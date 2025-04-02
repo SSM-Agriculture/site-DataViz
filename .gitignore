@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Les fichiers suivants
+*.html
+!docs/*.html
+*.tex
+*.pdf
+*.log
+*.sty
+*.docx
+*.odt
+/.quarto/
+/index_files/
+/_site/

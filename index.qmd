@@ -1,0 +1,20 @@
+---
+listing:
+  id: CatalogueViz
+  contents: DataViz
+  sort: "order asc"
+  template: listing-grid.ejs
+  categories: true
+  grid-columns: 2
+page-layout: full
+toc: false
+---
+
+## Catologue des DataViz liée à l'écosystème {{< fa brands r-project >}} réalisé par le  [SSM-Agriculture](https://agreste.agriculture.gouv.fr/agreste-web/)
+
+Les DataViz sont également consultables sur le site [`VizAgreste`](https://vizagreste.agriculture.gouv.fr/)
+<br>
+<br>
+
+::: {#CatalogueViz}
+:::

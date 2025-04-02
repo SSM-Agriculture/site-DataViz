@@ -1,0 +1,25 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - "/DataViz/**/*.qmd"
+
+website:
+  title: "Catalogue des DataViz proposé par le SSM Agriculture"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Accueil
+      - icon: github
+        href: https://github.com/SSM-Agriculture/site-DataViz
+    background: "blue"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+filters:
+   - include-code-files
+

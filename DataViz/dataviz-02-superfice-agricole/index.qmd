@@ -1,0 +1,22 @@
+---
+image: superficie-agricole.png
+title: La superficie agricole utilisée
+description: |
+  <br>
+  <b>Source : Agreste - Recensements agricoles</b>
+  
+  En 2020, l’agriculture occupe 269 000 km² de l’espace français. En métropole, cela représente 49 % du territoire.
+  <br>
+  <br>
+abstract: |
+  <br>
+  En 2020, l’agriculture occupe 269 000 km² de l’espace français. En métropole, cela représente 49 % du territoire.
+  <br>
+  <br>
+categories:
+  - DataViz
+html:
+  text: Voir la viz
+  url: https://ssm-agriculture.github.io/tutoriel-closeread/
+order: 2
+---
