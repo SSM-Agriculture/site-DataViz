@@ -10,7 +10,7 @@ categories:
   - DataViz
 html:
   text: Voir la viz
-  url: https://user-clementmrn-528624-0.user.lab.sspcloud.fr/files/work/site-DataViz/_site/DataViz/dataviz-01-performances-IAA/index.html
+  url: https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-01-performances-IAA
 order: 1
 format:
   closeread-html:
