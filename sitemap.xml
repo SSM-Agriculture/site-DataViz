@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://SSM-Agriculture.github.io/site-DataViz/DataViz/dataviz-03-emploi-agricole/index.html</loc>
-    <lastmod>2025-04-03T09:02:15.196Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SSM-Agriculture.github.io/site-DataViz/DataViz/dataviz-01-nb-exploitations/index.html</loc>
-    <lastmod>2025-04-03T09:03:03.578Z</lastmod>
+    <loc>https://SSM-Agriculture.github.io/site-DataViz/DataViz/dataviz-02-nb-exploitations/index.html</loc>
+    <lastmod>2025-04-17T09:54:11.389Z</lastmod>
   </url>
   <url>
     <loc>https://SSM-Agriculture.github.io/site-DataViz/index.html</loc>
-    <lastmod>2025-04-02T12:49:37.859Z</lastmod>
+    <lastmod>2025-04-17T08:41:08.770Z</lastmod>
   </url>
   <url>
-    <loc>https://SSM-Agriculture.github.io/site-DataViz/DataViz/dataviz-02-superfice-agricole/index.html</loc>
-    <lastmod>2025-04-03T09:02:50.481Z</lastmod>
+    <loc>https://SSM-Agriculture.github.io/site-DataViz/DataViz/dataviz-01-performances-IAA/index.html</loc>
+    <lastmod>2025-04-17T09:25:07.591Z</lastmod>
   </url>
 </urlset>

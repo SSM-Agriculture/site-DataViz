@@ -2,9 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/DataViz/dataviz-01-nb-exploitations/index.html",
-      "/DataViz/dataviz-02-superfice-agricole/index.html",
-      "/DataViz/dataviz-03-emploi-agricole/index.html"
+      "/DataViz/dataviz-01-performances-IAA/index.html",
+      "/DataViz/dataviz-02-nb-exploitations/index.html"
     ]
   }
 ]
