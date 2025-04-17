@@ -5,7 +5,7 @@
 
 # Les fichiers suivants
 *.html
-!docs/*.html
+!_site/DataViz/**/*.html
 *.tex
 *.pdf
 *.log
