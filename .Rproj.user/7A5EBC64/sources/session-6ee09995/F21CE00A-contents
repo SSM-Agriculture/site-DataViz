@@ -1,0 +1,646 @@
+---
+title: "Evolution du nombre d'exploitations"
+format:
+  closeread-html:
+    backgroundcolor: white
+    cr-section:
+      layout: overlay-left
+      font-size: 0.2rem
+    cr-style:
+      section-background-color: white
+      narrative-background-color-overlay: black
+      narrative-text-color-overlay: white
+    include-in-header:
+      text: |
+        <style>
+        
+
+          
+          /* Permet d'appliquer un style aux légendes (mais cela entre en concurence avec la possibilité native de closeread à définir une légende dans les [] de la commande : ![](./Images/MonImage.png)) */
+          .legend-option {
+            display: block;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            font-style: italic;
+          }
+          
+          /* Surligneur */
+          .highlight-yellow {
+            background-color: #FFE552;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-orange {
+            background-color: #fb9175;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-blue {
+            background-color: #00c7b3;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-lightskyblue {
+            background-color: #99f2f8;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-lightblue {
+            background-color: #518fff;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-purple {
+            background-color: #f767ef;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          }
+          .highlight-green {
+            background-color: #4efb8d;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          }
+          
+          
+          /* Souligner */
+          .underline-yellow {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            decoration-color: #FFE552;
+          }
+          .underline-orange {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            decoration-color: #fb9175;
+          }
+          
+          .overlay-left .narrative-col .narrative.bubble-transparent {
+            background-color: transparent !important;
+            color: black !important;
+            box-shadow: none;
+            border: none;
+          }
+          .overlay-left .narrative-col .narrative.bubble-white {
+            background-color: white !important;
+            color: black !important;
+            border: 2px solid black;
+            text-align: center;
+          }
+          
+          .texte-transparent {
+            color: rgba(0,0,0,0) !important;
+          }
+
+          
+          
+          /* Permet de pouvoir éviter les effet du scale-to et du pan-to. Mais cela fait pop directement l'image */
+          .closeread-target.no-transition {
+            transition: none;
+            transform: none;
+            opacity: 1;
+          }
+          
+          
+          /* Définir la position des objets (images, textes) */
+          .align-left {
+            text-align: left !important;
+          }
+          .align-right {
+            text-align: right !important;
+            margin-right: 0 !important;
+          }
+          .align-center {
+            text-align: center !important;
+          }
+          
+          .fin-page {
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 2rem;
+            font-size: 0.8rem;
+            border-top: 2px solid #ccc;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+          }
+          
+          
+          
+          /* Commandes pour les bouton cliquables du début */
+          .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-size: 1.5rem;
+            padding: 2rem;
+            text-align: center;
+          }
+          .menu-overlay.active {
+            display: flex;
+          }
+
+          .menu-option {
+            margin: 1rem;
+            cursor: pointer;
+            text-decoration: underline;
+            text-align: left;
+            width: 70%;   <!-- Permet d'ajuster la largeur de la fenêtre d'affichage-->
+          }
+
+          .menu-option:hover {
+            color: #ffd700;
+          }
+
+          .menu-close {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: white;
+          }
+
+          .menu-close:hover {
+            color: #ff6b6b;
+          }
+          
+          
+          /* Permetterait de figer le bouton en bas à droit de l'écran => à perfectionner */
+          .fixed-bottom-right {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            cursor: pointer;
+            max-height: 80px;
+          }
+          
+          
+          /* Utiliser un swipe horizontal*/
+          .swiper-container {
+            display:flex;
+            overflow-x: auto;
+            gap: 1rem;
+            scroll-snap-type: x mandatory;
+            padding: 1rem 0;
+          }
+
+          .swiper-slide {
+            flex: 0 0 80%;
+            scroll-snap-align: start;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid #ccc;
+          }
+
+          .swiper-slide::-webkit-scrollbar {
+            display: none; /* Pour un effet plus propre */
+          }
+
+          .swiper-container::-webkit-scrollbar {
+            display: none;
+          }
+          
+          
+          /* Générer une infobulle interactive*/
+          .tooltip-container {
+            position: relative;
+            z-index: 9999;
+            display: inline;
+            cursor: pointer;
+          }
+
+          .tooltip-content {
+            display: none;
+            position: absolute;
+            top: 1.5em;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            z-index: 9999;
+            max-width: 80vw !important;
+            width: max-content !important;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+          }
+
+          .tooltip-container.active .tooltip-content {
+            display: block;
+          }
+
+          .tooltip-question {
+            background-color: #FFE552; /* Couleur de l'arrière plan*/
+            color: black;              /* Couleur du "?" */
+            border-radius: 90%;
+            padding: 0.1rem 0.3rem;
+            z-index: 99999;
+            font-size: 0.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 0.2rem;
+            line-height: 1rem;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            vertical-align: super;    /* Cette commande permet de le mettre en exposant*/
+          }
+          .tooltip-wrapper {
+            position: relative;
+            display: inline-block;
+          }
+
+          .tooltip-trigger {
+            cursor: pointer;
+            color: #fff;
+            background-color: #555;
+            border-radius: 50%;
+            padding: 0 0.4em;
+            font-size: 0.8em;
+          }
+
+          .tooltip-wrapper:focus-within .tooltip-box,
+          .tooltip-trigger:focus + .tooltip-box {
+            display: block;
+          }
+          
+        </style>
+        
+        <script>
+        
+          /* Intègre les fonctionalité JS pour ouvrir un menu déroulant ou des liens cliquables */
+          
+          function openMenu(id) {
+            document.getElementById(id).classList.add("active");
+          }
+          function closeMenu(id) {
+            document.getElementById(id).classList.remove("active");
+          }
+          function goTo(url) {
+            window.location.href = url;
+          }
+          
+          
+          
+          /* Fonctions permettant l'infobulle*/
+          
+          document.addEventListener("DOMContentLoaded", function () {
+            const tooltips = document.querySelectorAll(".tooltip-container");
+
+          tooltips.forEach((tooltip) => {
+            tooltip.addEventListener("click", function (e) {
+              e.stopPropagation();
+              tooltip.classList.toggle("active");
+
+              // Fermer tous les autres
+              tooltips.forEach((other) => {
+                if (other !== tooltip) {
+                  other.classList.remove("active");
+               }
+              });
+            });
+          });
+
+          document.addEventListener("click", function () {
+            tooltips.forEach((tooltip) => tooltip.classList.remove("active"));
+            });
+          });
+          
+          
+          
+          
+          /* Fonction permettant de ne pas afficher une bulle déjà vue */
+          
+          let lastScrollY = window.scrollY;
+
+          window.addEventListener('scroll', () => {
+            const goingUp = window.scrollY < lastScrollY;
+            lastScrollY = window.scrollY;
+
+            document.querySelectorAll('.narrative').forEach(bubble => {
+              const rect = bubble.getBoundingClientRect();
+              const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+              if (!bubble.classList.contains('already-seen') && isVisible) {
+                bubble.classList.add('already-seen');
+              }
+
+              if (goingUp && bubble.classList.contains('already-seen') && bubble.classList.contains('non-reversible')) {
+                bubble.style.display = 'none';
+              }
+            });
+          });
+        </script>
+editor: visual
+execute:
+  echo: false
+---
+
+::::::::::: align-right
+Retourner à l'accueil [![](./Images/Bouton%20Home.png)](https://vizagreste.agriculture.gouv.fr/){style="max-height: 100px; width: auto;"}
+
+Partager la Viz (Mail) [![](./Images/Bouton%20Share.png)](mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20:%20https://monrapport.fr)
+
+Partager la Viz (X) [![](./Images/Bouton%20Share.png)](https://twitter.com/intent/tweet?text=Regarde%20ce%20rapport%20!&url=https://monrapport.fr)
+
+Partager la Viz (Facebook) [![](./Images/Bouton%20Share.png)](https://www.facebook.com/sharer/sharer.php?u=https://monrapport.fr)
+
+Explorer les données territoriales <img src="./Images/Bouton Data Dep.png" alt="Ouvrir menu 1" onclick="openMenu(&apos;menu-overlay-1&apos;)" style="max-height: 100px; cursor: pointer;"/>
+
+Pendant la navigation, appuyer pour accéder aux autres actions <img src="./Images/Bouton Menu.png" alt="Ouvrir menu 2" onclick="openMenu(&apos;menu-overlay-2&apos;)" style="max-height: 100px; cursor: pointer;"/>
+
+<!-- MENU 1 : Départements -->
+
+:::::: {#menu-overlay-1 .menu-overlay}
+::: {.menu-close onclick="closeMenu('menu-overlay-1')"}
+✖
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/01/2020')"}
+📍 01 Ain
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/02/2020')"}
+📍 02 Aisne
+:::
+::::::
+
+<!-- MENU 2 : Paramètres  -->
+
+:::::: {#menu-overlay-2 .menu-overlay}
+::: {.menu-close onclick="closeMenu('menu-overlay-2')"}
+✖
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/')"}
+📈 Accueil
+:::
+
+::: {.menu-option onclick="goTo('mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20: https://monrapport.fr')"}
+📉 Partager la Viz
+:::
+::::::
+:::::::::::
+
+# **Evolution du nombre d'exploitations agricoles en france**
+
+:::: cr-section
+::: {#cr-chiffre}
+```{=html}
+<p>
+  En 2020, la France 
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Y compris les 5 départements d’outre-mer : Guadeloupe, Martinique, Guyane, la Réunion et Mayotte (Mayotte est recensée depuis 2020).
+    </span>
+  </span>
+    compte <strong>416 436</strong> "exploitations agricoles" 
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Unité de production agricole disposant d’une gestion courante propre et dépassant un seuil minimum de superficie - 1 ha ou 20 ares de cultures spécialisées - ou de production, estimée en cheptel ou volume.
+    </span>
+  </span>
+  selon les résultats du dernier recensement agricole
+</p>
+```
+:::
+
+En **métropole**, elles sont **390 000**. C'est **100 000** de moins en 10 ans, soit une baisse de **20%**<br> ![](./Images/20.png) @cr-chiffre
+::::
+
+:::: cr-section
+::: {#cr-nb_ea1 .closeread-target .no-transition}
+**Nombre d'exploitations agricoles en métropole**<br> ![](./Images/nombre-d-exploitations-agricoles.png)
+:::
+
+```{=html}
+<p>
+  Pour autant, l’agriculture est toujours présente dans nos paysages : la superficie agricole utilisée 
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      La superficie agricole utilisée (SAU) comprends les terres arables (y compris pâturages temporaires, jachères, cultures sous abri, jardins familiaux...), les surfaces toujours en herbe et les cultures permanentes (vignes, vergers...).
+    </span>
+  </span>
+  ne recule que de 1 % depuis 2010.
+</p>
+```
+
+Pour autant, l’agriculture est toujours présente dans nos paysages : la superficie agricole utilisée ne recule que de 1 % depuis 2010. @cr-nb_ea1
+
+Les exploitations se regroupent, elles sont moins nombreuses tout en travaillant un espace équivalent. Ainsi, le poids des exploitations de moins de 20 ha baisse de 43 % à 38 %. @cr-nb_ea1
+::::
+
+::::: cr-section
+::: {#cr-nb_ea2 .closeread-target .no-transition}
+**4 fois moins d'exploitations qu'en 1970**<br> ![](./Images/nombre-d-exploitations-agricoles(1).png)
+:::
+
+::: {#cr-nb_ea3 .closeread-target .no-transition}
+**Forte concentration entre 1988 et 2000**<br> ![](./Images/nombre-d-exploitations-agricoles(2).png)
+:::
+
+De moins en moins d’exploitations : cette tendance observée au travers des recensements agricoles se poursuit : elles étaient [4 fois plus nombreuses en métropole en 1970]{.highlight-yellow}. @cr-nb_ea2
+
+Si la baisse du nombre d’exploitations est une constante depuis 50 ans, elle a été maximale entre 1988 et 2000, avec une [chute de 350 000]{.highlight-orange} en douze ans. @cr-nb_ea3
+
+```{=html}
+<p>
+  Si la baisse du nombre d’exploitations est une constante depuis 50 ans, elle a été maximale entre 1988 et 2000,
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      La mise en oeuvre des "quotas laitiers" et des mesures d'incitation à la retraite ont favorisé les regroupements.
+    </span>
+  </span>
+  avec une <span class="highlight-orange">chute de 350 000</span> en douze ans.
+</p>
+```
+:::::
+
+::: align-center
+**Evolution annuelle moyenne du nombre d'exploitations**<br>
+
+![](./Images/evolution%20annuelle%20nb%20ea.png)
+
+Depuis, la baisse s'atténue progressivement. Elle s'établit à [-2.3 % par an]{.highlight-blue} sur la période 2010-2020 (contre -3 % entre 2000 et 2010) <br> <br> <br>
+:::
+
+::::::: cr-section
+::: {#cr-evo-nb-ea .closeread-target .no-transition}
+**Évolution du nombre d'exploitations par spécialisation**<br> ![](./Images/evo%20nb%20ea%20par%20spe.png)
+:::
+
+::: {#cr-evo-nb-ea1 .closeread-target .no-transition}
+**Évolution du nombre d'exploitations par spécialisation**<br> ![](./Images/evo%20nb%20ea%20par%20spe1.png)
+:::
+
+::: {#cr-evo-nb-ea2 .closeread-target .no-transition}
+**Évolution du nombre d'exploitations par spécialisation**<br> ![](./Images/evo%20nb%20ea%20par%20spe2.png)
+:::
+
+::: {#cr-evo-nb-ea3 .closeread-target .no-transition}
+**Évolution du nombre d'exploitations par spécialisation**<br> ![](./Images/evo%20nb%20ea%20par%20spe3.png)
+:::
+
+Dans presque toutes les spécialisation, le nombre d'exploitations recule entre 2010 et 2020, excepté pour ["Horticulture-maraichage"]{.highlight-lightskyblue}. @cr-evo-nb-ea1
+
+C'est dans les exploitations spécialisées en [élevage]{.highlight_lightblue} que la baisse est la plus forte : -30 % (correspondant à -63 500 exploitations), preque les 2/3 de la diminution totale. @cr-evo-nb-ea2
+
+[L'élevage de bovins]{.highlight-lightblue} est particulièrement concerné : -33 000 exploitations, soit -27 %. Il perd le premier range qu'il détenait en 2010, qui revient à la spécialisation "Grandes cultures". @cr-evo-nb-ea3
+:::::::
+
+## Comment se traduisent ces évolution générales dans les territoires ?
+
+:::::::::: cr-section
+::: {#cr-carte .closeread-target .no-transition}
+**Taux d'évolution du nombre d'exploitations, 2010-2020 (en %)**<br> ![](./Images/carte%20france.jpg)
+:::
+
+Dans une grande façade Ouest, le nombre d'exploitations en [Normandie, Bretagne, Pays de la Loire, et Nouvelle-Aquitaine]{.highlight-purple} par exemple, se réduit plus fortement ... @cr-carte
+
+...que dans les [Hauts-de-France, l'Île-de-France ou l'ancienne Champagne-Ardenne]{.highlight-purple}. @cr-carte
+
+Tous les territoires sont concernés par la baisse du nombre d'exploitations ecepté la [Corse]{.highlight-green} et le [Guyane]{.highlight-green}, qui se distinguent par une légère augmentation. @cr-carte
+
+À l’opposé, le nombre d'exploitations baisse le plus fortement dans trois départements de l'Est de la France métropolitaine : [Vosges, Territoire-de-Belfort et Alpes-Maritimes]{.highlight-purple}. @cr-carte
+
+Dans ces départements se poursuit ces dix dernières années une tendance plus ancienne, avec une diminution plus prononcée qu’en moyenne. @cr-carte
+
+```{r include=FALSE}
+# A modifier pour bien zoomer sur les vosges
+```
+
+Les [Vosges]{.highlight-purple} comptent 1 000 exploitations de moins qu'en 2010, évolution plus forte que celle observée entre 2000 et 2010 (-4 % par an contre -3,2 %). @cr-carte
+
+::: bubble-white
+*Vosges : un tiers d'exploitations en moins entre 2010 et 2020*<br> ![](./Images/vosges1.png) @cr-carte
+
+<a href="./Images/vosges1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+:::
+
+::: bubble-white
+*Comparaison : indice base 100*<br> ![](./Images/vosges2.png) @cr-carte
+
+<a href="./Images/vosges2.png" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+:::
+
+```{r include=FALSE}
+# A modifier pour bien zoomer sur les Alpes-Maritimes
+```
+
+Les [Alpes-Maritimes]{.highlight-purple} détonnent au sein de la région Sud. Beaucoup de petites exploitations de fruits, gérées par des exploitants retraités ou proches de la retraite en 2010, ont disparu. @cr-carte
+
+::: bubble-white
+*Alpes-Maritimes : dix fois moins d'exploitations en 50 ans*<br> ![](./Images/Alpes1.png) @cr-carte
+
+<a href="./Images/Alpes1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+:::
+
+::: bubble-white
+*Comparaison : indice base 100*<br> ![](./Images/Alpes2.png){.bulle-blanche} @cr-carte
+
+<a href="./Images/Alpes2.png" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+:::
+
+```{r include=FALSE}
+# A modifier pour bien zoomer sur la Guyane
+```
+
+En [Guyane]{.highlight-purple}, l’augmentation est continue depuis plusieurs recensements. Il s’agit là d’un cas isolé au sein des départements d’outre-mer, où la tendance est plutôt à la stabilisation du nombre d'exploitations. @cr-carte
+
+::: bubble-white
+*Guyane : progression continue*<br> ![](./Images/DROM1.png) @cr-carte
+
+<a href="./Images/DROM1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+:::
+
+::: bubble-white
+*Antilles et la Réunion : vers une stabilisation après une forte réduction*<br> ![](./Images/DROM2.png) @cr-carte
+
+<a href="./Images/DROM2.png" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+:::
+::::::::::
+
+# Petit Bonus sur la possibilité de scroll horizontalement entre des viz (Utilisation d'html)
+
+```{=html}
+
+<div class="swiper-container">
+  <div class="swiper-slide">
+    Viz 1 : <strong>Evolution du nombre d'exploitations agricoles</strong><br>
+    <img src="./Images/emploi-salarie-agroalimentaire.png" style="max-width: 100%; margin-top: 0.5rem; border-radius: 10px;" />
+    
+    <p style="margin-top: 0.5rem;">
+        Le nombre d'exploitations en décroissance depuis des années
+    </p>
+    
+    <a href="https://vizagreste.agriculture.gouv.fr/evolution-du-nombre-d-exploitations.html">📥 Accéder à la Viz</a>
+  </div>
+  
+  <div class="swiper-slide">
+    Viz 2 : <strong>Spécialisation par type d'exploitation</strong><br>
+
+    <img src="./Images/evo%20nb%20ea%20par%20spe.png" style="max-width: 100%; margin-top: 0.5rem; border-radius: 10px;" alt="Spécialisation" />
+
+    <p style="margin-top: 0.5rem;">
+      Des disparités importantes entre élevage, maraîchage et grandes cultures.
+    </p>
+
+    <a href="https://vizagreste.agriculture.gouv.fr/" class="download-link">📥 Accéder à la Viz</a>
+  </div>
+
+</div>
+```
+
+# Le top 6 des départements en 2020
+
+![](./Images/top-6-dep.png){style="max-width: 100%"} <a href="./Images/top-6-dep.png" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+
+::::: cr-section
+::: {#cr-nb-exp1}
+**1970**
+
+![](./Images/nb-exp1970.png)
+
+<a href="./Images/nb-exp1970" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+:::
+
+::: {#cr-nb-exp2}
+**2020**
+
+![](./Images/nb-exp2020.png)
+
+<a href="./Images/nb-exp2020" download style="display: block; margin-top: 0.5rem;"> 📥 Télécharger l’image </a>
+:::
+
+Il y a 50 ans, c'est la Bretagne et ses proches voisins qui marquaient la tête du classement. @cr-nb-exp1
+
+En 2020, la distribution géographique des exploitations est assez proche, bien qu’un peu plus homogène, avec en particulier l’apparition de la Marne, des Pyrénées-Atlantiques et de l’Aveyron parmi les 6 premiers départements. @cr-nb-exp2
+:::::
+
+::: {.fin-page .align-center}
+**Pour en savoir plus sur le sujet :**<br> <a href="https://agreste.agriculture.gouv.fr/agreste-web/" style="display: block; margin-top: 0.5rem;"> 🐮 Site Agreste 🐮 </a>
+
+**Pour aller voir d'autres DataViz :**<br> <a href="https://vizagreste.agriculture.gouv.fr/" style="display: block; margin-top: 0.5rem;"> 📉 Accueil VizAgreste 📉 </a>
+:::

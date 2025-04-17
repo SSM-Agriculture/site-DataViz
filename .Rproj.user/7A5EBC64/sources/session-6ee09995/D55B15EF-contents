@@ -1,0 +1,1043 @@
+---
+title: "Performances des industries agroalimentaires"
+description: |
+  <br>
+  Premier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.
+  <br>
+  <br>
+
+categories:
+  - DataViz
+html:
+  text: Voir la viz
+  url: https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-01-performances-IAA
+order: 1
+format:
+  closeread-html:
+    backgroundcolor: white
+    cr-section:
+      layout: overlay-left
+      font-size: 0.2rem
+    cr-style:
+      section-background-color: white
+      narrative-background-color-overlay: black
+      narrative-text-color-overlay: white
+    include-in-header:
+      text: |
+        <style>
+          
+          h2,
+          h1 {
+            margin-top: 0;
+          }
+          
+          /* Permet d'appliquer un style aux légendes (mais cela entre en concurence avec la possibilité native de closeread à définir une légende dans les [] de la commande : ![](./Images/MonImage.png)) */
+          .legend-option {
+            display: block;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            font-style: italic;
+          }
+          
+          /* Surligneur */
+          .highlight-yellow {
+            background-color: #FFE552;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-orange {
+            background-color: #fb9175;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-blue {
+            background-color: #00c7b3;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-lightskyblue {
+            background-color: #99f2f8;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-lightblue {
+            background-color: #518fff;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          } 
+          .highlight-purple {
+            background-color: #f767ef;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          }
+          .highlight-green {
+            background-color: #4efb8d;
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: black;
+          }
+          
+          
+          /* Souligner */
+          .underline-yellow {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            decoration-color: #FFE552;
+          }
+          .underline-orange {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            decoration-color: #fb9175;
+          }
+
+          /* Permet de pouvoir éviter les effet du scale-to et du pan-to. Mais cela fait pop directement l'image */
+          .closeread-target.no-transition {
+            transition: none;
+            transform: none;
+            opacity: 1;
+          }
+          
+          
+          /* Définir la position des objets (images, textes) */
+          .align-left {
+            text-align: left !important;
+          }
+          .align-right {
+            text-align: right !important;
+            margin-right: 0 !important;
+          }
+          .align-center {
+            text-align: center !important;
+          }
+          
+          .img-align-right {
+            text-align: right;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-right: 10%;
+          }
+          
+          .fin-page {
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 2rem;
+            font-size: 0.8rem;
+            border-top: 2px solid #ccc;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+          }
+          
+          /* Permet de créer un cadre autour des images */
+          
+          .img-fluid-custom {
+            background-color: white;
+            border-radius: 20px;
+            padding: 1rem;
+            border: 10px solid #FFE5B4;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          }
+          
+          /* Fonctions adaptés seulement pour les devices ordinateur ou grands écrans */
+          @media screen and (min-width: 769px) {
+          
+          /* Fonctions pour réarranger la répartiton entre sticky-col et narrative-col */
+          .reframe-2-2 {
+            display: grid;
+            grid-template-columns: 2fr 2fr !important;
+          }
+          
+          .reframe-2-3 {
+            display: grid;
+            grid-template-columns: 2fr 3fr !important;
+          }
+          
+          .reframe-1-2 {
+            display: grid;
+            grid-template-columns: 1fr 2fr !important;
+          }
+          
+          .sticky-col {
+            grid-column: 2 !important;
+          }
+          
+          .sticky-col.img-png{
+            grid-column: 1 !important;
+          }
+          
+          /* Fonction pour céer un cadre autour des images */
+          
+          .img-fluid-custom {
+            background-color: white;
+            border-radius: 20px;
+            padding: 1rem;
+            border: 15px solid #FFE5B4;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          }
+          }
+          
+          /* Permet d'aficher les <details> même s'ils débordent sur une autre section (à condition d'avoir assez d'espace de libre entre les deux sections) */
+          .cr-section .sticky-col .sticky-col-stack {
+            overflow: visible !important;
+          }
+          .cr-section .sticky-col .sticky-col-stack > .sticky {
+            overflow: visible !important;
+          }
+          
+          
+          /* Permet les clics sur les éléments sticky (en conservant ceux dans les bulles narratives) */
+          .cr-section .narrative-col {
+            pointer-events: none;
+          }
+          .cr-section .narrative-col .trigger .narrative {
+            pointer-events: auto !important;
+          }
+          .cr-section .sticky-col {
+            pointer-events: auto !important;
+          }
+          
+          
+          
+          /* Commandes pour les bouton cliquables du début */
+          .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-size: 1.5rem;
+            padding: 2rem;
+            text-align: center;
+          }
+          .menu-overlay.active {
+            display: flex;
+          }
+
+          .menu-option {
+            margin: 1rem;
+            cursor: pointer;
+            text-decoration: underline;
+            text-align: left;
+            width: 70%;   <!-- Permet d'ajuster la largeur de la fenêtre d'affichage-->
+          }
+
+          .menu-option:hover {
+            color: #ffd700;
+          }
+
+          .menu-close {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: white;
+          }
+
+          .menu-close:hover {
+            color: #ff6b6b;
+          }
+          
+          
+          /* Permetterait de figer le bouton en bas à droit de l'écran => à perfectionner */
+          .fixed-bottom-right {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            cursor: pointer;
+            max-height: 80px;
+          }
+          
+          
+          /* Générer une infobulle interactive*/
+          .tooltip-container {
+            position: relative;
+            display: inline;
+          }
+
+          .tooltip-content {
+            display: none;
+            position: absolute;
+            top: 1.5em;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            z-index: 9999 !important;
+            max-width: 80vw !important;
+            width: 300px !important;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+          }
+
+          .tooltip-container.active .tooltip-content {
+            display: block;
+          }
+
+          .tooltip-question {
+            background-color: #FFE552; /* Couleur de l'arrière plan*/
+            color: black;              /* Couleur du "?" */
+            border-radius: 90%;
+            padding: 0.1rem 0.3rem;
+            position: relative;
+            z-index: 1;
+            font-size: 0.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 0.2rem;
+            line-height: 1rem;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            vertical-align: super;    /* Cette commande permet de le mettre en exposant*/
+          }
+          .tooltip-wrapper {
+            position: relative;
+            display: inline-block;
+          }
+
+          .tooltip-trigger {
+            cursor: pointer;
+            color: #fff;
+            background-color: #555;
+            border-radius: 50%;
+            padding: 0 0.4em;
+            font-size: 0.8em;
+          }
+
+          .tooltip-wrapper:focus-within .tooltip-box,
+          .tooltip-trigger:focus + .tooltip-box {
+            display: block;
+          }
+          
+        </style>
+        
+        <script>
+        
+          /* Intègre les fonctionalité JS pour ouvrir un menu déroulant ou des liens cliquables */
+          
+          function openMenu(id) {
+            document.getElementById(id).classList.add("active");
+          }
+          function closeMenu(id) {
+            document.getElementById(id).classList.remove("active");
+          }
+          function goTo(url) {
+            window.location.href = url;
+          }
+          
+          
+          
+          /* Fonctions permettant l'infobulle*/
+          
+          document.addEventListener("DOMContentLoaded", function () {
+            const tooltips = document.querySelectorAll(".tooltip-container");
+
+          tooltips.forEach((tooltip) => {
+            tooltip.addEventListener("click", function (e) {
+              e.stopPropagation();
+              tooltip.classList.toggle("active");
+
+              // Fermer tous les autres
+              tooltips.forEach((other) => {
+                if (other !== tooltip) {
+                  other.classList.remove("active");
+               }
+              });
+            });
+          });
+
+          document.addEventListener("click", function () {
+            tooltips.forEach((tooltip) => tooltip.classList.remove("active"));
+            });
+          });
+          
+          
+          
+          
+          /* Fonction permettant de ne pas afficher une bulle déjà vue */
+          
+          let lastScrollY = window.scrollY;
+
+          window.addEventListener('scroll', () => {
+            const goingUp = window.scrollY < lastScrollY;
+            lastScrollY = window.scrollY;
+
+            document.querySelectorAll('.narrative').forEach(bubble => {
+              const rect = bubble.getBoundingClientRect();
+              const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+              if (!bubble.classList.contains('already-seen') && isVisible) {
+                bubble.classList.add('already-seen');
+              }
+
+              if (goingUp && bubble.classList.contains('already-seen') && bubble.classList.contains('non-reversible')) {
+                bubble.style.display = 'none';
+              }
+            });
+          });
+
+          </script>
+        
+editor: visual
+execute:
+  echo: false
+---
+
+::::::::::: align-right
+Retourner à l'accueil [![](./data-png/Bouton%20Home.png)](https://vizagreste.agriculture.gouv.fr/){style="max-height: 100px; width: auto;"}
+
+Partager la Viz (Mail) [![](./data-png/Bouton%20Share.png)](mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20:%20https://monrapport.fr)
+
+Partager la Viz (X) [![](./data-png/Bouton%20Share.png)](https://twitter.com/intent/tweet?text=Regarde%20ce%20rapport%20!&url=https://monrapport.fr)
+
+Partager la Viz (Facebook) [![](./data-png/Bouton%20Share.png)](https://www.facebook.com/sharer/sharer.php?u=https://monrapport.fr)
+
+Explorer les données territoriales <img src="./data-png/Bouton Data Dep.png" alt="Ouvrir menu 1" onclick="openMenu(&apos;menu-overlay-1&apos;)" style="max-height: 100px; cursor: pointer;"/>
+
+Pendant la navigation, appuyer pour accéder aux autres actions <img src="./data-png/Bouton Menu.png" alt="Ouvrir menu 2" onclick="openMenu(&apos;menu-overlay-2&apos;)" style="max-height: 100px; cursor: pointer;"/>
+
+<!-- MENU 1 : Départements -->
+
+:::::: {#menu-overlay-1 .menu-overlay}
+::: {.menu-close onclick="closeMenu('menu-overlay-1')"}
+✖
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/01/2020')"}
+📍 01 Ain
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/02/2020')"}
+📍 02 Aisne
+:::
+::::::
+
+<!-- MENU 2 : Paramètres  -->
+
+:::::: {#menu-overlay-2 .menu-overlay}
+::: {.menu-close onclick="closeMenu('menu-overlay-2')"}
+✖
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/')"}
+📈 Accueil
+:::
+
+::: {.menu-option onclick="goTo('mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20: https://monrapport.fr')"}
+📉 Partager la Viz
+:::
+::::::
+:::::::::::
+
+# **Performances économiques des industires agroalimentaires**
+
+```{=html}
+<p>
+  Premier producteur agricole de l'Union européenne, la France occupe la deuxième place en tant que puissance industrielle agroalimentaire
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Les industries agroalimentaires (IAA) transforment les produits de l’agriculture et de la pêche en aliments et boissons pour la consommation humaine et animale.
+    </span>
+  </span>
+    , en chiffre d'affaire comme en valeur ajoutée.
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      La valeur ajoutée correspond au total des ventes (le chiffre d’affaires) diminué des consommations intermédiaires (par exemple le coût des matières premières).
+    </span>
+  </span>
+</p>
+```
+
+![](./data-png/2e.png) C'est le rang des industries agroalimentaires françaises au sein de l'union européenne.
+
+Classée juste derrière l'Allemagne ces dernières années, la France devance nettement l'Italie et l'Espagne.
+
+## **Valeur ajoutée des industries agroalimentaires dans l'Union européenne**
+
+Prix courants, en milliards d'euros
+
+![*Champ : branche des industries agroalimentaires* <br> *Source : Eurostat*](./data-svg/industrie-alimentaire-prix-courants.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/industrie-alimentaire-prix-courants.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/industrie-alimentaire-prix-courants.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/industrie-alimentaire-prix-courants.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+
+```{=html}
+<p>
+  Les industries agroalimentaires (IAA) sont le premier secteur manufacturier
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      L'industrie manufacturière regroupe les industries de transformation des biens, mais aussi la réparation et l'installation d'équipements industriels.
+    </span>
+  </span>
+    français, en chiffre d'affaires, en valeur ajoutée ou en emploi salarié.
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Rapportées à l’ensemble de l’industrie manufacturière, les IAA comptent pour 16 % des effectifs (ETP), 20 % du chiffre d’affaires et 16 % de la valeur ajoutée en 2021.
+    </span>
+  </span>
+  Elles génèrent par exemple 2,3 fois plus de valeur ajoutée que l’industrie automobile.
+</p> 
+```
+
+Depuis des décennies, les IAA assurent un volume d’emploi salarié remarquablement stable, en croissance même depuis 2015. Cette évolution est plus favorable que celle de l'ensemble de l’industrie manufacturière.
+
+## **Evolution de l'emploi salarié hors intérim des branches agroalimentaire et manufacturière**
+
+Indice en base 100 en 1990
+
+![\* *y compris l'artisanat commercial* <br> *Champ : France hors Mayotte* <br> *Source : Insee, comptes nationaux, base 2024*](./data-svg/emploi-salarie-agroalimentaire.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/emploi-salarie-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/emploi-salarie-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/emploi-salarie-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+
+# **Les IAA sont un acteur clé d’un vaste ensemble agricole et agroalimentaire**
+
+Les IAA forment un maillon essentiel d’une chaîne de valorisation qui va des fermes agricoles jusqu'aux consommateurs (à domicile ou au restaurant), en passant par les commerçants de gros et de détail. IAA et agriculture dégagent en 2022 une valeur ajoutée similaire. Ensemble, elles contribuent pour près de 4 % au produit intérieur brut (PIB) national (à hauteur de 100 milliards d’euros).
+
+## **Part de la valeur ajoutée de l'agriculture et des IAA dans le PIB**
+
+En %
+
+![\* *Agriculture, sylviculture et pêche* <br> *Champ : France* <br> *Source : Insee, comptes nationaux, base 2024*](./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+
+```{=html}
+<p>
+  L'analyse sectorielle
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      L’approche « sectorielle » privilégie l’activité principale, écartant par exemple les entreprises qui font principalement de la distribution. En comptabilité nationale en revanche, la « branche » IAA couvre uniquement les activités d’IAA, mais dans l’ensemble des entreprises.
+    </span>
+  </span>
+    qui suit distingue l’industrie de l’artisanat commercial.
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      L’artisanat commercial regroupe les unités ayant pour activité principale la charcuterie, la boulangerie, la boulangerie-pâtisserie, la pâtisserie, la cuisson de produits de boulangerie. Il concerne pour l’essentiel des entreprises de moins de 10 salariés, par ailleurs inscrites au Répertoire des métiers.
+    </span>
+  </span>
+    Elle écarte aussi les activités de transformation « à la ferme »
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      En particulier, certains domaines viticoles vinifient, embouteillent et commercialisent eux-mêmes ; ils ne figurent pas, statistiquement, dans les IAA.
+    </span>
+  </span>
+  , en vente directe, et le commerce de gros.
+</p>      
+```
+
+```{=html}
+<p>
+  En 2021, 19 000 entreprises
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Les statisticiens définissent désormais l’entreprise comme la plus petite combinaison d’unités légales formant une unité organisationnelle, avec une certaine autonomie de décision. Il peut s’agir d’entreprises indépendantes ou de groupes comprenant plusieurs filiales.
+    </span>
+  </span>
+  entrent ainsi dans le champ des industries agroalimentaires stricto sensu. De leur côté, les entreprises du commerce de gros ou de l’artisanat commercial alimentaire sont plus nombreuses. Mais elles emploient moins de salariés. Les IAA génèrent deux fois plus de valeur ajoutée qu'artisanat et commerce de gros alimentaires réunis.
+</p>
+```
+
+## **Indicateurs du secteur agroalimentaire en France en 2021**
+
+![*Md€ : milliards d'euros* <br> *ETP : équivalent temps plein* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/indicateurs-secteur-agroalimentaire.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/indicateurs-secteur-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-secteur-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/indicateurs-secteur-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+
+Pour mieux comprendre une notion comptable comme la valeur ajoutée, supposons qu'une entreprise fabrique des biscuits. La production vendue – le chiffre d’affaires – doit d’abord servir à payer les matières premières et l'énergie, qui font partie des « consommations intermédiaires ». Ce qu’il reste est par définition la valeur ajoutée, soit la richesse créée lors du processus de production.
+
+```{=html}
+<p class="align-center">
+  <img class="img-fluid" src="./data-png/Biscuits.png">
+</p>
+```
+
+L’entreprise utilisera cette valeur ajoutée pour payer les salariés, les impôts sur les bénéfices, les frais financiers, amortir son matériel, rémunérer les actionnaires et investir.
+
+# **Comment se déclinent les IAA selon les activités ?**
+
+```{=html}
+<p>
+  Les industries agroalimentaires recouvrent une dizaine d'activités
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      D'une grande diversité, comme par exemple des abattoirs, des caves coopératives viticoles, des petits fabricants de fromage, des usines de production d'huiles, de fabrication d'eaux minérales ou de produits transformés à base de fruits (compotes, jus de fruits)...
+    </span>
+  </span>
+  , de transformation végétale ou animale et de fabrication de boissons.
+<p> 
+```
+
+:::: {.cr-section .reframe-2-2}
+::: {#cr-va-iaa}
+## **Valeur ajoutée dans les IAA en 2021**
+
+En milliards d'euros
+
+![\* *plats préparés, sucre, confiserie, cacao, thé, café, condiments...* <br> \*\* *produits de l'extraction de l'amidon des végétaux utilisés dans l'alimentation (amidon, glucoses, gluten, tapioca...)* <br> *Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/valeur-ajoutee-iaa.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/valeur-ajoutee-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/valeur-ajoutee-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+Quatre activités génèrent les trois quarts de la valeur ajoutée des IAA. Au premier rang : la fabrication de boissons (vin, bière, spiritueux, boissons non alcoolisées hors jus de fruits) avec 22% de l'ensemble. @cr-va-iaa
+::::
+
+<br> <br> <br> <br>
+
+:::: {.cr-section .reframe-2-2}
+::: {#cr-palmares-iaa}
+## **Palmarès des activités des IAA en 2021**
+
+![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/classement-secteur-iaa.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/classement-secteur-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/classement-secteur-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/classement-secteur-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+L'activité des boissons domine la valeur ajoutée car elle représente le plus fort taux de valeur ajoutée. C'est celle où les matières premières pèsent le moins dans le processus de production. @cr-palmares-iaa
+
+```{=html}
+<p>
+  L'activité des boissons domine la valeur ajoutée car elle représente le plus fort taux de valeur ajoutée.
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Le taux de valeur ajoutée rapporte la valeur ajoutée du chiffre d'affaire. Moins il y a de consommations intermédiaires, plus il est important. Ce taux mesure la capacité à créer de la valeur supplémentaire.
+    </span>
+  </span>
+  C'est elle où les matières premières pèsent le moins dans le processus de production.
+</p>
+```
+
+Les activités de transformation de viande emploient le plus de salariés : elles ont besoin de davantage de main-d'oeuvre pour produire. @cr-palmares-iaa
+
+En matière de chiffre d'affaire, les produits laitiers arrivent en tête, mais leur valeur ajoutée est inférieure à celle des boissons ou des autres produits alimentaires. @cr-palmares-iaa
+::::
+
+Comparons les boissons avec l’activité qui lui est la plus opposée pour le taux de valeur ajoutée, celle des huiles et graisses.
+
+Dans la fabrication des boissons, les matières premières sont relativement peu coûteuses, en regard de la valorisation du produit final.
+
+```{=html}
+<p class="align-center">
+  <img class="img-fluid" src="./data-png/Boissons.png">
+<p/>
+```
+
+<br>
+
+```{=html}
+<p>
+  Pour produire des huiles et des graisses,
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Fabrication d'huiles et de graisses brutes et raffinées d'origine végétale ou animale (excepté les graisses animales comestibles comme par exemple le saindoux, le suif, ou le beurre).
+    </span>
+  </span>
+   les matières premières pèsent davantage. Plus souvent importées, elles sont aussi davantage sujettes à des variations de prix.
+</p>
+```
+
+<br>
+
+```{=html}
+<p class="align-center">
+  <img class="img-fluid" src="./data-png/Huiles_graisses.png">
+<p/>
+```
+
+Le calssement suivant traduit le degré de transformation des différentes filières des IAA.
+
+:::: {.cr-section .reframe-2-2}
+::: {#cr-taux-va-iaa}
+## **Taux de valeur ajoutée dans les IAA en 2021**
+
+![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/taux-valeur-ajoutee-iaa.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/taux-valeur-ajoutee-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-valeur-ajoutee-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-valeur-ajoutee-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+En bas de figure, juste avant les huiles et graisses, la production de farine et d'amylacés (amidon) illustre la notion de première transformation, dont les débouchés peuvent alimenter les filières de seconde transformation, à plus forte valeur ajoutée. @cr-taux-va-iaa
+
+```{=html}
+<p>
+  En bas de figure, juste avant les huiles et graisses, la production de farine et d'amylacés (amidon) illustre la notion de première transformation, dont les débouchés peuvent alimenter
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Par exemple, les meunuiseries transforment le blé en farine, et fournissen en matière première les boulangeries-pâtisseries industrielles. Les ateliers de préparations à base de viande produisent aussi pour les industries de plats préparés.
+    </span>
+  </span>
+   les filières de seconde transformation, à plus forte valeur ajoutée.
+</p>
+```
+::::
+
+<br>
+
+Le taux de valeur ajoutée n'est pas à lui seul un indicateur d'efficacité ou de rentabilité économique
+
+:::::: {.cr-section .reframe-1-2}
+::: {#cr-indicateur-efficacite}
+```{=html}
+<p class="img-align-right">
+  <img class="img-fluid" src="./data-png/indicateur-efficacite.png">
+</p>
+```
+:::
+
+::: {#cr-indicateur-efficacite1}
+```{=html}
+<p class="img-align-right">
+  <img class="img-fluid" src="./data-png/indicateur-efficacite1.png">
+</p>
+```
+:::
+
+::: {#cr-indicateur-efficacite2}
+```{=html}
+<p class="img-align-right">
+  <img class="img-fluid" src="./data-png/indicateur-efficacite2.png">
+</p>
+```
+:::
+
+Afficher le premier graph. @cr-indicateur-efficacite
+
+Pour apprécier la rentabilité, il faut retirer de la valeur ajoutée les frais de personnel. @cr-indicateur-efficacite1
+
+Apparait ainsi, l'éxcédent brut d'exploitation (EBE) - appelé plus communément la "marge". @cr-indicateur-efficacite2
+
+```{=html}
+<p>
+  Apparait ainsi, l'éxcédent brut d'exploitation (EBE) - appelé plus communément la "marge"
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      La marge sert à payer les impôts, amortir le matériel, couvrir les frais financiers, rémunérer les actionnaires et investir.
+    </span>
+  </span>
+   .
+</p>
+```
+::::::
+
+Le "taux de marge" rapporte cette marge à la valeur ajoutée. Moins les frais de personnel pèsent dans la valeur ajoutée, plus ce taux est élevé.
+
+:::: {.cr-section .reframe-2-2}
+::: {#cr-taux-marge-iaa}
+## **Taux de marge dans les IAA**
+
+Moyenne 2020-2021
+
+![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/taux-marge-iaa.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/taux-marge-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-marge-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-marge-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+Les activités de fabrication de boissons affichent un taux de marge supérieur à 50 %, cas assez rare dans l'industrie manufacturière. @cr-taux-marge-iaa
+
+A l'opposé, les activités de transformation de viande mobilisnet beaucoup de main-d'oeuvre, elles dégagent moins de marge en moyenne. @cr-taux-marge-iaa
+::::
+
+<br> <br>
+
+Comparées à la moyenne de l’industrie manufacturière, les IAA affichent un taux de valeur ajoutée plus faible (20 % contre 26 %) mais un meilleur taux de marge (33 % contre 25 %), et un taux d’investissement ⁠? plus élevé (19 % contre 15 %).
+
+:::: {.cr-section .reframe-2-2}
+::: {#cr-taux-investissement-iaa}
+## **Taux d'investissement dans les IAA**
+
+Moyenne 2020-2021
+
+![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/taux-investissement-iaa.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/taux-investissement-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-investissement-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-investissement-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+Marlgré des marges importantes, les secteurs des boissons et des aliments pour animaux sont ceux qui investissent le moins (en proportion de la valeur ajoutée), dans la période 2020-2021. @cr-taux-investissement-iaa
+
+A l'inverse, les huiles et graissent présentent un taux senssiblement supérieur aux autres activités. @cr-taux-investissement-iaa
+::::
+
+<br>
+
+# **Quels résultats en fonction de la taille des entreprises ?**
+
+```{=html}
+<p>
+  Les industries agroalimentaires reposent pour l’essentiel sur des microentreprises (83 % en 2021). Cependant, les 350 entreprises dites « grandes » ou de taille intermédiaire (ETI)
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      La loi de modernisation de l’économie de 2008 définit de nouvelles catégories d’entreprises, à partir de critères multiples et plus du seul effectif salarié. Outre des seuils d’effectifs (10, 50, 250, 5 000 salariés), elle considère l’activité. Par exemple une entreprise de moins de 250 salariés mais dont le CA dépasse 50 M€ et le total de bilan 43 M€ sera classée ETI et non PME.
+    </span>
+  </span>
+  réalisent 85 % du chiffre d’affaires et des exportations et 83 % de la valeur ajoutée
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Les 24 plus grandes entreprises génèrent à elles seules 40 % de la valeur ajoutée des IAA.
+    </span>
+  </span>
+  du secteur.
+</p>
+```
+
+## **Indicateurs synthétiques par catégorie d'entreprise en 2021**
+
+![*Microentreprises : effectifs \< 10 salariés et bilan \< 2 M€* <br> *PME : effectifs \< 250 salariés et bilan \< 43 M€* <br> *ETI : effectifs entre 250 et 5 000 salariés ou CA \>= 50 k€ ou bilan entre 43 M€ et 2 000 M€* <br> *GE : effectifs \>= 5 000 salariés ou (CA \> 1,5 Md€ et bilan \> 2 Md€)* <br><br> *Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : INSEE - Esane, traitements SSP*](./data-svg/indicateurs-categorie-entreprise.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/indicateurs-categorie-entreprise.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-categorie-entreprise.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/indicateurs-categorie-entreprise.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+
+# **Comment se portent les échanges extérieurs des IAA ?**
+
+```{=html}
+<p>
+  Le taux d’exportation
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Le taux d’exportation mesure la part des exportations dans le chiffre d’affaires total.
+    </span>
+  </span>
+  moyen des industries agroalimentaires s’établit à 25 % en 2021, un taux sensiblement inférieur à la moyenne de l’industrie manufacturière (42 %)  : les IAA servent en priorité le marché national.
+</p>
+```
+
+De gros écarts se dessinent selon les activités.
+
+:::: {.cr-section .reframe-2-2}
+::: {#cr-taux-export-iaa}
+# **Taux d'exportation des IAA en 2021**
+
+![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : INSEE - Esane, traitements SSP*](./data-svg/taux-exportation-iaa.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/taux-exportation-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-exportation-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-exportation-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+Les industries de produits périssables (viandes, poissons, boulangerie industrielle) exportent moins que les autres. @cr-taux-export-iaa
+
+A l'inverse, les industries des huiles et graisses ou des farines et amylacés exportent près de la moitié de leur production. @cr-taux-export-iaa
+::::
+
+<br>
+
+```{=html}
+<p>
+  La France est le 6e exportateur mondial de produits agricoles bruts et transformés, derrière les États-Unis, les Pays-Bas, l’Allemagne, le Brésil et la Chine. Les IAA françaises sont, depuis longtemps, exportatrices nettes
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Elles exportent plus qu’elles n’importent.
+    </span>
+  </span>
+  de produits transformés, caractéristiques qu’elles partagent avec leurs homologues espagnoles, italiennes ou néerlandaises. En revanche, si l’Allemagne exporte davantage que la France, elle importe plus qu’elle n’exporte et présente donc une balance commerciale⁠
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+     La balance commerciale représente la différence entre la valeur des exportations et des importations de biens.
+    </span>
+  </span>
+   structurellement déficitaire.
+</p>
+```
+
+## **Solde des échanges agroalimentaires français pour différents produits en 2022**
+
+En milliards d'euros
+
+![*Source : Douanes*](./data-svg/echanges.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/echanges.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/echanges.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/echanges.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+
+:::::: {.cr-section .reframe-2-2}
+::: {#cr-balance-commerciale}
+![\* *les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.* <br> *Champ : France, y compris Mayotte à partir de 2014.* <br> *Source : Douanes*](./data-svg/balance-produit-alimentaire.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/balance-produit-alimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+::: {#cr-balance-commerciale1}
+![\* *les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.* <br> *Champ : France, y compris Mayotte à partir de 2014.* <br> *Source : Douanes*](./data-svg/balance-produit-alimentaire1.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/balance-produit-alimentaire1.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire1.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+::: {#cr-balance-commerciale2}
+![\* *les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.* <br> *Champ : France, y compris Mayotte à partir de 2014.* <br> *Source : Douanes*](./data-svg/balance-produit-alimentaire2.svg){.img-fluid-custom}
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/balance-produit-alimentaire2.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire2.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire2.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+:::
+
+Depuis 10 ans au moins, la balance commerciale française est assez stable, entre 5 et 8 millairs d'euros chaque année. Mais aliments et boissons connaissent des évolutions nettement divergentes. @cr-balance-commerciale
+
+Parenthèse Covid mise à part, la fabrication de boissons accroit régulièrement ses performances à l'export - grâce aux prix, alors que les volumes baissent sur les années récentes. @cr-balance-commerciale1
+
+En revanche, la balance commerciale française est de plus en plus déficitaire dans les produits alimentaires, et tout particulièrement pour la transformation de viande. @cr-balance-commerciale2
+::::::
+
+# **Comment les IAA se déploient-elles dans le territoire national ?**
+
+::::::: {.cr-section .reframe-2-2}
+::: {#cr-ensemble-iaa}
+Ensemble des IAA : effectifs salariés au 31/12/2021
+
+![*Source : Insee - Flores*](./data-png/ensemble-iaa.png)
+:::
+
+::: {#cr-produits-laitiers}
+Fabrication de produits laitiers : effectifs salariés au 31/12/2021
+
+![*Source : Insee - Flores*](./data-png/produits-laitiers.png)
+:::
+
+::: {#cr-transfo-viande}
+Transformation de viande : effectifs salariés au 31/12/2021
+
+![*Source : Insee - Flores*](./data-png/transfo-viande.png)
+:::
+
+::: {#cr-fabrication-boisson}
+Fabrication de boissons : effectifs salariés au 31/12/2021
+
+![*Source : Insee - Flores*](./data-png/fabrication-boisson.png)
+:::
+
+En emplois salariés, les IAA apparaissent très présentes dans un quart nord-ouest, en premier lieu en Bretagne et dans les Pays de la Loire. L’Île-de-France accueille par ailleurs nombre de sièges sociaux. @cr-ensemble-iaa
+
+La fabrication de produits laitiers se retrouve dans ce que l’on appelle le « croissant laitier » : un arc qui s'ancre dans un Grand Ouest comprenant la Bretagne, les Pays de la Loire et la Normandie, remonte vers le nord et redescend par les plaines de l’Est, la Franche-Comté et les Alpes du Nord, jusqu’au Massif central (cf. la viz sur les exploitations bovines laitières). @cr-produits-laitiers
+
+Les industries de transformation se sont développées dans les régions de production laitière, et soutiennent en retour l’activité agricole locale. @cr-produits-laitiers
+
+Dans la même logique, les industries de transformation de viande se situent très majoritairement en Bretagne et dans les Pays de la Loire. @cr-transfo-viande
+
+Enfin, l’implantation des entreprises de fabrication de boissons se reconnait dans les grands bassins viticoles, mais aussi dans quelques zones de gisement d’eau minérale (Vosges, Alpes ou Auvergne). @cr-fabrication-boisson
+:::::::
+
+::: align-right
+<a href="./data-csv/Data-carte-iaa.csv" download style="display: block;">📥 Télécharger les données des cartes précédentes</a>
+:::
+
+::: {.align-center .fin-page}
+<a href="https://agreste.agriculture.gouv.fr/agreste-web/disaron/Chd2402/detail/"> Résultats économiques des IAA 2021</a>
+
+<a href="https://www.insee.fr/fr/statistiques/7728903">Transformation de l'agriculture 2024</a>
+
+<a href="./Docs/panorama-iaa-2022.pdf" download style="display: block;">Panorama des IAA 2022</a>
+
+<a href="https://vizagreste.agriculture.gouv.fr/"> Retour à l'accueil de VizAgreste</a>
+:::
