@@ -1,0 +1,16 @@
+.Rproj.user/
+*.Rproj
+
+.quarto/
+.quarto-preview/
+
+sitemap.xml
+
+.DS_store
+Thumbs.db
+
+*.log
+*.aux
+*.out
+*.toc
+*.tmp
