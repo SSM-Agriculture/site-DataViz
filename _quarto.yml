@@ -5,7 +5,7 @@ project:
     - "/DataViz/**/*.qmd"
 
 website:
-  title: "Catalogue des DataViz proposé par le SSM Agriculture"
+  title: "Catalogue des Viz proposé par le SSM Agriculture"
   site-url: "https://SSM-agriculture.github.io/site-DataViz/"
   navbar:
     left:
