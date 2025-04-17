@@ -1,1 +1,1 @@
-Sitemap: https://SSM-Agriculture.github.io/site-DataViz/sitemap.xml
+Sitemap: https://SSM-agriculture.github.io/site-DataViz/sitemap.xml
