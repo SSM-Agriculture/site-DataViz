@@ -10,11 +10,11 @@ page-layout: full
 toc: false
 ---
 
-## Catologue des DataViz liée à l'écosystème {{< fa brands r-project >}} réalisé par le  [SSM-Agriculture](https://agreste.agriculture.gouv.fr/agreste-web/)
+![](img/bandeau_agreste.jpg){fig-align="center"}
 
-Les DataViz sont également consultables sur le site [`VizAgreste`](https://vizagreste.agriculture.gouv.fr/)
-<br>
-<br>
+## Catologue des Viz lié à l'écosystème {{< fa brands r-project >}} réalisé par le [SSM-Agriculture](https://agreste.agriculture.gouv.fr/agreste-web/)
+
+Les Viz sont également consultables sur le site [`VizAgreste`](https://vizagreste.agriculture.gouv.fr/) <br> <br>
 
 ::: {#CatalogueViz}
 :::

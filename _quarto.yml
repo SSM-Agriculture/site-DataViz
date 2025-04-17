@@ -12,7 +12,7 @@ website:
         text: Accueil
       - icon: github
         href: https://github.com/SSM-Agriculture/site-DataViz
-    background: "blue"
+    background: "#008000"
 
 format:
   html:
