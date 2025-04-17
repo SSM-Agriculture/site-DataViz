@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-filters','listing-language','listing-title','listing-description','listing-categories','listing-html','listing-order','listing-editor','listing-execute','listing-path','listing-outputHref','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-filters','listing-language','listing-title','listing-description','listing-categories','listing-html','listing-order','listing-editor','listing-execute','listing-path','listing-outputHref','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-filters","listing-language","listing-title","listing-description","listing-categories","listing-html","listing-order","listing-editor","listing-execute","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-filters","listing-language","listing-title","listing-description","listing-categories","listing-html","listing-order","listing-editor","listing-execute","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-image"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -171,7 +171,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGF0YVZpeg==">DataViz <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RXhwbG9pdGF0aW9ucyUyMGFncmljb2xlcw==">Exploitations agricoles <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5kdXN0cmllcyUyMGFncm9hbGltZW50YWlyZXM=">Industries agroalimentaires <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -190,7 +190,7 @@ window.Quarto = {
 
 <div class="list grid quarto-listing-cols-4">
 
-  <div class="g-col-1" data-index="0" data-categories="RGF0YVZpeg==" data-listing-file-modified-sort="1744903256732" data-listing-reading-time-sort="18" data-listing-word-count-sort="3573">
+  <div class="g-col-1" data-index="0" data-categories="SW5kdXN0cmllcyUyMGFncm9hbGltZW50YWlyZXM=" data-listing-file-modified-sort="1744903807029" data-listing-reading-time-sort="18" data-listing-word-count-sort="3573">
     <a href="https://ssm-agriculture.github.io/site-DataViz/_site/DataViz/dataviz-01-performances-IAA/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       </a><div class="quarto-grid-item card h-100 card-left"><a href="https://ssm-agriculture.github.io/site-DataViz/_site/DataViz/dataviz-01-performances-IAA/" target="_blank" rel="noopener" class="grid-item-link">
         
@@ -245,7 +245,7 @@ Premier producteur agricole de l’Union européenne, la France dispose aussi d�
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              4/17/25, 3:20:56 PM
+              4/17/25, 3:30:07 PM
             </div>
         </div> -->
 
@@ -253,11 +253,13 @@ Premier producteur agricole de l’Union européenne, la France dispose aussi d�
      <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-categories="RGF0YVZpeg==" data-listing-file-modified-sort="1744903256736" data-listing-reading-time-sort="7" data-listing-word-count-sort="1296">
+  <div class="g-col-1" data-index="1" data-categories="RXhwbG9pdGF0aW9ucyUyMGFncmljb2xlcw==" data-listing-file-modified-sort="1744904018369" data-listing-reading-time-sort="7" data-listing-word-count-sort="1296">
     <a href="https://ssm-agriculture.github.io/site-DataViz/_site/DataViz/dataviz-02-nb-exploitations/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       </a><div class="quarto-grid-item card h-100 card-left"><a href="https://ssm-agriculture.github.io/site-DataViz/_site/DataViz/dataviz-02-nb-exploitations/" target="_blank" rel="noopener" class="grid-item-link">
         
-          <div class="card-img-bg" style="height: 100%;">&nbsp;</div>
+          <p class="card-img-top">
+            <img src="./DataViz/dataviz-02-nb-exploitations/nb-exploit.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
          
         
           </a><div class="card-body post-contents"><a href="https://ssm-agriculture.github.io/site-DataViz/_site/DataViz/dataviz-02-nb-exploitations/" target="_blank" rel="noopener" class="grid-item-link">
@@ -310,7 +312,7 @@ En 2020, la France compte 416 400 « exploitations agricoles », 20 % de moins q
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              4/17/25, 3:20:56 PM
+              4/17/25, 3:33:38 PM
             </div>
         </div> -->
 
