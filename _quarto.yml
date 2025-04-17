@@ -6,6 +6,7 @@ project:
 
 website:
   title: "Catalogue des DataViz proposé par le SSM Agriculture"
+  site-url: "https://SSM-agriculture.github.io/site-DataViz/"
   navbar:
     left:
       - href: index.qmd

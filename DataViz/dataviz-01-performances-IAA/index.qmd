@@ -11,7 +11,6 @@ categories:
 html:
   text: Voir la viz
   url: https://ssm-agriculture.github.io/site-DataViz/_site/DataViz/dataviz-01-performances-IAA/
-  
 order: 1
 format:
   closeread-html:
