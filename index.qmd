@@ -3,7 +3,7 @@ listing:
   id: CatalogueViz
   contents: DataViz
   sort: "order asc"
-  template: listing-grid.ejs
+#  template: listing-grid.ejs
   categories: true
   grid-columns: 2
 page-layout: full
