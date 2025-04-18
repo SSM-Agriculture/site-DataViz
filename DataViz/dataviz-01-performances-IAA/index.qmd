@@ -7,7 +7,7 @@ description: |
   <br>
 
 categories:
-  - DataViz
+  - Industries agroalimentaires
 html:
   text: Voir la viz
   url: https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-01-performances-IAA/
