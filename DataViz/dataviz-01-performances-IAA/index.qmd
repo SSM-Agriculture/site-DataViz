@@ -1,4 +1,5 @@
 ---
+image: classement-secteur-iaa.png
 title: "Performances des industries agroalimentaires"
 description: |
   <br>
