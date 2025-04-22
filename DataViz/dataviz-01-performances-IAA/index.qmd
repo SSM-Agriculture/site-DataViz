@@ -32,6 +32,10 @@ format:
             margin-top: 0;
           }
           
+          .page-columns * {
+            grid-column: page-start/page-end;
+          }
+          
           /* Permet d'appliquer un style aux légendes (mais cela entre en concurence avec la possibilité native de closeread à définir une légende dans les [] de la commande : ![](./Images/MonImage.png)) */
           .legend-option {
             display: block;
@@ -117,11 +121,9 @@ format:
             text-align: center !important;
           }
           
-          .img-align-right {
-            text-align: right;
-            margin-top: 10%;
-            margin-bottom: 10%;
-            margin-right: 10%;
+          .img-center {
+            text-align: center;
+            margin: 1%;
           }
           
           .fin-page {
@@ -517,7 +519,7 @@ Indice en base 100 en 1990
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/emploi-salarie-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/emploi-salarie-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/emploi-salarie-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/emploi-salarie-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/emploi-salarie-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/emploi-salarie-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 
@@ -535,7 +537,7 @@ En %
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/valeur-ajoutee-secteur-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 
@@ -587,7 +589,7 @@ En %
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/indicateurs-secteur-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-secteur-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/indicateurs-secteur-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/indicateurs-secteur-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-secteur-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/indicateurs-secteur-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 
@@ -628,7 +630,7 @@ En milliards d'euros
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/valeur-ajoutee-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/valeur-ajoutee-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/valeur-ajoutee-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/valeur-ajoutee-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
@@ -636,7 +638,6 @@ En milliards d'euros
 Quatre activités génèrent les trois quarts de la valeur ajoutée des IAA. Au premier rang : la fabrication de boissons (vin, bière, spiritueux, boissons non alcoolisées hors jus de fruits) avec 22% de l'ensemble. @cr-va-iaa
 ::::
 
-<br> <br> <br> <br>
 
 :::: {.cr-section .reframe-2-2}
 ::: {#cr-palmares-iaa}
@@ -648,7 +649,7 @@ Quatre activités génèrent les trois quarts de la valeur ajoutée des IAA. Au 
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/classement-secteur-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/classement-secteur-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/classement-secteur-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/classement-secteur-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/classement-secteur-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/classement-secteur-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
@@ -676,6 +677,7 @@ En matière de chiffre d'affaire, les produits laitiers arrivent en tête, mais 
 Comparons les boissons avec l’activité qui lui est la plus opposée pour le taux de valeur ajoutée, celle des huiles et graisses.
 
 Dans la fabrication des boissons, les matières premières sont relativement peu coûteuses, en regard de la valorisation du produit final.
+
 
 ```{=html}
 <p class="align-center">
@@ -718,7 +720,7 @@ Le calssement suivant traduit le degré de transformation des différentes fili�
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/taux-valeur-ajoutee-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-valeur-ajoutee-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-valeur-ajoutee-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/taux-valeur-ajoutee-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-valeur-ajoutee-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-valeur-ajoutee-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
@@ -746,7 +748,7 @@ Le taux de valeur ajoutée n'est pas à lui seul un indicateur d'efficacité ou 
 :::::: {.cr-section .reframe-1-2}
 ::: {#cr-indicateur-efficacite}
 ```{=html}
-<p class="img-align-right">
+<p class="img-center">
   <img class="img-fluid" src="./data-png/indicateur-efficacite.png">
 </p>
 ```
@@ -754,7 +756,7 @@ Le taux de valeur ajoutée n'est pas à lui seul un indicateur d'efficacité ou 
 
 ::: {#cr-indicateur-efficacite1}
 ```{=html}
-<p class="img-align-right">
+<p class="img-center">
   <img class="img-fluid" src="./data-png/indicateur-efficacite1.png">
 </p>
 ```
@@ -762,7 +764,7 @@ Le taux de valeur ajoutée n'est pas à lui seul un indicateur d'efficacité ou 
 
 ::: {#cr-indicateur-efficacite2}
 ```{=html}
-<p class="img-align-right">
+<p class="img-center">
   <img class="img-fluid" src="./data-png/indicateur-efficacite2.png">
 </p>
 ```
@@ -802,7 +804,7 @@ Moyenne 2020-2021
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/taux-marge-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-marge-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-marge-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/taux-marge-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-marge-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-marge-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
@@ -812,7 +814,6 @@ Les activités de fabrication de boissons affichent un taux de marge supérieur 
 A l'opposé, les activités de transformation de viande mobilisnet beaucoup de main-d'oeuvre, elles dégagent moins de marge en moyenne. @cr-taux-marge-iaa
 ::::
 
-<br> <br>
 
 Comparées à la moyenne de l’industrie manufacturière, les IAA affichent un taux de valeur ajoutée plus faible (20 % contre 26 %) mais un meilleur taux de marge (33 % contre 25 %), et un taux d’investissement ⁠? plus élevé (19 % contre 15 %).
 
@@ -828,7 +829,7 @@ Moyenne 2020-2021
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/taux-investissement-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-investissement-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-investissement-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/taux-investissement-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-investissement-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-investissement-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
@@ -870,7 +871,7 @@ A l'inverse, les huiles et graissent présentent un taux senssiblement supérieu
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/indicateurs-categorie-entreprise.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-categorie-entreprise.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/indicateurs-categorie-entreprise.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/indicateurs-categorie-entreprise.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-categorie-entreprise.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/indicateurs-categorie-entreprise.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 
@@ -901,7 +902,7 @@ De gros écarts se dessinent selon les activités.
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/taux-exportation-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-exportation-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-exportation-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/taux-exportation-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-exportation-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-exportation-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
@@ -943,7 +944,7 @@ En milliards d'euros
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/echanges.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/echanges.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/echanges.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/echanges.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/echanges.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/echanges.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 
@@ -955,7 +956,7 @@ En milliards d'euros
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/balance-produit-alimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/balance-produit-alimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
@@ -967,7 +968,7 @@ En milliards d'euros
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/balance-produit-alimentaire1.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire1.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/balance-produit-alimentaire1.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire1.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
@@ -979,7 +980,7 @@ En milliards d'euros
 
 <summary>ℹ️ Télécharger les données</summary>
 
-<a href="./data-csv/balance-produit-alimentaire2.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire2.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire2.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+<a href="./data-csv/balance-produit-alimentaire2.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire2.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire2.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
 
 </details>
 :::
