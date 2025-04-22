@@ -12,9 +12,9 @@ toc: false
 
 ![](img/bandeau_agreste.jpg){fig-align="center"}
 
-## Catologue des Viz lié à l'écosystème {{< fa brands r-project >}} réalisé par le [SSM-Agriculture](https://agreste.agriculture.gouv.fr/agreste-web/)
+## Ce catalogue de viz est réalisé en {{< fa brands r-project >}} avec l'extension CloseRead par le [SSM-Agriculture](https://agreste.agriculture.gouv.fr/agreste-web/)
 
-Les Viz sont également consultables sur le site [`VizAgreste`](https://vizagreste.agriculture.gouv.fr/) <br> <br>
+Les viz originales sont consultables sur le site [`VizAgreste`](https://vizagreste.agriculture.gouv.fr/) <br> <br>
 
 ::: {#CatalogueViz}
 :::
