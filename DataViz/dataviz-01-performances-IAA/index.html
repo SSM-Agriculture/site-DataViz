@@ -77,6 +77,10 @@ ul.task-list li input[type="checkbox"] {
     margin-top: 0;
   }
 
+  .page-columns * {
+    grid-column: page-start/page-end;
+  }
+
   /* Permet d'appliquer un style aux légendes (mais cela entre en concurence avec la possibilité native de closeread à définir une légende dans les [] de la commande : ![](./Images/MonImage.png)) */
   .legend-option {
     display: block;
@@ -162,11 +166,9 @@ ul.task-list li input[type="checkbox"] {
     text-align: center !important;
   }
 
-  .img-align-right {
-    text-align: right;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-right: 10%;
+  .img-center {
+    text-align: center;
+    margin: 1%;
   }
 
   .fin-page {
@@ -489,8 +491,8 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-overlay: white;
---cr-section-background-color: white;
+          --cr-section-background-color: white;
+--cr-narrative-text-color-overlay: white;
 --cr-narrative-background-color-overlay: black;
         }
       </style>
@@ -622,7 +624,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/emploi-salarie-agroalimentaire.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/emploi-salarie-agroalimentaire.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/emploi-salarie-agroalimentaire.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/emploi-salarie-agroalimentaire.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/emploi-salarie-agroalimentaire.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/emploi-salarie-agroalimentaire.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </section>
 </section>
@@ -642,7 +644,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/valeur-ajoutee-secteur-agroalimentaire.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 <p>
   L'analyse sectorielle
@@ -691,7 +693,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/indicateurs-secteur-agroalimentaire.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-secteur-agroalimentaire.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/indicateurs-secteur-agroalimentaire.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/indicateurs-secteur-agroalimentaire.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-secteur-agroalimentaire.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/indicateurs-secteur-agroalimentaire.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 <p>Pour mieux comprendre une notion comptable comme la valeur ajoutée, supposons qu’une entreprise fabrique des biscuits. La production vendue – le chiffre d’affaires – doit d’abord servir à payer les matières premières et l’énergie, qui font partie des « consommations intermédiaires ». Ce qu’il reste est par définition la valeur ajoutée, soit la richesse créée lors du processus de production.</p>
 <p class="align-center">
@@ -736,14 +738,13 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/valeur-ajoutee-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/valeur-ajoutee-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/valeur-ajoutee-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/valeur-ajoutee-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </section>
 </div>
 </div>
 </div>
 </div>
-<p><br> <br> <br> <br></p>
 <div class="cr-section reframe-2-2 cr-column-screen overlay-left">
 <div class="narrative-col">
 <div class="trigger new-trigger" data-focus-on="cr-palmares-iaa">
@@ -791,7 +792,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/classement-secteur-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/classement-secteur-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/classement-secteur-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/classement-secteur-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/classement-secteur-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/classement-secteur-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </section>
 </div>
@@ -856,7 +857,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/taux-valeur-ajoutee-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-valeur-ajoutee-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-valeur-ajoutee-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/taux-valeur-ajoutee-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-valeur-ajoutee-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-valeur-ajoutee-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </section>
 </div>
@@ -900,17 +901,17 @@ ul.task-list li input[type="checkbox"] {
 <div class="sticky-col">
 <div class="sticky-col-stack">
 <div id="cr-indicateur-efficacite" class="sticky">
-<p class="img-align-right">
+<p class="img-center">
   <img class="img-fluid" src="./data-png/indicateur-efficacite.png">
 </p>
 </div>
 <div id="cr-indicateur-efficacite1" class="sticky">
-<p class="img-align-right">
+<p class="img-center">
   <img class="img-fluid" src="./data-png/indicateur-efficacite1.png">
 </p>
 </div>
 <div id="cr-indicateur-efficacite2" class="sticky">
-<p class="img-align-right">
+<p class="img-center">
   <img class="img-fluid" src="./data-png/indicateur-efficacite2.png">
 </p>
 </div>
@@ -947,14 +948,13 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/taux-marge-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-marge-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-marge-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/taux-marge-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-marge-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-marge-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </section>
 </div>
 </div>
 </div>
 </div>
-<p><br> <br></p>
 <p>Comparées à la moyenne de l’industrie manufacturière, les IAA affichent un taux de valeur ajoutée plus faible (20 % contre 26 %) mais un meilleur taux de marge (33 % contre 25 %), et un taux d’investissement ⁠? plus élevé (19 % contre 15 %).</p>
 <div class="cr-section reframe-2-2 cr-column-screen overlay-left">
 <div class="narrative-col">
@@ -985,7 +985,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/taux-investissement-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-investissement-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-investissement-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/taux-investissement-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-investissement-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-investissement-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </section>
 </div>
@@ -1025,7 +1025,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/indicateurs-categorie-entreprise.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-categorie-entreprise.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/indicateurs-categorie-entreprise.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/indicateurs-categorie-entreprise.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-categorie-entreprise.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/indicateurs-categorie-entreprise.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </section>
 </section>
@@ -1070,7 +1070,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/taux-exportation-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-exportation-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/taux-exportation-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/taux-exportation-iaa.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-exportation-iaa.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-exportation-iaa.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </section>
 </div>
@@ -1108,7 +1108,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/echanges.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/echanges.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/echanges.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/echanges.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/echanges.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/echanges.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 <div class="cr-section reframe-2-2 cr-column-screen overlay-left">
 <div class="narrative-col">
@@ -1141,7 +1141,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/balance-produit-alimentaire.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/balance-produit-alimentaire.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </div>
 <div id="cr-balance-commerciale1" class="sticky">
@@ -1155,7 +1155,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/balance-produit-alimentaire1.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire1.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire1.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/balance-produit-alimentaire1.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire1.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire1.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </div>
 <div id="cr-balance-commerciale2" class="sticky">
@@ -1169,7 +1169,7 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 ℹ️ Télécharger les données
 </summary>
-<p><a href="./data-csv/balance-produit-alimentaire2.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire2.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-csv/balance-produit-alimentaire2.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
+<p><a href="./data-csv/balance-produit-alimentaire2.csv" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire2.svg" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire2.png" download="" style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a></p>
 </details>
 </div>
 </div>

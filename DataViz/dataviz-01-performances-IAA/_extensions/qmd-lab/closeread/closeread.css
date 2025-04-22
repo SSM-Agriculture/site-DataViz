@@ -40,16 +40,18 @@
 }
 .cr-section .sticky-col .sticky-col-stack {
   display: grid;
-  height: 100dvh;
+  height: auto !important;
+  min-height: auto !important;
   position: sticky;
-  overflow: hidden;
+  overflow: visible !important;
   top: 0;
 }
 .cr-section .sticky-col .sticky-col-stack .sticky {
   grid-area: 1/1;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 1em;
+  margin-top: auto;
+  margin-bottom:auto;
   opacity: 0;
 }
 
