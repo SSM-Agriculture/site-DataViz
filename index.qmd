@@ -1,6 +1,5 @@
 ---
 listing:
-  type: default
   id: CatalogueViz
   contents: DataViz
   sort: "order asc"
