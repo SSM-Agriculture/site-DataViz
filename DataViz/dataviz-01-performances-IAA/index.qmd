@@ -25,310 +25,6 @@ format:
       narrative-text-color-overlay: white
     include-in-header:
       text: |
-        <style>
-          
-          h2,
-          h1 {
-            margin-top: 0;
-          }
-          
-          .page-columns * {
-            grid-column: page-start/page-end;
-          }
-          
-          /* Permet d'appliquer un style aux légendes (mais cela entre en concurence avec la possibilité native de closeread à définir une légende dans les [] de la commande : ![](./Images/MonImage.png)) */
-          .legend-option {
-            display: block;
-            margin-left: 1rem;
-            margin-top: 0.5rem;
-            font-style: italic;
-          }
-          
-          /* Surligneur */
-          .highlight-yellow {
-            background-color: #FFE552;
-            padding: 2px 4px;
-            border-radius: 3px;
-            color: black;
-          } 
-          .highlight-orange {
-            background-color: #fb9175;
-            padding: 2px 4px;
-            border-radius: 3px;
-            color: black;
-          } 
-          .highlight-blue {
-            background-color: #00c7b3;
-            padding: 2px 4px;
-            border-radius: 3px;
-            color: black;
-          } 
-          .highlight-lightskyblue {
-            background-color: #99f2f8;
-            padding: 2px 4px;
-            border-radius: 3px;
-            color: black;
-          } 
-          .highlight-lightblue {
-            background-color: #518fff;
-            padding: 2px 4px;
-            border-radius: 3px;
-            color: black;
-          } 
-          .highlight-purple {
-            background-color: #f767ef;
-            padding: 2px 4px;
-            border-radius: 3px;
-            color: black;
-          }
-          .highlight-green {
-            background-color: #4efb8d;
-            padding: 2px 4px;
-            border-radius: 3px;
-            color: black;
-          }
-          
-          
-          /* Souligner */
-          .underline-yellow {
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            decoration-color: #FFE552;
-          }
-          .underline-orange {
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            decoration-color: #fb9175;
-          }
-
-          /* Permet de pouvoir éviter les effet du scale-to et du pan-to. Mais cela fait pop directement l'image */
-          .closeread-target.no-transition {
-            transition: none;
-            transform: none;
-            opacity: 1;
-          }
-          
-          
-          /* Définir la position des objets (images, textes) */
-          .align-left {
-            text-align: left !important;
-          }
-          .align-right {
-            text-align: right !important;
-            margin-right: 0 !important;
-          }
-          .align-center {
-            text-align: center !important;
-          }
-          
-          .img-center {
-            text-align: center;
-            margin: 1%;
-          }
-          
-          .fin-page {
-            background-color: #f2f2f2;
-            color: #333;
-            padding: 2rem;
-            font-size: 0.8rem;
-            border-top: 2px solid #ccc;
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-          }
-          
-          /* Permet de créer un cadre autour des images */
-          
-          .img-fluid-custom {
-            background-color: white;
-            border-radius: 20px;
-            padding: 1rem;
-            border: 10px solid #FFE5B4;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-          }
-          
-          /* Fonctions adaptés seulement pour les devices ordinateur ou grands écrans */
-          @media screen and (min-width: 769px) {
-          
-          /* Fonctions pour réarranger la répartiton entre sticky-col et narrative-col */
-          .reframe-2-2 {
-            display: grid;
-            grid-template-columns: 2fr 2fr !important;
-          }
-          
-          .reframe-2-3 {
-            display: grid;
-            grid-template-columns: 2fr 3fr !important;
-          }
-          
-          .reframe-1-2 {
-            display: grid;
-            grid-template-columns: 1fr 2fr !important;
-          }
-          
-          .sticky-col {
-            grid-column: 2 !important;
-          }
-          
-          .sticky-col.img-png{
-            grid-column: 1 !important;
-          }
-          
-          /* Fonction pour céer un cadre autour des images */
-          
-          .img-fluid-custom {
-            background-color: white;
-            border-radius: 20px;
-            padding: 1rem;
-            border: 15px solid #FFE5B4;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-          }
-          }
-          
-          /* Permet d'aficher les <details> même s'ils débordent sur une autre section (à condition d'avoir assez d'espace de libre entre les deux sections) */
-          .cr-section .sticky-col .sticky-col-stack {
-            overflow: visible !important;
-          }
-          .cr-section .sticky-col .sticky-col-stack > .sticky {
-            overflow: visible !important;
-          }
-          
-          
-          /* Permet les clics sur les éléments sticky (en conservant ceux dans les bulles narratives) */
-          .cr-section .narrative-col {
-            pointer-events: none;
-          }
-          .cr-section .narrative-col .trigger .narrative {
-            pointer-events: auto !important;
-          }
-          .cr-section .sticky-col {
-            pointer-events: auto !important;
-          }
-          
-          
-          
-          /* Commandes pour les bouton cliquables du début */
-          .menu-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.95);
-            z-index: 9999;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: white;
-            font-size: 1.5rem;
-            padding: 2rem;
-            text-align: center;
-          }
-          .menu-overlay.active {
-            display: flex;
-          }
-
-          .menu-option {
-            margin: 1rem;
-            cursor: pointer;
-            text-decoration: underline;
-            text-align: left;
-            width: 70%;   <!-- Permet d'ajuster la largeur de la fenêtre d'affichage-->
-          }
-
-          .menu-option:hover {
-            color: #ffd700;
-          }
-
-          .menu-close {
-            position: absolute;
-            top: 1rem;
-            right: 1.5rem;
-            font-size: 2rem;
-            cursor: pointer;
-            color: white;
-          }
-
-          .menu-close:hover {
-            color: #ff6b6b;
-          }
-          
-          
-          /* Permetterait de figer le bouton en bas à droit de l'écran => à perfectionner */
-          .fixed-bottom-right {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            z-index: 999;
-            cursor: pointer;
-            max-height: 80px;
-          }
-          
-          
-          /* Générer une infobulle interactive*/
-          .tooltip-container {
-            position: relative;
-            display: inline;
-          }
-
-          .tooltip-content {
-            display: none;
-            position: absolute;
-            top: 1.5em;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #333;
-            color: white;
-            padding: 0.5em 1em;
-            border-radius: 5px;
-            font-size: 0.9rem;
-            z-index: 9999 !important;
-            max-width: 80vw !important;
-            width: 300px !important;
-            box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
-          }
-
-          .tooltip-container.active .tooltip-content {
-            display: block;
-          }
-
-          .tooltip-question {
-            background-color: #FFE552; /* Couleur de l'arrière plan*/
-            color: black;              /* Couleur du "?" */
-            border-radius: 90%;
-            padding: 0.1rem 0.3rem;
-            position: relative;
-            z-index: 1;
-            font-size: 0.5rem;
-            font-weight: bold;
-            cursor: pointer;
-            display: inline-block;
-            margin-left: 0.2rem;
-            line-height: 1rem;
-            text-align: center;
-            box-shadow: 0 0 5px rgba(0,0,0,0.3);
-            vertical-align: super;    /* Cette commande permet de le mettre en exposant*/
-          }
-          .tooltip-wrapper {
-            position: relative;
-            display: inline-block;
-          }
-
-          .tooltip-trigger {
-            cursor: pointer;
-            color: #fff;
-            background-color: #555;
-            border-radius: 50%;
-            padding: 0 0.4em;
-            font-size: 0.8em;
-          }
-
-          .tooltip-wrapper:focus-within .tooltip-box,
-          .tooltip-trigger:focus + .tooltip-box {
-            display: block;
-          }
-          
-        </style>
         
         <script>
         
@@ -396,7 +92,7 @@ format:
           });
 
           </script>
-        
+    css: ../../masa-closeread.css
 editor: visual
 execute:
   echo: false
@@ -638,7 +334,6 @@ En milliards d'euros
 Quatre activités génèrent les trois quarts de la valeur ajoutée des IAA. Au premier rang : la fabrication de boissons (vin, bière, spiritueux, boissons non alcoolisées hors jus de fruits) avec 22% de l'ensemble. @cr-va-iaa
 ::::
 
-
 :::: {.cr-section .reframe-2-2}
 ::: {#cr-palmares-iaa}
 ## **Palmarès des activités des IAA en 2021**
@@ -677,7 +372,6 @@ En matière de chiffre d'affaire, les produits laitiers arrivent en tête, mais 
 Comparons les boissons avec l’activité qui lui est la plus opposée pour le taux de valeur ajoutée, celle des huiles et graisses.
 
 Dans la fabrication des boissons, les matières premières sont relativement peu coûteuses, en regard de la valorisation du produit final.
-
 
 ```{=html}
 <p class="align-center">
@@ -813,7 +507,6 @@ Les activités de fabrication de boissons affichent un taux de marge supérieur 
 
 A l'opposé, les activités de transformation de viande mobilisnet beaucoup de main-d'oeuvre, elles dégagent moins de marge en moyenne. @cr-taux-marge-iaa
 ::::
-
 
 Comparées à la moyenne de l’industrie manufacturière, les IAA affichent un taux de valeur ajoutée plus faible (20 % contre 26 %) mais un meilleur taux de marge (33 % contre 25 %), et un taux d’investissement ⁠? plus élevé (19 % contre 15 %).
 
