@@ -50,7 +50,7 @@
   grid-area: 1/1;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: auto;
+  margin-top: 4rem;
   margin-bottom:auto;
   opacity: 0;
 }
@@ -260,12 +260,12 @@ body.cr-removeheaderspace #quarto-content main#quarto-document-content .quarto-t
   --cr-narrative-background-color-sidebar: transparent;
   --cr-narrative-text-color-sidebar: black;
   --cr-narrative-border-radius: 1em;
-  --cr-narrative-overlay-max-width: 527.98px;
+  /* --cr-narrative-overlay-max-width: 527.98px; */
   --cr-narrative-overlay-min-width: none;
-  --cr-narrative-outer-margin: 5%;
+  /* --cr-narrative-outer-margin: 5%; */
   --cr-narrative-font-family: var(--bs-body-font-family);
   --cr-narrative-font-size: 1.15rem;
-  --cr-poem-font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --cr-poem-font-family: "Marianne", "Spectral", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --cr-narrative-sidebar-width: 1fr;
   --cr-section-background-color: lightgrey;
 }
