@@ -118,7 +118,13 @@ h1 {
   border: 10px solid #FFE5B4;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-          
+
+.overlay-left .narrative-col .narrative.bubble-white {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black;
+}
+       
 /* Fonctions adaptés seulement pour les devices ordinateur ou grands écrans */
 @media screen and (min-width: 769px) {
     
@@ -293,3 +299,46 @@ h1 {
   display: block;
 }
 
+/* Ajout des styles Marianne et Spectral */
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/fonts/Spectral-Regular.ttf") format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/fonts/Spectral-Italic.ttf") format(truetype);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/fonts/Spectral-Bold.ttf") format(truetype);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("/fonts/Marianne-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("/fonts/Marianne-Regular_Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: ialic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("/fonts/Marianne-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
