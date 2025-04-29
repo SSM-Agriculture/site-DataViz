@@ -70,73 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-<script>
-
-  /* Intègre les fonctionalité JS pour ouvrir un menu déroulant ou des liens cliquables */
-
-  function openMenu(id) {
-    document.getElementById(id).classList.add("active");
-  }
-  function closeMenu(id) {
-    document.getElementById(id).classList.remove("active");
-  }
-  function goTo(url) {
-    window.location.href = url;
-  }
-
-
-
-  /* Fonctions permettant l'infobulle*/
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const tooltips = document.querySelectorAll(".tooltip-container");
-
-  tooltips.forEach((tooltip) => {
-    tooltip.addEventListener("click", function (e) {
-      e.stopPropagation();
-      tooltip.classList.toggle("active");
-
-      // Fermer tous les autres
-      tooltips.forEach((other) => {
-        if (other !== tooltip) {
-          other.classList.remove("active");
-       }
-      });
-    });
-  });
-
-  document.addEventListener("click", function () {
-    tooltips.forEach((tooltip) => tooltip.classList.remove("active"));
-    });
-  });
-
-
-
-
-  /* Fonction permettant de ne pas afficher une bulle déjà vue */
-
-  let lastScrollY = window.scrollY;
-
-  window.addEventListener('scroll', () => {
-    const goingUp = window.scrollY < lastScrollY;
-    lastScrollY = window.scrollY;
-
-    document.querySelectorAll('.narrative').forEach(bubble => {
-      const rect = bubble.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-
-      if (!bubble.classList.contains('already-seen') && isVisible) {
-        bubble.classList.add('already-seen');
-      }
-
-      if (goingUp && bubble.classList.contains('already-seen') && bubble.classList.contains('non-reversible')) {
-        bubble.style.display = 'none';
-      }
-    });
-  });
-
-  </script>
 <meta cr-debug-mode="false">
 <meta cr-remove-header-space="false">
 
@@ -188,9 +121,9 @@ ul.task-list li input[type="checkbox"] {
       <!-- user-provided yaml closeread style options -->
       <style>
         :root {
-          --cr-narrative-text-color-overlay: white;
---cr-narrative-background-color-overlay: black;
+          --cr-narrative-background-color-overlay: black;
 --cr-section-background-color: white;
+--cr-narrative-text-color-overlay: white;
         }
       </style>
     
@@ -945,7 +878,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="align-right">
+<div class="align-center">
 <p><a href="./data-csv/Data-carte-iaa.csv" download="" style="display: block;">📥 Télécharger les données des cartes précédentes</a></p>
 </div>
 <div class="align-center fin-page">
@@ -1377,6 +1310,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script src="../../masa-closeread.js"></script>
 
 
 
