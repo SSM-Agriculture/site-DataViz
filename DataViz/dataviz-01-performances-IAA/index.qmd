@@ -657,7 +657,7 @@ Dans la même logique, les industries de transformation de viande se situent tr�
 Enfin, l’implantation des entreprises de fabrication de boissons se reconnait dans les grands bassins viticoles, mais aussi dans quelques zones de gisement d’eau minérale (Vosges, Alpes ou Auvergne). @cr-fabrication-boisson
 :::::::
 
-::: align-right
+::: align-center
 <a href="./data-csv/Data-carte-iaa.csv" download style="display: block;">📥 Télécharger les données des cartes précédentes</a>
 :::
 
