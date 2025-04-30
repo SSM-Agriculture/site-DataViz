@@ -342,3 +342,14 @@ h1 {
   font-weight: 700;
   font-style: normal;
 }
+
+:root {
+  --cr-narrative-background-color-overlay: black;
+  --cr-narrative-text-color-overlay: white;
+  --cr-narrative-font-family: Marianne-Regular;
+  --cr-section-background-color: white;
+}
+
+body {
+  font-family: Marianne-Regular;
+}
