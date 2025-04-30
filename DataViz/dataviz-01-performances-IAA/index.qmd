@@ -15,6 +15,7 @@ html:
 order: 1
 format:
   closeread-html:
+    self-contained: true
     backgroundcolor: white
     cr-section:
       layout: overlay-left

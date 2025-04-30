@@ -301,7 +301,7 @@ h1 {
 
 /* Ajout des styles Marianne et Spectral */
 
-@font-face {
+/* @font-face {
   font-family: "Spectral";
   src: url("/fonts/Spectral-Regular.ttf") format(truetype);
   font-weight: 400;
@@ -320,25 +320,25 @@ h1 {
   src: url("/fonts/Spectral-Bold.ttf") format(truetype);
   font-weight: 700;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: "Marianne";
-  src: url("/fonts/Marianne-Regular.woff") format("woff");
+  src: url("./fonts/Marianne-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Marianne";
-  src: url("/fonts/Marianne-Regular_Italic.woff") format("woff");
+  src: url("./fonts/Marianne-Regular_Italic.woff") format("woff");
   font-weight: 400;
   font-style: ialic;
 }
 
 @font-face {
   font-family: "Marianne";
-  src: url("/fonts/Marianne-Bold.woff") format("woff");
+  src: url("./fonts/Marianne-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
