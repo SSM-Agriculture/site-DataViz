@@ -1,0 +1,239 @@
+---
+image: classement-secteur-iaa.png
+title: "Signes de qualité ou d'origine"
+description: |
+  <br>
+  Premier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.
+  <br>
+  <br>
+
+categories:
+  - Exploitations agricoles
+html:
+  text: Voir la viz
+  url: https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-03-signes-qualite-ou-origine/
+order: 3
+format:
+  closeread-html:
+    self-contained: true
+    backgroundcolor: white
+    cr-section:
+      layout: overlay-left
+      font-size: 0.2rem
+    css: ../../masa-closeread.css
+    include-after-body:
+      text: |
+        <script src="../../masa-closeread.js"></script>
+editor: source
+execute:
+  echo: false
+---
+
+Cinq signes de qualité ou d’origine (dénommés aussi « SIQO ») peuvent qualifier les produits d’une exploitation agricole. L’Europe réglemente la plupart de ces certifications. Seul le label rouge est spécifiquement français.
+
+<p style="display:flex; align-items: center; gap: 2%;">
+  <img src="./data-png/36.png"> 
+  C'est la part des exploitations engagées dans au moins un signe de qualité ou d'origine en 2020, en France métropolitaine.
+</p>
+
+::::::::::: {.align-right style="background-color: #fddbfa; border-radius: 15px;"}
+Retourner à l'accueil [![](./data-png/Bouton%20Home.png)](https://vizagreste.agriculture.gouv.fr/){style="max-height: 100px; width: auto;"}
+
+Partager la Viz (Mail) [![](./data-png/Bouton%20Share.png)](mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20:%20https://monrapport.fr)
+
+Partager la Viz (X) [![](./data-png/Bouton%20Share.png)](https://twitter.com/intent/tweet?text=Regarde%20ce%20rapport%20!&url=https://monrapport.fr)
+
+Partager la Viz (Facebook) [![](./data-png/Bouton%20Share.png)](https://www.facebook.com/sharer/sharer.php?u=https://monrapport.fr)
+
+Explorer les données territoriales <img src="./data-png/Bouton Data Dep.png" alt="Ouvrir menu 1" onclick="openMenu(&apos;menu-overlay-1&apos;)" style="max-height: 100px; cursor: pointer;"/>
+
+Pendant la navigation, appuyer pour accéder aux autres actions <img src="./data-png/Bouton Menu.png" alt="Ouvrir menu 2" onclick="openMenu(&apos;menu-overlay-2&apos;)" style="max-height: 100px; cursor: pointer;"/>
+
+<!-- MENU 1 : Départements -->
+
+:::::: {#menu-overlay-1 .menu-overlay}
+::: {.menu-close onclick="closeMenu('menu-overlay-1')"}
+✖
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/01/2020')"}
+📍 01 Ain
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/02/2020')"}
+📍 02 Aisne
+:::
+::::::
+
+<!-- MENU 2 : Paramètres  -->
+
+:::::: {#menu-overlay-2 .menu-overlay}
+::: {.menu-close onclick="closeMenu('menu-overlay-2')"}
+✖
+:::
+
+::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/')"}
+📈 Accueil
+:::
+
+::: {.menu-option onclick="goTo('mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20: https://monrapport.fr')"}
+📉 Partager la Viz
+:::
+::::::
+:::::::::::
+
+<br>
+<br>
+
+
+```{=html}
+<p>
+  <img src="./data-png/AB.png">
+  « Agriculture biologique » (AB)
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Ce mode privilégie les procédés non polluants, exclut l’usage des OGM et limite le recours aux intrants. Il est reconnu par l’Europe dès 1991. Concernant d’abord les productions végétales, il s’élargit au monde animal en 1999.
+    </span>
+  </span>
+  garantit un mode de production respectueux de l’environnement et un niveau élevé de bien-être animal.
+  
+  <br>
+  <br>
+  
+  <img src="./data-png/AOP.png">
+  « Appellation d’origine protégée » (AOP) 
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      L’appellation d’origine contrôlée (AOC) désigne des produits répondant aux critères de l’AOP et protège la dénomination sur le territoire français. Elle constitue une étape vers l’AOP (signe européen apparu en 1992), qui protège le nom du produit dans toute l’Union. La notion d’ « appellation d’origine » est apparue en France dès 1905, pour lutter contre la fraude viticole. Le champ a été étendu en 1990 à l’ensemble des produits agricoles et alimentaires.
+    </span>
+  </span>
+  désigne un produit dont toutes les étapes de production sont réalisées selon un savoir-faire reconnu dans une même aire géographique.
+  
+  <br>
+  <br>
+  
+  <img src="./data-png/IGP.png">
+  « Indication géographique protégée » (IGP)
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Signe européen qui protège le nom du produit dans toute l'Union. L'IGP concerne surtout les vins, mais aussi les fromages, la viande et les fruits. Le jambon de Bayonne, la fraise du Périgord, la tomme de Savoie sont des IGP.
+    </span>
+  </span>
+  identifie un produit agricole, brut ou transformé, dont les caractéristiques sont liées au lieu géographique dans lequel se déroule au moins sa production ou sa transformation selon des conditions bien déterminées.
+  
+  <br>
+  <br>
+  
+  <img src="./data-png/label-rouge.png">
+  « Label rouge »
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Apparu dans la loi en France en 1960, sous l’impulsion d’aviculteurs, il concerne en premier lieu les produits animaux : volailles, œufs, viandes (et poissons). Il s’est étendu aux fruits et légumes, avec en 1966 l’ail de Lautrec.
+    </span>
+  </span>
+  désigne des produits qui, par leurs conditions de production ou de fabrication, ont un niveau de qualité supérieur par rapport aux produits standards.
+  
+  <br>
+  <br>
+  
+  <img src="./data-png/STG.png">
+  « Spécialité traditionnelle garantie » (STG) 
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      Signe européen créé en 1992, il concerne en France peu d’exploitations (1 300) et trois spécialités : le lait de foin, les moules de Bouchot et le Berthoud. Autre exemple à l’étranger, la « pizza napoletana » est une STG italienne, qui peut être produite n’importe où tant que le cahier des charges est respecté.
+    </span>
+  </span>
+  reconnaît une composition, une pratique ou un savoir-faire qui sont traditionnels. Ce signe est réservé aux produits alimentaires.
+</p>
+```
+
+AOP et IGP relèvent d’une géographie, d’un terroir, leur cartographie évolue donc peu. Les trois autres signes (AB, label rouge et STG) ne sont pas liés à une localisation spécifique.
+
+<br>
+<br>
+
+En 2020, les signes de qualité ou d’origine (SIQO) concernent 140 000 exploitations, soit 36 % de l’ensemble en France métropolitaine, contre 27 % en 2010.
+```{=html}
+<p>
+  Cette part augmente nettement, et tous les signes
+  <span class="tooltip-container">
+    <span class="tooltip-question">?⁠</span>
+    <span class="tooltip-content">
+      Le graphique suivant ne présente pas les STG : les exploitations bénéficiant de ce signe n’étaient pas comptabilisées en 2010. Elles sont par ailleurs peu nombreuses (1 300 en 2020).
+    </span>
+  </span>
+  progressent en dix ans.
+</p>
+```
+
+# Part des exploitations avec SIQO pour 2010 et 2020
+
+::::{.cr-section}
+:::{#cr-part-exploitation-avec-siqo .img-fluid-custom}
+## Part des exploitations avec SIQO pour 2010 et 2020
+![](./data-svg/part-des-exploitations-avec-signe-de-qualité-ou-d-origine-pour-2010-et-2020.svg)
+
+<details>
+
+<summary>ℹ️ Télécharger les données</summary>
+
+<a href="./data-csv/part-des-exploitations-avec-signe-de-qualité-ou-d-origine-pour-2010-et-2020.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/part-des-exploitations-avec-signe-de-qualité-ou-d-origine-pour-2010-et-2020.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/part-des-exploitations-avec-signe-de-qualité-ou-d-origine-pour-2010-et-2020.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
+
+</details>
+
+:::
+
+L'agriculture biologique connait l'évolution la plus importante : la part des exploitations "bio" est multipliée par trois en dis ans. @cr-part-exploitation-avec-siqo
+
+::::
+
+Une même exploitation peut cumuler plusieurs SIQO, pour un même produit ou des produits différents.
+
+::::{.cr-section}
+
+:::{#cr-cumul-des-siqo .img-fluid-custom}
+
+## Parmi les exploitations avec SIQO, part de celles avec au moins un autre signe
+![](./data-svg/cumul-des-siqo.svg)
+
+:::
+
+:::{#cr-cumul-des-siqo1 .img-fluid-custom}
+
+## Parmi les exploitations avec SIQO, part de celles avec au moins un autre signe
+![](./data-svg/cumul-des-siqo1.svg)
+
+:::
+
+:::{#cr-cumul-des-siqo2 .img-fluid-custom}
+
+## Parmi les exploitations avec SIQO, part de celles avec au moins un autre signe
+![](./data-svg/cumul-des-siqo2.svg)
+
+:::
+
+Une fois sur deux, une exploitation engagée dans une IGP l'est aussi en AOP @cr-cumul-des-siqo
+
+Plus généralement, quand une exploitation détient une IGP, deux fois sur trois, elle bénéficie d'un ou plusieurs autres SIQO. C'est aussi une caractéristique des exploitation poduisant une STG. @cr-cumul-des-siqo1
+
+En revanche, les signes Agriculture Biologique et Label Rouge sont plus souvent présents seuls. @cr-cumul-des-siqo2
+
+```{=html}
+<p>
+  En revanche, les signes Agriculture Biologique et Label Rouge
+  <span class="tooltip-container">
+    <span class="tooltip-question">?⁠</span>
+    <span class="tooltip-content">
+      Un produit lable rouge ne peut bénéficier simultanément d'une AOP.
+    </span>
+  </span>
+  sont plus souvent présents seuls.
+</p>
+```
+
+::::
