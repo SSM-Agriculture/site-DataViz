@@ -24,7 +24,7 @@ format:
     include-after-body:
       text: |
         <script src="../../masa-closeread.js"></script>
-editor: visual
+editor: source
 execute:
   echo: false
 ---
@@ -96,7 +96,10 @@ Pendant la navigation, appuyer pour accéder aux autres actions <img src="./data
 </p>
 ```
 
-![](./data-png/2e.png) C'est le rang des industries agroalimentaires françaises au sein de l'union européenne.
+<p style="display:flex; align-items: center; gap: 2%;">
+  <img src="./data-png/2e.png"> 
+  C'est le rang des industries agroalimentaires françaises au sein de l'union européenne.
+</p>
 
 Classée juste derrière l'Allemagne ces dernières années, la France devance nettement l'Italie et l'Espagne.
 
