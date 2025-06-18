@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://SSM-agriculture.github.io/site-DataViz/DataViz/dataviz-03-signes-qualite-ou-origine/index.html</loc>
+    <lastmod>2025-06-18T08:39:50.678Z</lastmod>
+  </url>
+  <url>
     <loc>https://SSM-agriculture.github.io/site-DataViz/DataViz/dataviz-02-nb-exploitations/index.html</loc>
-    <lastmod>2025-04-29T13:25:03.973Z</lastmod>
+    <lastmod>2025-06-18T08:49:43.608Z</lastmod>
   </url>
   <url>
     <loc>https://SSM-agriculture.github.io/site-DataViz/index.html</loc>
-    <lastmod>2025-04-29T13:25:04.149Z</lastmod>
+    <lastmod>2025-06-18T08:39:50.694Z</lastmod>
   </url>
   <url>
     <loc>https://SSM-agriculture.github.io/site-DataViz/DataViz/dataviz-01-performances-IAA/index.html</loc>
-    <lastmod>2025-04-29T13:25:03.941Z</lastmod>
+    <lastmod>2025-06-18T08:39:50.666Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SSM-agriculture.github.io/site-DataViz/DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html</loc>
+    <lastmod>2025-06-18T09:30:54.848Z</lastmod>
   </url>
 </urlset>

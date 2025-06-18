@@ -4,9 +4,17 @@ h2,
 h1 {
   margin-top: 0;
 }
-  
+
 .page-columns * {
   grid-column: page-start/page-end;
+}
+
+.page-columns .cr-section.map * {
+  grid-column: 1 !important;
+}
+
+.cr-section.map .narrative {
+  max-width: 528.98px !important;
 }
           
 /* Permet d'appliquer un style aux légendes (mais cela entre en concurence avec la possibilité native de closeread à définir une légende dans les [] de la commande : ![](./Images/MonImage.png)) */
@@ -90,6 +98,7 @@ h1 {
   text-align: right !important;
   margin-right: 0 !important;
 }
+
 .align-center {
   text-align: center !important;
 }
@@ -147,6 +156,10 @@ h1 {
 .sticky-col {
   grid-column: 2 !important;
 }
+
+.page-columns .cr-section.map * {
+  grid-column: 1 !important;
+}
           
 .sticky-col.img-png{
   grid-column: 1 !important;
@@ -169,8 +182,13 @@ h1 {
 }
 .cr-section .sticky-col .sticky-col-stack > .sticky {
   overflow: visible !important;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4rem;
+  margin-bottom:auto;
 }
-          
+
+  
           
 /* Permet les clics sur les éléments sticky (en conservant ceux dans les bulles narratives) */
 .cr-section .narrative-col {
@@ -301,7 +319,7 @@ h1 {
 
 /* Ajout des styles Marianne et Spectral */
 
-@font-face {
+/* @font-face {
   font-family: "Spectral";
   src: url("fonts/Spectral-Regular.ttf") format(truetype);
   font-weight: 400;
@@ -320,25 +338,37 @@ h1 {
   src: url("fonts/Spectral-Bold.ttf") format(truetype);
   font-weight: 700;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: "Marianne";
-  src: url("fonts/Marianne-Regular.woff") format("woff");
+  src: url("./fonts/Marianne-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Marianne";
-  src: url("fonts/Marianne-Regular_Italic.woff") format("woff");
+  src: url("./fonts/Marianne-Regular_Italic.woff") format("woff");
   font-weight: 400;
   font-style: ialic;
 }
 
 @font-face {
   font-family: "Marianne";
-  src: url("fonts/Marianne-Bold.woff") format("woff");
+  src: url("./fonts/Marianne-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
+
+:root {
+  --cr-narrative-background-color-overlay: black;
+  --cr-narrative-text-color-overlay: white;
+  --cr-narrative-font-family: Marianne-Regular;
+  --cr-section-background-color: white;
+}
+
+body {
+  font-family: Marianne-Regular;
+}
+
