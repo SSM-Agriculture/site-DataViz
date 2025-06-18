@@ -15,7 +15,7 @@ html:
 order: 3
 format:
   closeread-html:
-    self-contained: true
+    self-contained-math: true
     backgroundcolor: white
     cr-section:
       layout: overlay-left
@@ -523,7 +523,7 @@ La surface d'exploitation des vignes continue de diminuer entre 2010 et 2020, ma
 </style>
 
 <div id="map-container">
-  <iframe src="carte_vierge.html" id="map"></iframe>
+  <iframe src="carte.html" id="map"></iframe>
 </div>
 ```
 :::
@@ -569,7 +569,7 @@ Outre-mer, la [Guyane]{.highlight-green} se distingue encore plus fortement (0,4
 </style>
 
 <div id="map-container">
-  <iframe src="carte_vierge.html" id="map"></iframe>
+  <iframe src="carte.html" id="map"></iframe>
 </div>
 ```
 :::
