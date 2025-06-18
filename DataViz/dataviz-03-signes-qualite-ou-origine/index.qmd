@@ -12,10 +12,10 @@ categories:
 html:
   text: Voir la viz
   url: https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-03-signes-qualite-ou-origine/
-order: 3
+order: 4
 format:
   closeread-html:
-    self-contained: true
+    self-contained-math: true
     backgroundcolor: white
     cr-section:
       layout: overlay-left
