@@ -222,13 +222,13 @@ En 2020, elle s’élève en métropole à 69&nbsp;ha (contre 55&nbsp;ha en 2010
 
 :::
 
-Le nombre [d'exploitaton de moins de 100&nbsp;ha]{.highlight-orange} recule tandis que celui des plus grandes augmentes. Pour autant, **les exploitation de moins de 50&nbsp;ha sont toujours majoritaires (54&nbsp;% en 2020)**. @cr-nb-exp
+Le nombre [d'exploitation de moins de 100&nbsp;ha]{.highlight-orange} recule tandis que celui des plus grandes augmente. Pour autant, **les exploitations de moins de 50&nbsp;ha sont toujours majoritaires (54&nbsp;% en 2020)**. @cr-nb-exp
 
 Les [exploitations de moins de 20&nbsp;ha]{.highlight-orange} concentrent les 2/3 de la diminution totale. @cr-nb-exp1
 
 Ces petites exploitations restent les plus présentes, mais en 50&nbsp;ans leur part dans l'ensemble est passée de **58&nbsp;% à 38&nbsp;%**. @cr-nb-exp-ha
 
-A l'opposé, le nombre d'exploitations de [plus de 200&nbsp;ha]{.highlight-orange} augmente d'un tiers entre 2010 et 2020. @cr-nb-exp2
+À l'opposé, le nombre d'exploitations de [plus de 200&nbsp;ha]{.highlight-orange} augmente d'un tiers entre 2010 et 2020. @cr-nb-exp2
 
 Sur plus long terme, les exploitations de 100&nbsp;ha et plus sont de plus en plus nombreuses. @cr-nb-exp-ha1
 
@@ -309,7 +309,7 @@ A l'opposé, [viticulture, fruits, maraîchage ou horticulture]{.highlight-purpl
 </p>
 ```
 
-# Exploitation avec un SAU nulle
+# Exploitation avec une SAU nulle
 
 ![](./data-svg/exploitations-avec-une-sau-nulle.svg){.img-fluid-custom}
 
@@ -325,7 +325,7 @@ A l'opposé, [viticulture, fruits, maraîchage ou horticulture]{.highlight-purpl
 
 **Près de la moitié** des exploitations (46&nbsp;%) avec une SAU nulle sont celles de [l’élevage de volailles]{.highlight-green} ; elles représentent un quart des exploitations avicoles. [L’élevage et l’engraissement de porcins]{.highlight-blue} viennent ensuite (18&nbsp;%).
 
-# Evolution par type e culture en métropole
+# Évolution par type de culture en métropole
 
 Entre 2010 et 2020, l’exploitation de la SAU a évolué de façon contrastée selon les cultures : celle des [céréales]{.highlight-orange} et des [oléagineux]{.highlight-orange} **recule** tandis que celle des [plantes à fibres]{.highlight-green} et des [prairies]{.highlight-green} **grandit**.
 
@@ -435,7 +435,7 @@ La culture du lin s'est particulièrement développée, notamment en Haute-Norma
   <span class="tooltip-container">
     <span class="tooltip-question">?</span>
     <span class="tooltip-content">
-      La France est leader mondial de la production de lin tetile, la Haute-Normandie assurant à elle seule la moitié de la production mondiale de fibres de lin de qualité.
+      La France est leader mondial de la production de lin textile, la Haute-Normandie assurant à elle seule la moitié de la production mondiale de fibres de lin de qualité.
     </span>
   </span>
   s'est particulièrement développée, notamment en Haute-Normandie.
@@ -467,10 +467,10 @@ La superficie de [protéagineux]{.highlight-blue} (pois, féveroles, lupins, len
   <span class="tooltip-container">
     <span class="tooltip-question">?</span>
     <span class="tooltip-content">
-      De puis, un deuxième plan a été mis en place en 2010 et un troisième va être lancé prochainement, pour continuer de soutenir ces cultures.
+      Depuis, un deuxième plan a été mis en place en 2010 et un troisième va être lancé prochainement, pour continuer de soutenir ces cultures.
     </span>
   </span>
-  , afin d'assoir une production nationale.
+  , afin d'asseoir une production nationale.
 </p>
 ```
 
@@ -530,7 +530,7 @@ La surface d'exploitation des vignes continue de diminuer entre 2010 et 2020, ma
 
 L’**emprise de l’agriculture** s'affirme davantage dans le quart nord-ouest de la métropole. Elle atteint son maximum en [Eure-et-Loir]{.highlight-green} où 75&nbsp;% du territoire est dédié à l’agriculture. Isolé au sein du Sud-Ouest, le [Gers]{.highlight-green} affiche 71&nbsp;%. @cr-map
 
-A l'opposé, dans le Sud-Est et dans les [Landes]{.highlight-green} ou la [Gironde]{.highlight-green}, ce sont plutôt des forêts, montagnes ou zones humides. @cr-map
+À l'opposé, dans le Sud-Est et dans les [Landes]{.highlight-green} ou la [Gironde]{.highlight-green}, ce sont plutôt des forêts, montagnes ou zones humides. @cr-map
 
 La part de SAU la plus faible est dans le département des [Alpes-Maritimes]{.highlight-green} (10&nbsp;%). @cr-map
 
