@@ -537,8 +537,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="part-de-la-superficie-agricole-utilisée-en-2020-dans-la-superficie-totale-en" class="level1">
 <h1>Part de la superficie agricole utilisée en 2020 dans la superficie totale (en %)</h1>
+<!-- Commenter carte 1
+```{=html}
 <script id="zoomOrder" type="application/json">
   ["France", "Landes", "Alpes-Maritimes", "Lot"]
+</script>
+```
+Fin de commentaire -->
+<script id="zoomOrder" type="application/json">
+  ["France", "Landes", "Alpes-Maritimes"]
 </script>
 <div class="cr-section map cr-column-screen overlay-left">
 <div class="narrative-col">
@@ -557,9 +564,11 @@ ul.task-list li input[type="checkbox"] {
 <p>La part de SAU la plus faible est dans le département des <span class="highlight-green">Alpes-Maritimes</span> (10&nbsp;%).</p>
 </div>
 </div>
-<div class="trigger new-trigger" data-focus-on="cr-map">
+<div class="trigger">
 <div class="narrative">
-<p>Outre-mer, la <span class="highlight-green">Guyane</span> se distingue encore plus fortement (0,4&nbsp;%).</p>
+<!-- Commenter la carte 1
+Outre-mer, la [Guyane]{.highlight-green} se distingue encore plus fortement (0,4&nbsp;%). @cr-map
+Fin de commentaire de la carte 1 -->
 </div>
 </div>
 </div>
