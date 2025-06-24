@@ -541,10 +541,6 @@ L’**emprise de l’agriculture** s'affirme davantage dans le quart nord-ouest 
 
 La part de SAU la plus faible est dans le département des [Alpes-Maritimes]{.highlight-green} (10&nbsp;%). @cr-map
 
-<!-- Commenter la carte 1
-Outre-mer, la [Guyane]{.highlight-green} se distingue encore plus fortement (0,4&nbsp;%). @cr-map
-Fin de commentaire de la carte 1 -->
-
 ::::
 
 <!-- Commenter la deuxième carte 
