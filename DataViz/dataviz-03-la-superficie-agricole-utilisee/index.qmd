@@ -538,6 +538,7 @@ Outre-mer, la [Guyane]{.highlight-green} se distingue encore plus fortement (0,4
 
 ::::
 
+<!-- Commenter la deuxième carte 
 # SAU moyenne en 2020 (en hectares)
 
 ```{=html}
@@ -581,7 +582,7 @@ Les valeurs les plus fortes de la surface moyenne des exploitations se concentre
 Les valeurs minimales sont observées dans les départements d'outre-mer : de 1,4&nbsp;ha à [Mayotte]{.highlight-purple} à 8&nbsp;ha en moyenne en [Martinique]{.highlight-purple}. @cr-map1
 
 ::::
-
+Fin de commentaire de la carte 2 -->
 
 ::: {.fin-page .align-center}
 **Pour en savoir plus sur le sujet :**
