@@ -493,12 +493,19 @@ La surface d'exploitation des vignes continue de diminuer entre 2010 et 2020, ma
 
 # Part de la superficie agricole utilisée en 2020 dans la superficie totale (en %)
 
+<!-- Commenter carte 1
 ```{=html}
 <script id="zoomOrder" type="application/json">
   ["France", "Landes", "Alpes-Maritimes", "Lot"]
 </script>
 ```
+Fin de commentaire -->
 
+```{=html}
+<script id="zoomOrder" type="application/json">
+  ["France", "Landes", "Alpes-Maritimes"]
+</script>
+```
 
 ::::{.cr-section .map}
 
@@ -534,7 +541,9 @@ L’**emprise de l’agriculture** s'affirme davantage dans le quart nord-ouest 
 
 La part de SAU la plus faible est dans le département des [Alpes-Maritimes]{.highlight-green} (10&nbsp;%). @cr-map
 
+<!-- Commenter la carte 1
 Outre-mer, la [Guyane]{.highlight-green} se distingue encore plus fortement (0,4&nbsp;%). @cr-map
+Fin de commentaire de la carte 1 -->
 
 ::::
 
