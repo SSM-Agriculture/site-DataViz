@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ca9a02525e315e07c29cfdfe59dc3672.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a87a6e92ecb016e6ab5bc69fb374431d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/intersection-observer-polyfill-1.0.0/intersection-observer.js"></script>
 <script src="../../site_libs/quarto-contrib/scrollama-3.2.0/scrollama.min.js"></script>
 <script src="../../site_libs/quarto-contrib/closeread-0.1.0/closeread.js"></script>
@@ -591,33 +591,19 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-</section>
-<section id="sau-moyenne-en-2020-en-hectares" class="level1">
-<h1>SAU moyenne en 2020 (en hectares)</h1>
+<!-- Commenter la deuxième carte 
+# SAU moyenne en 2020 (en hectares)
+
+```{=html}
 <script id="zoomOrder" type="application/json">
   ["France", "Var", "Lot"]
 </script>
-<div class="cr-section map cr-column-screen overlay-left">
-<div class="narrative-col">
-<div class="trigger new-trigger" data-focus-on="cr-map1">
-<div class="narrative">
-<p>Les valeurs les plus fortes de la surface moyenne des exploitations se concentrent dans un quart nord-est, des départements céréaliers (<span class="highlight-purple">Cher, Seine-et-Marne</span>) ou d’élevage bovin (<span class="highlight-purple">Nièvre</span>), ou réunissant les deux (<span class="highlight-purple">Haute-Marne</span>, qui culmine à 170&nbsp;ha).</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-map1">
-<div class="narrative">
-<p>À l’inverse, en province, des départements de tradition viticole présentent une SAU moyenne plus faible : <span class="highlight-purple">Var, Hérault, Pyrénées-Orientales, Vaucluse</span>.</p>
-</div>
-</div>
-<div class="trigger new-trigger" data-focus-on="cr-map1">
-<div class="narrative">
-<p>Les valeurs minimales sont observées dans les départements d’outre-mer : de 1,4&nbsp;ha à <span class="highlight-purple">Mayotte</span> à 8&nbsp;ha en moyenne en <span class="highlight-purple">Martinique</span>.</p>
-</div>
-</div>
-</div>
-<div class="sticky-col">
-<div class="sticky-col-stack">
-<div id="cr-map1" class="sticky">
+```
+
+::::{.cr-section .map}
+
+:::{#cr-map1}
+```{=html}
 <style>
   #map-container {
     position: absolute !important;
@@ -639,10 +625,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="map-container">
   <iframe src="carte.html" id="map"></iframe>
 </div>
-</div>
-</div>
-</div>
-</div>
+```
+:::
+
+Les valeurs les plus fortes de la surface moyenne des exploitations se concentrent dans un quart nord-est, des départements céréaliers ([Cher, Seine-et-Marne]{.highlight-purple}) ou d’élevage bovin ([Nièvre]{.highlight-purple}), ou réunissant les deux ([Haute-Marne]{.highlight-purple}, qui culmine à 170&nbsp;ha). @cr-map1
+
+À l’inverse, en province, des départements de tradition viticole présentent une SAU moyenne plus faible : [Var, Hérault, Pyrénées-Orientales, Vaucluse]{.highlight-purple}. @cr-map1
+
+Les valeurs minimales sont observées dans les départements d'outre-mer : de 1,4&nbsp;ha à [Mayotte]{.highlight-purple} à 8&nbsp;ha en moyenne en [Martinique]{.highlight-purple}. @cr-map1
+
+::::
+Fin de commentaire de la carte 2 -->
 <div class="fin-page align-center">
 <p><strong>Pour en savoir plus sur le sujet :</strong></p>
 <p><a href="https://agreste.agriculture.gouv.fr/agreste-web/" style="display: block; margin-top: 0.5rem;"> 🐮 Site Agreste 🐮 </a></p>
