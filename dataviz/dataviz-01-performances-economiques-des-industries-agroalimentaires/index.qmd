@@ -1,66 +1,36 @@
 ---
+image: ./data-png/classement-secteur-iaa.png
 title: "Performances des industries agroalimentaires"
-format:
+description: |
+  <br>
+  Premier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.
+  <br>
+  <br>
+
+categories:
+  - Industries agroalimentaires
+html:
+  text: Voir la viz
+  url: https://ssm-agriculture.github.io/site-DataViz/dataviz/dataviz-01-performances-economiques-des-industries-agroalimentaires/
+order: 1
+format: 
   closeread-html:
-    self-contained-math: true
-    backgroundcolor: white
+    embed-resources: true
     cr-section:
       layout: overlay-left
-      font-size: 0.2rem
-    css: ../../masa-closeread.css
-    include-after-body:
-      text: |
-        <script src="../../masa-closeread.js"></script>
+    cr-style:
+      narrative-background-color-overlay: "#242b35"
+    css: masa-closeread.css
+    include-after: |
+      <script src="masa-closeread.js"></script>
 editor: source
 execute:
   echo: false
 ---
 
-::::::::::: align-right
-Retourner à l'accueil [![](./data-png/Bouton%20Home.png)](https://vizagreste.agriculture.gouv.fr/){style="max-height: 100px; width: auto;"}
-
-Partager la Viz (Mail) [![](./data-png/Bouton%20Share.png)](mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20:%20https://monrapport.fr)
-
-Partager la Viz (X) [![](./data-png/Bouton%20Share.png)](https://twitter.com/intent/tweet?text=Regarde%20ce%20rapport%20!&url=https://monrapport.fr)
-
-Partager la Viz (Facebook) [![](./data-png/Bouton%20Share.png)](https://www.facebook.com/sharer/sharer.php?u=https://monrapport.fr)
-
-Explorer les données territoriales <img src="./data-png/Bouton Data Dep.png" alt="Ouvrir menu 1" onclick="openMenu(&apos;menu-overlay-1&apos;)" style="max-height: 100px; cursor: pointer;"/>
-
-Pendant la navigation, appuyer pour accéder aux autres actions <img src="./data-png/Bouton Menu.png" alt="Ouvrir menu 2" onclick="openMenu(&apos;menu-overlay-2&apos;)" style="max-height: 100px; cursor: pointer;"/>
-
-<!-- MENU 1 : Départements -->
-
-:::::: {#menu-overlay-1 .menu-overlay}
-::: {.menu-close onclick="closeMenu('menu-overlay-1')"}
-✖
-:::
-
-::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/01/2020')"}
-📍 01 Ain
-:::
-
-::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/02/2020')"}
-📍 02 Aisne
-:::
-::::::
-
-<!-- MENU 2 : Paramètres  -->
-
-:::::: {#menu-overlay-2 .menu-overlay}
-::: {.menu-close onclick="closeMenu('menu-overlay-2')"}
-✖
-:::
-
-::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/')"}
-📈 Accueil
-:::
-
-::: {.menu-option onclick="goTo('mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20: https://monrapport.fr')"}
-📉 Partager la Viz
-:::
-::::::
-:::::::::::
+```{=html}
+`r dataviz::menu_dataviz()`
+```
 
 # **Performances économiques des industires agroalimentaires**
 
@@ -84,25 +54,23 @@ Pendant la navigation, appuyer pour accéder aux autres actions <img src="./data
 ```
 
 <p style="display:flex; align-items: center; gap: 2%;">
-  <img src="./data-png/2e.png"> 
-  C'est le rang des industries agroalimentaires françaises au sein de l'union européenne.
+  <img src="./data-png/2e.png"/> 
+  <span>C'est le rang des industries agroalimentaires françaises au sein de l'union européenne. </span>
 </p>
 
 Classée juste derrière l'Allemagne ces dernières années, la France devance nettement l'Italie et l'Espagne.
 
 ## **Valeur ajoutée des industries agroalimentaires dans l'Union européenne**
 
-Prix courants, en milliards d'euros
+ Prix courants, en milliards d'euros
 
-![*Champ : branche des industries agroalimentaires* <br> *Source : Eurostat*](./data-svg/industrie-alimentaire-prix-courants.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/industrie-alimentaire-prix-courants.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/industrie-alimentaire-prix-courants.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/industrie-alimentaire-prix-courants.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/industrie-alimentaire-prix-courants.svg",
+  "Champ : branche des industries agroalimentaires
+  Source : Eurostat"
+)
+```
 
 ```{=html}
 <p>
@@ -128,17 +96,16 @@ Depuis des décennies, les IAA assurent un volume d’emploi salarié remarquabl
 
 ## **Evolution de l'emploi salarié hors intérim des branches agroalimentaire et manufacturière**
 
-Indice en base 100 en 1990
+ Indice en base 100 en 1990
 
-![\* *y compris l'artisanat commercial* <br> *Champ : France hors Mayotte* <br> *Source : Insee, comptes nationaux, base 2024*](./data-svg/emploi-salarie-agroalimentaire.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/emploi-salarie-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/emploi-salarie-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/emploi-salarie-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/emploi-salarie-agroalimentaire.svg",
+  "*y compris l'artisanat commercial
+  Champ : France hors Mayotte
+  Source : Insee, comptes nationaux, base 2024"
+)
+```
 
 # **Les IAA sont un acteur clé d’un vaste ensemble agricole et agroalimentaire**
 
@@ -146,17 +113,16 @@ Les IAA forment un maillon essentiel d’une chaîne de valorisation qui va des 
 
 ## **Part de la valeur ajoutée de l'agriculture et des IAA dans le PIB**
 
-En %
+ En %
 
-![\* *Agriculture, sylviculture et pêche* <br> *Champ : France* <br> *Source : Insee, comptes nationaux, base 2024*](./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/valeur-ajoutee-secteur-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/valeur-ajoutee-secteur-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/valeur-ajoutee-secteur-agroalimentaire.svg",
+  "*Agriculture, sylviculture et pêche
+  Champ : France
+  Source : Insee, comptes nationaux, base 2024"
+)
+```
 
 ```{=html}
 <p>
@@ -200,22 +166,21 @@ En %
 
 ## **Indicateurs du secteur agroalimentaire en France en 2021**
 
-![*Md€ : milliards d'euros* <br> *ETP : équivalent temps plein* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/indicateurs-secteur-agroalimentaire.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/indicateurs-secteur-agroalimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-secteur-agroalimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/indicateurs-secteur-agroalimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/indicateurs-secteur-agroalimentaire.svg",
+  "Md€ : milliards d'euros
+  ETP : équivalent temps plein
+  Source : Insee - Esane, traitements SSP"
+)
+```
 
 Pour mieux comprendre une notion comptable comme la valeur ajoutée, supposons qu'une entreprise fabrique des biscuits. La production vendue – le chiffre d’affaires – doit d’abord servir à payer les matières premières et l'énergie, qui font partie des « consommations intermédiaires ». Ce qu’il reste est par définition la valeur ajoutée, soit la richesse créée lors du processus de production.
 
-```{=html}
-<p class="align-center">
-  <img class="img-fluid" src="./data-png/Biscuits.png">
-</p>
+```{r}
+dataviz::genere_image(
+  "./data-svg/biscuits.svg"
+)
 ```
 
 L’entreprise utilisera cette valeur ajoutée pour payer les salariés, les impôts sur les bénéfices, les frais financiers, amortir son matériel, rémunérer les actionnaires et investir.
@@ -235,39 +200,37 @@ L’entreprise utilisera cette valeur ajoutée pour payer les salariés, les imp
 <p> 
 ```
 
-:::: {.cr-section .reframe-2-2}
+:::: {.cr-section}
 ::: {#cr-va-iaa}
 ## **Valeur ajoutée dans les IAA en 2021**
 
 En milliards d'euros
 
-![\* *plats préparés, sucre, confiserie, cacao, thé, café, condiments...* <br> \*\* *produits de l'extraction de l'amidon des végétaux utilisés dans l'alimentation (amidon, glucoses, gluten, tapioca...)* <br> *Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/valeur-ajoutee-iaa.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/valeur-ajoutee-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/valeur-ajoutee-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/valeur-ajoutee-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/valeur-ajoutee-iaa.svg",
+  "*plats préparés, sucre, confiserie, cacao, thé, café, condiments...
+  **produits de l'extraction de l'amidon des végétaux utilisés dans l'alimentation (amidon, glucoses, gluten, tapioca...)
+  Champ : IAA hors artisanat commercial et tabac - France
+  Source : Insee - Esane, traitements SSP"
+)
+```
 :::
 
 Quatre activités génèrent les trois quarts de la valeur ajoutée des IAA. Au premier rang : la fabrication de boissons (vin, bière, spiritueux, boissons non alcoolisées hors jus de fruits) avec 22% de l'ensemble. @cr-va-iaa
 ::::
 
-:::: {.cr-section .reframe-2-2}
+:::: {.cr-section}
 ::: {#cr-palmares-iaa}
 ## **Palmarès des activités des IAA en 2021**
 
-![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/classement-secteur-iaa.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/classement-secteur-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/classement-secteur-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/classement-secteur-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/classement-secteur-iaa.svg",
+  "Champ : IAA hors artisanat commercial et tabac - France
+  Source : Insee - Esane, traitements SSP"
+)
+```
 :::
 
 L'activité des boissons domine la valeur ajoutée car elle représente le plus fort taux de valeur ajoutée. C'est celle où les matières premières pèsent le moins dans le processus de production. @cr-palmares-iaa
@@ -294,13 +257,11 @@ Comparons les boissons avec l’activité qui lui est la plus opposée pour le t
 
 Dans la fabrication des boissons, les matières premières sont relativement peu coûteuses, en regard de la valorisation du produit final.
 
-```{=html}
-<p class="align-center">
-  <img class="img-fluid" src="./data-png/Boissons.png">
-<p/>
+```{r}
+dataviz::genere_image(
+  "./data-svg/boissons.svg"
+)
 ```
-
-<br>
 
 ```{=html}
 <p>
@@ -315,29 +276,26 @@ Dans la fabrication des boissons, les matières premières sont relativement peu
 </p>
 ```
 
-<br>
-
-```{=html}
-<p class="align-center">
-  <img class="img-fluid" src="./data-png/Huiles_graisses.png">
-<p/>
+```{r}
+dataviz::genere_image(
+  "./data-svg/huiles_graisses.svg"
+)
 ```
 
 Le calssement suivant traduit le degré de transformation des différentes filières des IAA.
 
-:::: {.cr-section .reframe-2-2}
+:::: {.cr-section}
 ::: {#cr-taux-va-iaa}
 ## **Taux de valeur ajoutée dans les IAA en 2021**
 
-![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/taux-valeur-ajoutee-iaa.svg){.img-fluid-custom}
+```{r}
+dataviz::genere_image(
+  "./data-svg/taux-valeur-ajoutee-iaa.svg",
+  "Champ : IAA hors artisanat commercial et tabac - France
+  Source : Insee - Esane, traitements SSP"
+)
+```
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/taux-valeur-ajoutee-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-valeur-ajoutee-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-valeur-ajoutee-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
 :::
 
 En bas de figure, juste avant les huiles et graisses, la production de farine et d'amylacés (amidon) illustre la notion de première transformation, dont les débouchés peuvent alimenter les filières de seconde transformation, à plus forte valeur ajoutée. @cr-taux-va-iaa
@@ -356,33 +314,37 @@ En bas de figure, juste avant les huiles et graisses, la production de farine et
 ```
 ::::
 
-<br>
-
 Le taux de valeur ajoutée n'est pas à lui seul un indicateur d'efficacité ou de rentabilité économique
 
-:::::: {.cr-section .reframe-1-2}
+:::::: {.cr-section}
 ::: {#cr-indicateur-efficacite}
-```{=html}
-<p class="img-center">
-  <img class="img-fluid" src="./data-png/indicateur-efficacite.png">
-</p>
+
+```{r}
+dataviz::genere_image(
+  "./data-svg/ebe.svg"
+)
 ```
+
 :::
 
 ::: {#cr-indicateur-efficacite1}
-```{=html}
-<p class="img-center">
-  <img class="img-fluid" src="./data-png/indicateur-efficacite1.png">
-</p>
+
+```{r}
+dataviz::genere_image(
+  "./data-svg/ebe1.svg"
+)
 ```
+
 :::
 
 ::: {#cr-indicateur-efficacite2}
-```{=html}
-<p class="img-center">
-  <img class="img-fluid" src="./data-png/indicateur-efficacite2.png">
-</p>
+
+```{r}
+dataviz::genere_image(
+  "./data-svg/ebe2.svg"
+)
 ```
+
 :::
 
 Afficher le premier graph. @cr-indicateur-efficacite
@@ -407,21 +369,19 @@ Apparait ainsi, l'éxcédent brut d'exploitation (EBE) - appelé plus communéme
 
 Le "taux de marge" rapporte cette marge à la valeur ajoutée. Moins les frais de personnel pèsent dans la valeur ajoutée, plus ce taux est élevé.
 
-:::: {.cr-section .reframe-2-2}
+:::: {.cr-section}
 ::: {#cr-taux-marge-iaa}
 ## **Taux de marge dans les IAA**
 
-Moyenne 2020-2021
+ Moyenne 2020-2021
 
-![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/taux-marge-iaa.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/taux-marge-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-marge-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-marge-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/taux-marge-iaa.svg",
+  "Champ : IAA hors artisanat commercial et tabac - France
+  Source : Insee - Esane, traitements SSP"
+)
+```
 :::
 
 Les activités de fabrication de boissons affichent un taux de marge supérieur à 50 %, cas assez rare dans l'industrie manufacturière. @cr-taux-marge-iaa
@@ -429,31 +389,41 @@ Les activités de fabrication de boissons affichent un taux de marge supérieur 
 A l'opposé, les activités de transformation de viande mobilisnet beaucoup de main-d'oeuvre, elles dégagent moins de marge en moyenne. @cr-taux-marge-iaa
 ::::
 
-Comparées à la moyenne de l’industrie manufacturière, les IAA affichent un taux de valeur ajoutée plus faible (20 % contre 26 %) mais un meilleur taux de marge (33 % contre 25 %), et un taux d’investissement ⁠? plus élevé (19 % contre 15 %).
+```{=html}
+<p>
+  <!-- /* Insérer ici le contenu avant l'infobulle -->
+  Comparées à la moyenne de l’industrie manufacturière, les IAA affichent un taux de valeur ajoutée plus faible (20 % contre 26 %) mais un meilleur taux de marge (33 % contre 25 %), et un taux d’investissement
+  <span class="tooltip-container">
+    <span class="tooltip-question">?</span>
+    <span class="tooltip-content">
+      <!-- Insérer ici le contenu présent dans l'infobulle -->
+			Le taux d’investissement mesure la part des investissements dans la valeur ajoutée.
+    </span>
+  </span>
+  <!--Insérer ici le contenu situé après l'infobulle -->
+  plus élevé (19 % contre 15 %).
+</p>
+```
 
-:::: {.cr-section .reframe-2-2}
+:::: {.cr-section}
 ::: {#cr-taux-investissement-iaa}
 ## **Taux d'investissement dans les IAA**
 
-Moyenne 2020-2021
+ Moyenne 2020-2021
 
-![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : Insee - Esane, traitements SSP*](./data-svg/taux-investissement-iaa.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/taux-investissement-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-investissement-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-investissement-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/taux-investissement-iaa.svg",
+  "Champ : IAA hors artisanat commercial et tabac - France
+  Source : Insee - Esane, traitements SSP"
+)
+```
 :::
 
 Marlgré des marges importantes, les secteurs des boissons et des aliments pour animaux sont ceux qui investissent le moins (en proportion de la valeur ajoutée), dans la période 2020-2021. @cr-taux-investissement-iaa
 
 A l'inverse, les huiles et graissent présentent un taux senssiblement supérieur aux autres activités. @cr-taux-investissement-iaa
 ::::
-
-<br>
 
 # **Quels résultats en fonction de la taille des entreprises ?**
 
@@ -479,15 +449,17 @@ A l'inverse, les huiles et graissent présentent un taux senssiblement supérieu
 
 ## **Indicateurs synthétiques par catégorie d'entreprise en 2021**
 
-![*Microentreprises : effectifs \< 10 salariés et bilan \< 2 M€* <br> *PME : effectifs \< 250 salariés et bilan \< 43 M€* <br> *ETI : effectifs entre 250 et 5 000 salariés ou CA \>= 50 k€ ou bilan entre 43 M€ et 2 000 M€* <br> *GE : effectifs \>= 5 000 salariés ou (CA \> 1,5 Md€ et bilan \> 2 Md€)* <br><br> *Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : INSEE - Esane, traitements SSP*](./data-svg/indicateurs-categorie-entreprise.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/indicateurs-categorie-entreprise.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/indicateurs-categorie-entreprise.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/indicateurs-categorie-entreprise.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/indicateurs-categorie-entreprise.svg",
+  "Microentreprises : effectifs < 10 salariés et bilan < 2 M€
+  PME : effectifs < 250 salariés et bilan < 43 M€
+  ETI : effectifs entre 250 et 5 000 salariés ou CA >= 50 k€ ou bilan entre 43 M€ et 2 000 M€
+  GE : effectifs >= 5 000 salariés ou (CA > 1,5 Md€ et bilan > 2 Md€)
+  Champ : IAA hors artisanat commercial et tabac - France
+  Source : INSEE - Esane, traitements SSP"
+)
+```
 
 # **Comment se portent les échanges extérieurs des IAA ?**
 
@@ -506,27 +478,23 @@ A l'inverse, les huiles et graissent présentent un taux senssiblement supérieu
 
 De gros écarts se dessinent selon les activités.
 
-:::: {.cr-section .reframe-2-2}
+:::: {.cr-section}
 ::: {#cr-taux-export-iaa}
 # **Taux d'exportation des IAA en 2021**
 
-![*Champ : IAA hors artisanat commercial et tabac - France* <br> *Source : INSEE - Esane, traitements SSP*](./data-svg/taux-exportation-iaa.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/taux-exportation-iaa.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/taux-exportation-iaa.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/taux-exportation-iaa.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/taux-exportation-iaa.svg",
+  "Champ : IAA hors artisanat commercial et tabac - France
+  Source : Insee - Esane, traitements SSP"
+)
+```
 :::
 
 Les industries de produits périssables (viandes, poissons, boulangerie industrielle) exportent moins que les autres. @cr-taux-export-iaa
 
 A l'inverse, les industries des huiles et graisses ou des farines et amylacés exportent près de la moitié de leur production. @cr-taux-export-iaa
 ::::
-
-<br>
 
 ```{=html}
 <p>
@@ -550,53 +518,50 @@ A l'inverse, les industries des huiles et graisses ou des farines et amylacés e
 
 ## **Solde des échanges agroalimentaires français pour différents produits en 2022**
 
-En milliards d'euros
+ En milliards d'euros
 
-![*Source : Douanes*](./data-svg/echanges.svg){.img-fluid-custom}
+```{r}
+dataviz::genere_image(
+  "./data-svg/echanges.svg",
+  "Source : Douanes"
+)
+```
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/echanges.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/echanges.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/echanges.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
-
-:::::: {.cr-section .reframe-2-2}
+:::::: {.cr-section}
 ::: {#cr-balance-commerciale}
-![\* *les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.* <br> *Champ : France, y compris Mayotte à partir de 2014.* <br> *Source : Douanes*](./data-svg/balance-produit-alimentaire.svg){.img-fluid-custom}
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/balance-produit-alimentaire.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/balance-produit-alimentaire.svg",
+  "*les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.
+  Champ : France, y compris Mayotte à partir de 2014.
+  Source : Douanes"
+)
+```
 :::
 
 ::: {#cr-balance-commerciale1}
-![\* *les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.* <br> *Champ : France, y compris Mayotte à partir de 2014.* <br> *Source : Douanes*](./data-svg/balance-produit-alimentaire1.svg){.img-fluid-custom}
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/balance-produit-alimentaire1.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire1.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/balance-produit-alimentaire1.svg",
+  "*les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.
+  Champ : France, y compris Mayotte à partir de 2014.
+  Source : Douanes"
+)
+```
 :::
 
 ::: {#cr-balance-commerciale2}
-![\* *les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.* <br> *Champ : France, y compris Mayotte à partir de 2014.* <br> *Source : Douanes*](./data-svg/balance-produit-alimentaire2.svg){.img-fluid-custom}
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/balance-produit-alimentaire2.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> <a href="./data-svg/balance-produit-alimentaire2.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> <a href="./data-png/balance-produit-alimentaire2.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/balance-produit-alimentaire2.svg",
+  "*les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.
+  Champ : France, y compris Mayotte à partir de 2014.
+  Source : Douanes"
+)
+```
 :::
 
 Depuis 10 ans au moins, la balance commerciale française est assez stable, entre 5 et 8 millairs d'euros chaque année. Mais aliments et boissons connaissent des évolutions nettement divergentes. @cr-balance-commerciale
@@ -608,29 +573,51 @@ En revanche, la balance commerciale française est de plus en plus déficitaire 
 
 # **Comment les IAA se déploient-elles dans le territoire national ?**
 
-::::::: {.cr-section .reframe-2-2}
+::::::: {.cr-section}
 ::: {#cr-ensemble-iaa}
-Ensemble des IAA : effectifs salariés au 31/12/2021
 
-![*Source : Insee - Flores*](./data-png/ensemble-iaa.png)
+## Ensemble des IAA : effectifs salariés au 31/12/2021
+
+```{r}
+dataviz::genere_image(
+  "./data-png/ensemble-iaa.png",
+  "Source : Insee - Flores"
+)
+```
+
 :::
 
 ::: {#cr-produits-laitiers}
-Fabrication de produits laitiers : effectifs salariés au 31/12/2021
+## Fabrication de produits laitiers : effectifs salariés au 31/12/2021
 
-![*Source : Insee - Flores*](./data-png/produits-laitiers.png)
+```{r}
+dataviz::genere_image(
+  "./data-png/produits-laitiers.png",
+  "Source : Insee - Flores"
+)
+```
 :::
 
 ::: {#cr-transfo-viande}
-Transformation de viande : effectifs salariés au 31/12/2021
+## Transformation de viande : effectifs salariés au 31/12/2021
 
-![*Source : Insee - Flores*](./data-png/transfo-viande.png)
+```{r}
+dataviz::genere_image(
+  "./data-png/transfo-viande.png",
+  "Source : Insee - Flores"
+)
+```
 :::
 
 ::: {#cr-fabrication-boisson}
-Fabrication de boissons : effectifs salariés au 31/12/2021
+## Fabrication de boissons : effectifs salariés au 31/12/2021
 
-![*Source : Insee - Flores*](./data-png/fabrication-boisson.png)
+```{r}
+dataviz::genere_image(
+  "./data-png/fabrication-boisson.png",
+  "Source : Insee - Flores"
+)
+```
 :::
 
 En emplois salariés, les IAA apparaissent très présentes dans un quart nord-ouest, en premier lieu en Bretagne et dans les Pays de la Loire. L’Île-de-France accueille par ailleurs nombre de sièges sociaux. @cr-ensemble-iaa
@@ -644,11 +631,9 @@ Dans la même logique, les industries de transformation de viande se situent tr�
 Enfin, l’implantation des entreprises de fabrication de boissons se reconnait dans les grands bassins viticoles, mais aussi dans quelques zones de gisement d’eau minérale (Vosges, Alpes ou Auvergne). @cr-fabrication-boisson
 :::::::
 
-::: align-center
-<a href="./data-csv/Data-carte-iaa.csv" download style="display: block;">📥 Télécharger les données des cartes précédentes</a>
-:::
-
 ::: {.align-center .fin-page}
+**Pour en savoir plus :**
+
 <a href="https://agreste.agriculture.gouv.fr/agreste-web/disaron/Chd2402/detail/"> Résultats économiques des IAA 2021</a>
 
 <a href="https://www.insee.fr/fr/statistiques/7728903">Transformation de l'agriculture 2024</a>

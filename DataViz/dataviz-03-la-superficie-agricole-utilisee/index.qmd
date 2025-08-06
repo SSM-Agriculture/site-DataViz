@@ -1,18 +1,6 @@
 ---
 image: ./data-png/surface-moyenne-des-exploitations-par-specialisation.png
 title: "Superficie Agricole Utilisée"
-description: |
-  <br>
-  Premier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.
-  <br>
-  <br>
-
-categories:
-  - Exploitations agricoles
-html:
-  text: Voir la viz
-  url: https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-03-la-superficie-agricole-utilisee/
-order: 3
 format:
   closeread-html:
     self-contained-math: true
