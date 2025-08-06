@@ -2,127 +2,309 @@
   {
     "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html",
     "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html",
-    "title": "Superficie Agricole Utilisée",
+    "title": "La surface agricole utilisée",
     "section": "",
-    "text": "Retourner à l’accueil \nPartager la Viz (Mail) \nPartager la Viz (X) \nPartager la Viz (Facebook) \nExplorer les données territoriales \nPendant la navigation, appuyer pour accéder aux autres actions \n\n\n\n✖\n\n\n📍 01 Ain\n\n\n📍 02 Aisne\n\n\n\n\n\n✖\n\n\n📈 Accueil\n\n\n📉 Partager la Viz"
+    "text": "Retour à l’accueil\n      \n\n      \n      \n        \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n        \n        Partager la dataviz\n      \n\n      \n      \n        \n          \n            \n          \n        \n        Explorer les données territoriales\nEn 2020, l’agriculture occupe 269 000 km² de l’espace français. En métropole\n  \n    ?\n    \n      En Guyane, dont la superficie est le sixième de celle de la métropole, l’agriculture n’utilise que 0,4 % du territoire.\n    \n  \n  , cela représente 49 % du territoire.\nAlors qu'elle diminue régulièrement depuis 50 ans, la superficie agricole utilisée\n  \n    ?\n    \n      La SAU comprend les terres arables (y compris pâturages temporaires, jachères, cultures sous abri, jardins familiaux...), les surfaces toujours en herbe et les cultures permanentes (vignes, vergers...).\n    \n  \n  varie peu entre 2010 et 2020 (-1 %)\nC’est la surface occupée en 2020 par l’agriculture en France métropolitaine."
   },
   {
     "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#nombre-dexploitations-par-classe-de-sau",
     "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#nombre-dexploitations-par-classe-de-sau",
-    "title": "Superficie Agricole Utilisée",
+    "title": "La surface agricole utilisée",
     "section": "Nombre d’exploitations par classe de SAU",
-    "text": "Nombre d’exploitations par classe de SAU\n\n\n\n\nLe nombre d’exploitation de moins de 100 ha recule tandis que celui des plus grandes augmente. Pour autant, les exploitations de moins de 50 ha sont toujours majoritaires (54 % en 2020).\n\n\n\n\nLes exploitations de moins de 20 ha concentrent les 2/3 de la diminution totale.\n\n\n\n\nCes petites exploitations restent les plus présentes, mais en 50 ans leur part dans l’ensemble est passée de 58 % à 38 %.\n\n\n\n\nÀ l’opposé, le nombre d’exploitations de plus de 200 ha augmente d’un tiers entre 2010 et 2020.\n\n\n\n\nSur plus long terme, les exploitations de 100 ha et plus sont de plus en plus nombreuses.\n\n\n\n\nPlus de 100 000 en 2020, elles représentent un quart du total, contre 2 % en 50 ans auparavant.\n\n\n\n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nLes exploitations spécialisées en grandes cultures occupent plus d’un tiers de la SAU en métropole, celles spécialisées dans les élevages bovins presqu’autant."
+    "text": "Nombre d’exploitations par classe de SAU\n\n\n\n\nLe nombre d’exploitations de moins de 100 ha recule tandis que celui des plus grandes augmente. Pour autant, les exploitations de moins de 50 ha sont toujours majoritaires (54 % en 2020).\n\n\n\n\nLes exploitations de moins de 20 ha concentrent les 2/3 de la diminution totale.\n\n\n\n\nCes petites exploitations restent les plus présentes, mais en 50 ans leur part dans l’ensemble est passée de 58 % à 38 %.\n\n\n\n\nÀ l’opposé, le nombre d’exploitations de plus de 200 ha augmente d’un tiers entre 2010 et 2020.\n\n\n\n\nSur plus long terme, les exploitations de 100 ha et plus sont de plus en plus nombreuses.\n\n\n\n\nPlus de 100 000 en 2020, elles représentent un quart du total, contre 2 % en 50 ans auparavant.\n\n\n\n\n\n\n\nNombre d’exploitations par classe de SAU\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNombre d’exploitations par classe de SAU\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNombre d’exploitations par classe de SAU\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÉvolution du nombre d’exploitations (en millions)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÉvolution du nombre d’exploitations (en millions)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLes exploitations spécialisées en grandes cultures occupent plus d’un tiers de la SAU en métropole, celles spécialisées dans les élevages bovins presqu’autant."
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#nombre-dexploitations-par-classe-de-sau-1",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#nombre-dexploitations-par-classe-de-sau-1",
+    "title": "La surface agricole utilisée",
+    "section": "Nombre d’exploitations par classe de SAU",
+    "text": "Nombre d’exploitations par classe de SAU"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#nombre-dexploitations-par-classe-de-sau-2",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#nombre-dexploitations-par-classe-de-sau-2",
+    "title": "La surface agricole utilisée",
+    "section": "Nombre d’exploitations par classe de SAU",
+    "text": "Nombre d’exploitations par classe de SAU"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#nombre-dexploitations-par-classe-de-sau-3",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#nombre-dexploitations-par-classe-de-sau-3",
+    "title": "La surface agricole utilisée",
+    "section": "Nombre d’exploitations par classe de SAU",
+    "text": "Nombre d’exploitations par classe de SAU"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#évolution-du-nombre-dexploitations-en-millions",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#évolution-du-nombre-dexploitations-en-millions",
+    "title": "La surface agricole utilisée",
+    "section": "Évolution du nombre d’exploitations (en millions)",
+    "text": "Évolution du nombre d’exploitations (en millions)"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#évolution-du-nombre-dexploitations-en-millions-1",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#évolution-du-nombre-dexploitations-en-millions-1",
+    "title": "La surface agricole utilisée",
+    "section": "Évolution du nombre d’exploitations (en millions)",
+    "text": "Évolution du nombre d’exploitations (en millions)"
   },
   {
     "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#surface-moyenne-des-exploitations-par-spécialisation",
     "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#surface-moyenne-des-exploitations-par-spécialisation",
-    "title": "Superficie Agricole Utilisée",
+    "title": "La surface agricole utilisée",
     "section": "Surface moyenne des exploitations par spécialisation",
-    "text": "Surface moyenne des exploitations par spécialisation\n\n\n\n\nLes exploitations bovines sont en moyenne les plus vastes, devant celles orientées en grandes cultures.\n\n\n\n\nA l’opposé, viticulture, fruits, maraîchage ou horticulture se déploient plutôt dans de petites surfaces.\n\n\n\n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\n  La SAU peut s'avérer nulle. C'est le cas pour plus de 5 000 exploitations,\n  \n    ?\n    \n      Hors apiculture pour qui la notion de SAU est difficile à évaluer, les surfaces butinées étant soit des espaces publics ou des surfaces mises à disposition par des exploitants ou des particuliers.\n    \n  \n  où seuls les bâtiments servent à la production agricole."
+    "text": "Surface moyenne des exploitations par spécialisation\n\n\n\n\nLes exploitations bovines sont en moyenne les plus vastes, devant celles orientées en grandes cultures.\n\n\n\n\nÀ l’opposé, viticulture, fruits, maraîchage ou horticulture se déploient plutôt dans de petites surfaces.\n\n\n\n\n\n\n\nSurface moyenne des exploitations par spécialisation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSurface moyenne des exploitations par spécialisation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  La SAU peut s'avérer nulle. C'est le cas pour plus de 5 000 exploitations,\n  \n    ?\n    \n      Hors apiculture pour qui la notion de SAU est difficile à évaluer, les surfaces butinées étant soit des espaces publics ou des surfaces mises à disposition par des exploitants ou des particuliers.\n    \n  \n  où seuls les bâtiments servent à la production agricole."
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#surface-moyenne-des-exploitations-par-spécialisation-1",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#surface-moyenne-des-exploitations-par-spécialisation-1",
+    "title": "La surface agricole utilisée",
+    "section": "Surface moyenne des exploitations par spécialisation",
+    "text": "Surface moyenne des exploitations par spécialisation"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#surface-moyenne-des-exploitations-par-spécialisation-2",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#surface-moyenne-des-exploitations-par-spécialisation-2",
+    "title": "La surface agricole utilisée",
+    "section": "Surface moyenne des exploitations par spécialisation",
+    "text": "Surface moyenne des exploitations par spécialisation"
   },
   {
     "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-des-plantes-à-fibres",
     "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-des-plantes-à-fibres",
-    "title": "Superficie Agricole Utilisée",
+    "title": "La surface agricole utilisée",
     "section": "Culture des plantes à fibres",
-    "text": "Culture des plantes à fibres\n\n\n\n\nLa culture du lin s’est particulièrement développée, notamment en Haute-Normandie.\n\n\n\n\n\n  La culture du lin\n  \n    ?\n    \n      La France est leader mondial de la production de lin textile, la Haute-Normandie assurant à elle seule la moitié de la production mondiale de fibres de lin de qualité.\n    \n  \n  s'est particulièrement développée, notamment en Haute-Normandie.\n\n\n\n\n\nLes surfaces de PPAM (plantes à parfum, aromatiques et médicinales) progressent fortement entre 2010 et 2020. Dans les départements de la Drôme, de Vaucluse et des Alpes-de-Haute-Provence, la culture du lavandin et de la lavande s’est accrue sensiblement : + 13 000 ha au total pour ces deux plantes, soit un gain de 65 %.\n\n\n\n\n\n  Les surfaces de PPAM (plantes à parfum, aromatiques et médicinales) progressent fortement entre 2010 et 2020. Dans les départements de la Drôme, de Vaucluse et des Alpes-de-Haute-Provence, la culture du lavandin et de la lavande\n  \n    ?\n    \n      Lavandin et lavande représentent en 2020 plus de la moitié des superficies des PPAM. La France est le premier producteur mondial de lavandin et le deuxième de lavande (derrière la Bulgarie).\n    \n  \n  s'est accrue sensiblement : + 13 000 ha au total pour ces deux plantes, soit un gain de 65 %.\n\n\n\n\n\nEntre 2010 et 2020, les surfaces d’oléagineux (colza, tournesol, soja, …) reculent de 5 %.\n\n\n\n\nLa superficie de protéagineux (pois, féveroles, lupins, lentilles, …) augmente légèrement (+ 1 % entre 2010 et 2020).\n\n\n\n\n\n  L'extension spectaculaire des surfaces en oléagineux et protéagineux dans les années 80 est le fruit d'une politique volontariste. En réaction à l'embargo américain de 1973, la France lance dès 1974 un ambitieux \"Plan Protéines\"\n  \n    ?\n    \n      Depuis, un deuxième plan a été mis en place en 2010 et un troisième va être lancé prochainement, pour continuer de soutenir ces cultures.\n    \n  \n  , afin d'asseoir une production nationale.\n\n\n\n\n\nLa surface d’exploitation des vignes continue de diminuer entre 2010 et 2020, mais moins que précédemment. En 50 ans, plus de 400 000 ha de vignes ont disparu, dont la moitié en Languedoc-Roussillon. Dans les Pyrénées-Orientales, la surface viticole a été divisée par trois, dans l’Hérault ou l’Aude par deux.\n\n\n\n\n\n  La surface d'exploitation des vignes continue de diminuer entre 2010 et 2020, mais moins que précédemment. En 50 ans, plus de 400 000 ha de vignes ont disparu,\n  \n    ?\n    \n      La communauté européenne a instauré en 1980 la prime à l'abandon définitif (PAD), dite \"prime à l'arrachage\". Ce programme a cessé en 2011.\n    \n  \n   dont la moitié en Languedoc-Roussillon. Dans les Pyrénées-Orientales, la surface viticole a été divisée par trois, dans l'Hérault ou l'Aude par deux.\n\n\n\n\n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Culture des plantes à fibres\n\n\n\n\nLa culture du lin s’est particulièrement développée, notamment en Haute-Normandie.\n\n\n\n\n\n  La culture du lin\n  \n    ?\n    \n      La France est leader mondial de la production de lin tetile, la Haute-Normandie assurant à elle seule la moitié de la production mondiale de fibres de lin de qualité.\n    \n  \n  s'est particulièrement développée, notamment en Haute-Normandie.\n\n\n\n\n\nLes surfaces de PPAM (plantes à parfum, aromatiques et médicinales) progressent fortement entre 2010 et 2020. Dans les départements de la Drôme, de Vaucluse et des Alpes-de-Haute-Provence, la culture du lavandin et de la lavande s’est accrue sensiblement : + 13 000 ha au total pour ces deux plantes, soit un gain de 65 %.\n\n\n\n\n\n  Les surfaces de PPAM (plantes à parfum, aromatiques et médicinales) progressent fortement entre 2010 et 2020. Dans les départements de la Drôme, de Vaucluse et des Alpes-de-Haute-Provence, la culture du lavandin et de la lavande\n  \n    ?\n    \n      Lavandin et lavande représentent en 2020 plus de la moitié des superficies des PPAM. La France est le premier producteur mondial de lavandin et le deuxième de lavande (derrière la Bulgarie).\n    \n  \n  s'est accrue sensiblement : + 13 000 ha au total pour ces deux plantes, soit un gain de 65 %.\n\n\n\n\n\nEntre 2010 et 2020, les surfaces d’oléagineux (colza, tournesol, soja…) reculent de 5 %.\n\n\n\n\nLa superficie de protéagineux (pois, féveroles, lupins, lentilles…) augmente légèrement (+ 1 % entre 2010 et 2020).\n\n\n\n\n\n  L'extension spectaculaire des surfaces en oléagineux et protéagineux dans les années 80 est le fruit d'une politique volontariste. En réaction à l'embargo américain de 1973, la France lance dès 1974 un ambitieux \"Plan Protéines\"\n  \n    ?\n    \n      De puis, un deuxième plan a été mis en place en 2010 et un troisième va être lancé prochainement, pour continuer de soutenir ces cultures.\n    \n  \n  , afin d'asseoir une production nationale.\n\n\n\n\n\nLa surface d’exploitation des vignes continue de diminuer entre 2010 et 2020, mais moins que précédemment. En 50 ans, plus de 400 000 ha de vignes ont disparu, dont la moitié en Languedoc-Roussillon. Dans les Pyrénées-Orientales, la surface viticole a été divisée par trois, dans l’Hérault ou l’Aude par deux.\n\n\n\n\n\n  La surface d'exploitation des vignes continue de diminuer entre 2010 et 2020, mais moins que précédemment. En 50 ans, plus de 400 000 ha de vignes ont disparu,\n  \n    ?\n    \n      La communauté européenne a instauré en 1980 la prime à l'abandon définitif (PAD), dite \"prime à l'arrachage\". Ce programme a cessé en 2011.\n    \n  \n   dont la moitié en Languedoc-Roussillon. Dans les Pyrénées-Orientales, la surface viticole a été divisée par trois, dans l'Hérault ou l'Aude par deux.\n\n\n\n\n\n\n\n\nCulture des plantes à fibres\n\n\n\n\n\n\n\n\n\n\nCulture de plantes à parfum, aromatiques et médicinales\n\n\n\n\n\n\n\n\n\n\nCulture des oléagineux\n\n\n\n\n\n\n\n\n\n\nCulture des protéagineux\n\n\n\n\n\n\n\n\n\n\nCulture de la vigne"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html",
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-des-plantes-à-fibres-1",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-des-plantes-à-fibres-1",
+    "title": "La surface agricole utilisée",
+    "section": "Culture des plantes à fibres",
+    "text": "Culture des plantes à fibres"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-de-plantes-à-parfum-aromatiques-et-médicinales",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-de-plantes-à-parfum-aromatiques-et-médicinales",
+    "title": "La surface agricole utilisée",
+    "section": "Culture de plantes à parfum, aromatiques et médicinales",
+    "text": "Culture de plantes à parfum, aromatiques et médicinales"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-des-oléagineux",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-des-oléagineux",
+    "title": "La surface agricole utilisée",
+    "section": "Culture des oléagineux",
+    "text": "Culture des oléagineux"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-des-protéagineux",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-des-protéagineux",
+    "title": "La surface agricole utilisée",
+    "section": "Culture des protéagineux",
+    "text": "Culture des protéagineux"
+  },
+  {
+    "objectID": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-de-la-vigne",
+    "href": "DataViz/dataviz-03-la-superficie-agricole-utilisee/index.html#culture-de-la-vigne",
+    "title": "La surface agricole utilisée",
+    "section": "Culture de la vigne",
+    "text": "Culture de la vigne"
+  },
+  {
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html",
     "title": "Performances des industries agroalimentaires",
     "section": "",
-    "text": "Retourner à l’accueil \nPartager la Viz (Mail) \nPartager la Viz (X) \nPartager la Viz (Facebook) \nExplorer les données territoriales \nPendant la navigation, appuyer pour accéder aux autres actions \n\n\n\n✖\n\n\n📍 01 Ain\n\n\n📍 02 Aisne\n\n\n\n\n\n✖\n\n\n📈 Accueil\n\n\n📉 Partager la Viz"
+    "text": "Retour à l’accueil\n      \n\n      \n      \n        \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n        \n        Partager la dataviz\n      \n\n      \n      \n        \n          \n            \n          \n        \n        Explorer les données territoriales"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#valeur-ajoutée-des-industries-agroalimentaires-dans-lunion-européenne",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#valeur-ajoutée-des-industries-agroalimentaires-dans-lunion-européenne",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#valeur-ajoutée-des-industries-agroalimentaires-dans-lunion-européenne",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#valeur-ajoutée-des-industries-agroalimentaires-dans-lunion-européenne",
     "title": "Performances des industries agroalimentaires",
     "section": "Valeur ajoutée des industries agroalimentaires dans l’Union européenne",
-    "text": "Valeur ajoutée des industries agroalimentaires dans l’Union européenne\nPrix courants, en milliards d’euros\n\n\n\nChamp : branche des industries agroalimentaires  Source : Eurostat\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n  Les industries agroalimentaires (IAA) sont le premier secteur manufacturier\n  \n    ?\n    \n      L'industrie manufacturière regroupe les industries de transformation des biens, mais aussi la réparation et l'installation d'équipements industriels.\n    \n  \n    français, en chiffre d'affaires, en valeur ajoutée ou en emploi salarié.\n  \n    ?\n    \n      Rapportées à l’ensemble de l’industrie manufacturière, les IAA comptent pour 16 % des effectifs (ETP), 20 % du chiffre d’affaires et 16 % de la valeur ajoutée en 2021.\n    \n  \n  Elles génèrent par exemple 2,3 fois plus de valeur ajoutée que l’industrie automobile.\n \nDepuis des décennies, les IAA assurent un volume d’emploi salarié remarquablement stable, en croissance même depuis 2015. Cette évolution est plus favorable que celle de l’ensemble de l’industrie manufacturière."
+    "text": "Valeur ajoutée des industries agroalimentaires dans l’Union européenne\nPrix courants, en milliards d’euros\n\n\n\n\n\n\n\nChamp : branche des industries agroalimentaires Source : Eurostat\n\n\n\n\n\n\n\n\n  Les industries agroalimentaires (IAA) sont le premier secteur manufacturier\n  \n    ?\n    \n      L'industrie manufacturière regroupe les industries de transformation des biens, mais aussi la réparation et l'installation d'équipements industriels.\n    \n  \n    français, en chiffre d'affaires, en valeur ajoutée ou en emploi salarié.\n  \n    ?\n    \n      Rapportées à l’ensemble de l’industrie manufacturière, les IAA comptent pour 16 % des effectifs (ETP), 20 % du chiffre d’affaires et 16 % de la valeur ajoutée en 2021.\n    \n  \n  Elles génèrent par exemple 2,3 fois plus de valeur ajoutée que l’industrie automobile.\n \nDepuis des décennies, les IAA assurent un volume d’emploi salarié remarquablement stable, en croissance même depuis 2015. Cette évolution est plus favorable que celle de l’ensemble de l’industrie manufacturière."
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#evolution-de-lemploi-salarié-hors-intérim-des-branches-agroalimentaire-et-manufacturière",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#evolution-de-lemploi-salarié-hors-intérim-des-branches-agroalimentaire-et-manufacturière",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#evolution-de-lemploi-salarié-hors-intérim-des-branches-agroalimentaire-et-manufacturière",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#evolution-de-lemploi-salarié-hors-intérim-des-branches-agroalimentaire-et-manufacturière",
     "title": "Performances des industries agroalimentaires",
     "section": "Evolution de l’emploi salarié hors intérim des branches agroalimentaire et manufacturière",
-    "text": "Evolution de l’emploi salarié hors intérim des branches agroalimentaire et manufacturière\nIndice en base 100 en 1990\n\n\n\n* y compris l’artisanat commercial  Champ : France hors Mayotte  Source : Insee, comptes nationaux, base 2024\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Evolution de l’emploi salarié hors intérim des branches agroalimentaire et manufacturière\nIndice en base 100 en 1990\n\n\n\n\n\n\n\n*y compris l’artisanat commercial Champ : France hors Mayotte Source : Insee, comptes nationaux, base 2024"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#part-de-la-valeur-ajoutée-de-lagriculture-et-des-iaa-dans-le-pib",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#part-de-la-valeur-ajoutée-de-lagriculture-et-des-iaa-dans-le-pib",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#part-de-la-valeur-ajoutée-de-lagriculture-et-des-iaa-dans-le-pib",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#part-de-la-valeur-ajoutée-de-lagriculture-et-des-iaa-dans-le-pib",
     "title": "Performances des industries agroalimentaires",
     "section": "Part de la valeur ajoutée de l’agriculture et des IAA dans le PIB",
-    "text": "Part de la valeur ajoutée de l’agriculture et des IAA dans le PIB\nEn %\n\n\n\n* Agriculture, sylviculture et pêche  Champ : France  Source : Insee, comptes nationaux, base 2024\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n  L'analyse sectorielle\n  \n    ?\n    \n      L’approche « sectorielle » privilégie l’activité principale, écartant par exemple les entreprises qui font principalement de la distribution. En comptabilité nationale en revanche, la « branche » IAA couvre uniquement les activités d’IAA, mais dans l’ensemble des entreprises.\n    \n  \n    qui suit distingue l’industrie de l’artisanat commercial.\n  \n    ?\n    \n      L’artisanat commercial regroupe les unités ayant pour activité principale la charcuterie, la boulangerie, la boulangerie-pâtisserie, la pâtisserie, la cuisson de produits de boulangerie. Il concerne pour l’essentiel des entreprises de moins de 10 salariés, par ailleurs inscrites au Répertoire des métiers.\n    \n  \n    Elle écarte aussi les activités de transformation « à la ferme »\n  \n    ?\n    \n      En particulier, certains domaines viticoles vinifient, embouteillent et commercialisent eux-mêmes ; ils ne figurent pas, statistiquement, dans les IAA.\n    \n  \n  , en vente directe, et le commerce de gros.\n      \n\n  En 2021, 19 000 entreprises\n  \n    ?\n    \n      Les statisticiens définissent désormais l’entreprise comme la plus petite combinaison d’unités légales formant une unité organisationnelle, avec une certaine autonomie de décision. Il peut s’agir d’entreprises indépendantes ou de groupes comprenant plusieurs filiales.\n    \n  \n  entrent ainsi dans le champ des industries agroalimentaires stricto sensu. De leur côté, les entreprises du commerce de gros ou de l’artisanat commercial alimentaire sont plus nombreuses. Mais elles emploient moins de salariés. Les IAA génèrent deux fois plus de valeur ajoutée qu'artisanat et commerce de gros alimentaires réunis."
+    "text": "Part de la valeur ajoutée de l’agriculture et des IAA dans le PIB\nEn %\n\n\n\n\n\n\n\n*Agriculture, sylviculture et pêche Champ : France Source : Insee, comptes nationaux, base 2024\n\n\n\n\n\n\n\n\n  L'analyse sectorielle\n  \n    ?\n    \n      L’approche « sectorielle » privilégie l’activité principale, écartant par exemple les entreprises qui font principalement de la distribution. En comptabilité nationale en revanche, la « branche » IAA couvre uniquement les activités d’IAA, mais dans l’ensemble des entreprises.\n    \n  \n    qui suit distingue l’industrie de l’artisanat commercial.\n  \n    ?\n    \n      L’artisanat commercial regroupe les unités ayant pour activité principale la charcuterie, la boulangerie, la boulangerie-pâtisserie, la pâtisserie, la cuisson de produits de boulangerie. Il concerne pour l’essentiel des entreprises de moins de 10 salariés, par ailleurs inscrites au Répertoire des métiers.\n    \n  \n    Elle écarte aussi les activités de transformation « à la ferme »\n  \n    ?\n    \n      En particulier, certains domaines viticoles vinifient, embouteillent et commercialisent eux-mêmes ; ils ne figurent pas, statistiquement, dans les IAA.\n    \n  \n  , en vente directe, et le commerce de gros.\n      \n\n  En 2021, 19 000 entreprises\n  \n    ?\n    \n      Les statisticiens définissent désormais l’entreprise comme la plus petite combinaison d’unités légales formant une unité organisationnelle, avec une certaine autonomie de décision. Il peut s’agir d’entreprises indépendantes ou de groupes comprenant plusieurs filiales.\n    \n  \n  entrent ainsi dans le champ des industries agroalimentaires stricto sensu. De leur côté, les entreprises du commerce de gros ou de l’artisanat commercial alimentaire sont plus nombreuses. Mais elles emploient moins de salariés. Les IAA génèrent deux fois plus de valeur ajoutée qu'artisanat et commerce de gros alimentaires réunis."
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#indicateurs-du-secteur-agroalimentaire-en-france-en-2021",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#indicateurs-du-secteur-agroalimentaire-en-france-en-2021",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#indicateurs-du-secteur-agroalimentaire-en-france-en-2021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#indicateurs-du-secteur-agroalimentaire-en-france-en-2021",
     "title": "Performances des industries agroalimentaires",
     "section": "Indicateurs du secteur agroalimentaire en France en 2021",
-    "text": "Indicateurs du secteur agroalimentaire en France en 2021\n\n\n\nMd€ : milliards d’euros  ETP : équivalent temps plein  Source : Insee - Esane, traitements SSP\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\nPour mieux comprendre une notion comptable comme la valeur ajoutée, supposons qu’une entreprise fabrique des biscuits. La production vendue – le chiffre d’affaires – doit d’abord servir à payer les matières premières et l’énergie, qui font partie des « consommations intermédiaires ». Ce qu’il reste est par définition la valeur ajoutée, soit la richesse créée lors du processus de production.\n\n  \n\nL’entreprise utilisera cette valeur ajoutée pour payer les salariés, les impôts sur les bénéfices, les frais financiers, amortir son matériel, rémunérer les actionnaires et investir."
+    "text": "Indicateurs du secteur agroalimentaire en France en 2021\n\n\n\n\n\n\n\nMd€ : milliards d’euros ETP : équivalent temps plein Source : Insee - Esane, traitements SSP\n\n\n\n\n\n\n\nPour mieux comprendre une notion comptable comme la valeur ajoutée, supposons qu’une entreprise fabrique des biscuits. La production vendue – le chiffre d’affaires – doit d’abord servir à payer les matières premières et l’énergie, qui font partie des « consommations intermédiaires ». Ce qu’il reste est par définition la valeur ajoutée, soit la richesse créée lors du processus de production.\n\n\n\n\n\n\n\n\nL’entreprise utilisera cette valeur ajoutée pour payer les salariés, les impôts sur les bénéfices, les frais financiers, amortir son matériel, rémunérer les actionnaires et investir."
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#valeur-ajoutée-dans-les-iaa-en-2021",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#valeur-ajoutée-dans-les-iaa-en-2021",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#valeur-ajoutée-dans-les-iaa-en-2021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#valeur-ajoutée-dans-les-iaa-en-2021",
     "title": "Performances des industries agroalimentaires",
     "section": "Valeur ajoutée dans les IAA en 2021",
-    "text": "Valeur ajoutée dans les IAA en 2021\nEn milliards d’euros\n\n\n\n* plats préparés, sucre, confiserie, cacao, thé, café, condiments…  ** produits de l’extraction de l’amidon des végétaux utilisés dans l’alimentation (amidon, glucoses, gluten, tapioca…)  Champ : IAA hors artisanat commercial et tabac - France  Source : Insee - Esane, traitements SSP\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Valeur ajoutée dans les IAA en 2021\nEn milliards d’euros\n\n\n\n\n\n\n\n*plats préparés, sucre, confiserie, cacao, thé, café, condiments… **produits de l’extraction de l’amidon des végétaux utilisés dans l’alimentation (amidon, glucoses, gluten, tapioca…) Champ : IAA hors artisanat commercial et tabac - France Source : Insee - Esane, traitements SSP"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#palmarès-des-activités-des-iaa-en-2021",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#palmarès-des-activités-des-iaa-en-2021",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#palmarès-des-activités-des-iaa-en-2021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#palmarès-des-activités-des-iaa-en-2021",
     "title": "Performances des industries agroalimentaires",
     "section": "Palmarès des activités des IAA en 2021",
-    "text": "Palmarès des activités des IAA en 2021\n\n\n\nChamp : IAA hors artisanat commercial et tabac - France  Source : Insee - Esane, traitements SSP\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Palmarès des activités des IAA en 2021\n\n\n\n\n\n\n\nChamp : IAA hors artisanat commercial et tabac - France Source : Insee - Esane, traitements SSP"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#taux-de-valeur-ajoutée-dans-les-iaa-en-2021",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#taux-de-valeur-ajoutée-dans-les-iaa-en-2021",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#taux-de-valeur-ajoutée-dans-les-iaa-en-2021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#taux-de-valeur-ajoutée-dans-les-iaa-en-2021",
     "title": "Performances des industries agroalimentaires",
     "section": "Taux de valeur ajoutée dans les IAA en 2021",
-    "text": "Taux de valeur ajoutée dans les IAA en 2021\n\n\n\nChamp : IAA hors artisanat commercial et tabac - France  Source : Insee - Esane, traitements SSP\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Taux de valeur ajoutée dans les IAA en 2021\n\n\n\n\n\n\n\nChamp : IAA hors artisanat commercial et tabac - France Source : Insee - Esane, traitements SSP"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#taux-de-marge-dans-les-iaa",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#taux-de-marge-dans-les-iaa",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#taux-de-marge-dans-les-iaa",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#taux-de-marge-dans-les-iaa",
     "title": "Performances des industries agroalimentaires",
     "section": "Taux de marge dans les IAA",
-    "text": "Taux de marge dans les IAA\nMoyenne 2020-2021\n\n\n\nChamp : IAA hors artisanat commercial et tabac - France  Source : Insee - Esane, traitements SSP\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Taux de marge dans les IAA\nMoyenne 2020-2021\n\n\n\n\n\n\n\nChamp : IAA hors artisanat commercial et tabac - France Source : Insee - Esane, traitements SSP"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#taux-dinvestissement-dans-les-iaa",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#taux-dinvestissement-dans-les-iaa",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#taux-dinvestissement-dans-les-iaa",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#taux-dinvestissement-dans-les-iaa",
     "title": "Performances des industries agroalimentaires",
     "section": "Taux d’investissement dans les IAA",
-    "text": "Taux d’investissement dans les IAA\nMoyenne 2020-2021\n\n\n\nChamp : IAA hors artisanat commercial et tabac - France  Source : Insee - Esane, traitements SSP\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Taux d’investissement dans les IAA\nMoyenne 2020-2021\n\n\n\n\n\n\n\nChamp : IAA hors artisanat commercial et tabac - France Source : Insee - Esane, traitements SSP"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#indicateurs-synthétiques-par-catégorie-dentreprise-en-2021",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#indicateurs-synthétiques-par-catégorie-dentreprise-en-2021",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#indicateurs-synthétiques-par-catégorie-dentreprise-en-2021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#indicateurs-synthétiques-par-catégorie-dentreprise-en-2021",
     "title": "Performances des industries agroalimentaires",
     "section": "Indicateurs synthétiques par catégorie d’entreprise en 2021",
-    "text": "Indicateurs synthétiques par catégorie d’entreprise en 2021\n\n\n\nMicroentreprises : effectifs &lt; 10 salariés et bilan &lt; 2 M€  PME : effectifs &lt; 250 salariés et bilan &lt; 43 M€  ETI : effectifs entre 250 et 5 000 salariés ou CA &gt;= 50 k€ ou bilan entre 43 M€ et 2 000 M€  GE : effectifs &gt;= 5 000 salariés ou (CA &gt; 1,5 Md€ et bilan &gt; 2 Md€)  Champ : IAA hors artisanat commercial et tabac - France  Source : INSEE - Esane, traitements SSP\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Indicateurs synthétiques par catégorie d’entreprise en 2021\n\n\n\n\n\n\n\nMicroentreprises : effectifs &lt; 10 salariés et bilan &lt; 2 M€ PME : effectifs &lt; 250 salariés et bilan &lt; 43 M€ ETI : effectifs entre 250 et 5 000 salariés ou CA &gt;= 50 k€ ou bilan entre 43 M€ et 2 000 M€ GE : effectifs &gt;= 5 000 salariés ou (CA &gt; 1,5 Md€ et bilan &gt; 2 Md€) Champ : IAA hors artisanat commercial et tabac - France Source : INSEE - Esane, traitements SSP"
   },
   {
-    "objectID": "DataViz/dataviz-01-performances-IAA/index.html#solde-des-échanges-agroalimentaires-français-pour-différents-produits-en-2022",
-    "href": "DataViz/dataviz-01-performances-IAA/index.html#solde-des-échanges-agroalimentaires-français-pour-différents-produits-en-2022",
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#solde-des-échanges-agroalimentaires-français-pour-différents-produits-en-2022",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#solde-des-échanges-agroalimentaires-français-pour-différents-produits-en-2022",
     "title": "Performances des industries agroalimentaires",
     "section": "Solde des échanges agroalimentaires français pour différents produits en 2022",
-    "text": "Solde des échanges agroalimentaires français pour différents produits en 2022\nEn milliards d’euros\n\n\n\nSource : Douanes\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nDepuis 10 ans au moins, la balance commerciale française est assez stable, entre 5 et 8 millairs d’euros chaque année. Mais aliments et boissons connaissent des évolutions nettement divergentes.\n\n\n\n\nParenthèse Covid mise à part, la fabrication de boissons accroit régulièrement ses performances à l’export - grâce aux prix, alors que les volumes baissent sur les années récentes.\n\n\n\n\nEn revanche, la balance commerciale française est de plus en plus déficitaire dans les produits alimentaires, et tout particulièrement pour la transformation de viande.\n\n\n\n\n\n\n\n\n\n* les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.  Champ : France, y compris Mayotte à partir de 2014.  Source : Douanes\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\n* les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.  Champ : France, y compris Mayotte à partir de 2014.  Source : Douanes\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\n* les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons.  Champ : France, y compris Mayotte à partir de 2014.  Source : Douanes\n\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG"
+    "text": "Solde des échanges agroalimentaires français pour différents produits en 2022\nEn milliards d’euros\n\n\n\n\n\n\n\nSource : Douanes\n\n\n\n\n\n\n\n\n\nDepuis 10 ans au moins, la balance commerciale française est assez stable, entre 5 et 8 millairs d’euros chaque année. Mais aliments et boissons connaissent des évolutions nettement divergentes.\n\n\n\n\nParenthèse Covid mise à part, la fabrication de boissons accroit régulièrement ses performances à l’export - grâce aux prix, alors que les volumes baissent sur les années récentes.\n\n\n\n\nEn revanche, la balance commerciale française est de plus en plus déficitaire dans les produits alimentaires, et tout particulièrement pour la transformation de viande.\n\n\n\n\n\n\n\n\n\n\n\n\n\n*les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons. Champ : France, y compris Mayotte à partir de 2014. Source : Douanes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons. Champ : France, y compris Mayotte à partir de 2014. Source : Douanes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*les statistiques des douanes incorporent le tabac, mais cette activité est marginale par rapport à celle des boissons. Champ : France, y compris Mayotte à partir de 2014. Source : Douanes"
+  },
+  {
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#ensemble-des-iaa-effectifs-salariés-au-31122021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#ensemble-des-iaa-effectifs-salariés-au-31122021",
+    "title": "Performances des industries agroalimentaires",
+    "section": "Ensemble des IAA : effectifs salariés au 31/12/2021",
+    "text": "Ensemble des IAA : effectifs salariés au 31/12/2021\n\n\n\n\n\n\n\nSource : Insee - Flores"
+  },
+  {
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#fabrication-de-produits-laitiers-effectifs-salariés-au-31122021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#fabrication-de-produits-laitiers-effectifs-salariés-au-31122021",
+    "title": "Performances des industries agroalimentaires",
+    "section": "Fabrication de produits laitiers : effectifs salariés au 31/12/2021",
+    "text": "Fabrication de produits laitiers : effectifs salariés au 31/12/2021\n\n\n\n\n\n\n\nSource : Insee - Flores"
+  },
+  {
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#transformation-de-viande-effectifs-salariés-au-31122021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#transformation-de-viande-effectifs-salariés-au-31122021",
+    "title": "Performances des industries agroalimentaires",
+    "section": "Transformation de viande : effectifs salariés au 31/12/2021",
+    "text": "Transformation de viande : effectifs salariés au 31/12/2021\n\n\n\n\n\n\n\nSource : Insee - Flores"
+  },
+  {
+    "objectID": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#fabrication-de-boissons-effectifs-salariés-au-31122021",
+    "href": "DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/index.html#fabrication-de-boissons-effectifs-salariés-au-31122021",
+    "title": "Performances des industries agroalimentaires",
+    "section": "Fabrication de boissons : effectifs salariés au 31/12/2021",
+    "text": "Fabrication de boissons : effectifs salariés au 31/12/2021\n\n\n\n\n\n\n\nSource : Insee - Flores"
   },
   {
     "objectID": "index.html#ce-catalogue-de-viz-est-réalisé-en-avec-lextension-closeread-par-le-ssm-agriculture",
     "href": "index.html#ce-catalogue-de-viz-est-réalisé-en-avec-lextension-closeread-par-le-ssm-agriculture",
     "title": "Catalogue des Viz proposé par le SSM Agriculture",
     "section": "Ce catalogue de viz est réalisé en  avec l’extension CloseRead par le SSM-Agriculture",
-    "text": "Ce catalogue de viz est réalisé en  avec l’extension CloseRead par le SSM-Agriculture\nLes viz originales sont consultables sur le site VizAgreste  \n\n\n\n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            Performances des industries agroalimentaires\n            \n\n            \n              \nPremier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.\n\n\n\n            \n\n            \n            \n              \n                \n              \n            \n            \n\n  \n    \n      \n        \n          \n            Voir la viz\n          \n        \n      \n    \n  \n\n  \n\n\n          \n        \n\n        \n\n      \n     \n  \n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            Evolution du nombre d'exploitations\n            \n\n            \n              \n Source: Agreste - Recensements agricoles \n\nEn 2020, la France compte 416 400 « exploitations agricoles », 20 % de moins qu'il y a 10 ans, selon les résultats du dernier recensement agricole.\n\n\n\n            \n\n            \n            \n              \n                \n              \n            \n            \n\n  \n    \n      \n        \n          \n            Voir la Viz\n          \n        \n      \n    \n  \n\n  \n\n\n          \n        \n\n        \n\n      \n     \n  \n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            Superficie Agricole Utilisée\n            \n\n            \n              \nPremier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.\n\n\n\n            \n\n            \n            \n              \n                \n              \n            \n            \n\n  \n    \n      \n        \n          \n            Voir la viz\n          \n        \n      \n    \n  \n\n  \n\n\n          \n        \n\n        \n\n      \n     \n  \n\n\n\nNo matching items"
+    "text": "Ce catalogue de viz est réalisé en  avec l’extension CloseRead par le SSM-Agriculture\nLes viz originales sont consultables sur le site VizAgreste  \n\n\n\n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            Performances des industries agroalimentaires\n            \n\n            \n              \nPremier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.\n\n\n\n            \n\n            \n            \n              \n                \n              \n            \n            \n\n  \n    \n      \n        \n          \n            Voir la viz\n          \n        \n      \n    \n  \n\n  \n\n\n          \n        \n\n        \n\n      \n     \n  \n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            Evolution du nombre d'exploitations\n            \n\n            \n              \n Source: Agreste - Recensements agricoles \n\nEn 2020, la France compte 416 400 « exploitations agricoles », 20 % de moins qu'il y a 10 ans, selon les résultats du dernier recensement agricole.\n\n\n\n            \n\n            \n            \n              \n                \n              \n            \n            \n\n  \n    \n      \n        \n          \n            Voir la Viz\n          \n        \n      \n    \n  \n\n  \n\n\n          \n        \n\n        \n\n      \n     \n  \n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            La surface agricole utilisée\n            \n\n            \n              \nPremier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.\n\n\n\n            \n\n            \n            \n              \n                \n              \n            \n            \n\n  \n    \n      \n        \n          \n            Voir la viz\n          \n        \n      \n    \n  \n\n  \n\n\n          \n        \n\n        \n\n      \n     \n  \n\n\n\nNo matching items"
   },
   {
-    "objectID": "DataViz/dataviz-02-nb-exploitations/index.html",
-    "href": "DataViz/dataviz-02-nb-exploitations/index.html",
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html",
     "title": "Evolution du nombre d’exploitations",
     "section": "",
-    "text": "Retourner à l’accueil \nPartager la Viz (Mail) \nPartager la Viz (X) \nPartager la Viz (Facebook) \nExplorer les données territoriales \nPendant la navigation, appuyer pour accéder aux autres actions \n\n\n\n✖\n\n\n📍 01 Ain\n\n\n📍 02 Aisne\n\n\n\n\n\n✖\n\n\n📈 Accueil\n\n\n📉 Partager la Viz\n\n\n\n\nEvolution du nombre d’exploitations agricoles en france\n\n  En 2020, la France \n  \n    ?\n    \n      Y compris les 5 départements d’outre-mer : Guadeloupe, Martinique, Guyane, la Réunion et Mayotte (Mayotte est recensée depuis 2020).\n    \n  \n    compte 416 436 \"exploitations agricoles\" \n  \n    ?\n    \n      Unité de production agricole disposant d’une gestion courante propre et dépassant un seuil minimum de superficie - 1 ha ou 20 ares de cultures spécialisées - ou de production, estimée en cheptel ou volume.\n    \n  \n  selon les résultats du dernier recensement agricole\n\n En métropole, elles sont 390 000. C’est 100 000 de moins en 10 ans, soit une baisse de 20%\n\n\n\n\nPour autant, l’agriculture est toujours présente dans nos paysages : la superficie agricole utilisée ne recule que de 1 % depuis 2010.\n\n\n\n\n\n  Pour autant, l’agriculture est toujours présente dans nos paysages : la superficie agricole utilisée \n  \n    ?\n    \n      La superficie agricole utilisée (SAU) comprends les terres arables (y compris pâturages temporaires, jachères, cultures sous abri, jardins familiaux...), les surfaces toujours en herbe et les cultures permanentes (vignes, vergers...).\n    \n  \n  ne recule que de 1 % depuis 2010.\n\n\n\n\n\nLes exploitations se regroupent, elles sont moins nombreuses tout en travaillant un espace équivalent. Ainsi, le poids des exploitations de moins de 20 ha baisse de 43 % à 38 %.\n\n\n\n\n\n\n\nNombre d’exploitations agricoles en métropole\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\n\n\n\n\nDe moins en moins d’exploitations : cette tendance observée au travers des recensements agricoles se poursuit : elles étaient 4 fois plus nombreuses en métropole en 1970.\n\n\n\n\nSi la baisse du nombre d’exploitations est une constante depuis 50 ans, elle a été maximale entre 1988 et 2000, avec une chute de 350 000 en douze ans.\n\n\n\n\n\n  Si la baisse du nombre d’exploitations est une constante depuis 50 ans, elle a été maximale entre 1988 et 2000,\n  \n    ?\n    \n      La mise en oeuvre des \"quotas laitiers\" et des mesures d'incitation à la retraite ont favorisé les regroupements.\n    \n  \n  avec une chute de 350 000 en douze ans.\n\n\n\n\n\n\n\n4 fois moins d’exploitations qu’en 1970\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\nForte concentration entre 1988 et 2000\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\n\nEvolution annuelle moyenne du nombre d’exploitations\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\nDepuis, la baisse s’atténue progressivement. Elle s’établit à -2.3 % par an sur la période 2010-2020 (contre -3 % entre 2000 et 2010)\n\n\n\n\nDans presque toutes les spécialisation, le nombre d’exploitations recule entre 2010 et 2020, excepté pour “Horticulture-maraichage”.\n\n\n\n\nC’est dans les exploitations spécialisées en élevage que la baisse est la plus forte : -30 % (correspondant à -63 500 exploitations), preque les 2/3 de la diminution totale.\n\n\n\n\nL’élevage de bovins est particulièrement concerné : -33 000 exploitations, soit -27 %. Il perd le premier range qu’il détenait en 2010, qui revient à la spécialisation “Grandes cultures”.\n\n\n\n\n\n\nÉvolution du nombre d’exploitations par spécialisation\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\nÉvolution du nombre d’exploitations par spécialisation\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\nÉvolution du nombre d’exploitations par spécialisation\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\nÉvolution du nombre d’exploitations par spécialisation\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\n\n\nComment se traduisent ces évolution générales dans les territoires ?\n\n\n\n\nDans une grande façade Ouest, le nombre d’exploitations en Normandie, Bretagne, Pays de la Loire, et Nouvelle-Aquitaine par exemple, se réduit plus fortement …\n\n\n\n\n…que dans les Hauts-de-France, l’Île-de-France ou l’ancienne Champagne-Ardenne.\n\n\n\n\nTous les territoires sont concernés par la baisse du nombre d’exploitations excepté la Corse et la Guyane, qui se distinguent par une légère augmentation.\n\n\n\n\nÀ l’opposé, le nombre d’exploitations baisse le plus fortement dans trois départements de l’Est de la France métropolitaine : Vosges, Territoire-de-Belfort et Alpes-Maritimes.\n\n\n\n\nDans ces départements se poursuit ces dix dernières années une tendance plus ancienne, avec une diminution plus prononcée qu’en moyenne.\n\n\n\n\nLes Vosges comptent 1 000 exploitations de moins qu’en 2010, évolution plus forte que celle observée entre 2000 et 2010 (-4 % par an contre -3,2 %).\n\n\n\n\nVosges : un tiers d’exploitations en moins entre 2010 et 2020\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nComparaison : indice base 100\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nLes Alpes-Maritimes détonnent au sein de la région Sud. Beaucoup de petites exploitations de fruits, gérées par des exploitants retraités ou proches de la retraite en 2010, ont disparu.\n\n\n\n\nAlpes-Maritimes : dix fois moins d’exploitations en 50 ans\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nComparaison : indice base 100\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nEn Guyane, l’augmentation est continue depuis plusieurs recensements. Il s’agit là d’un cas isolé au sein des départements d’outre-mer, où la tendance est plutôt à la stabilisation du nombre d’exploitations.\n\n\n\n\n\n  En Guyane, l'augmentation\n  \n    ?\n    \n      L’immigration (notamment celle des réfugiés politiques Hmong venant du Laos) a contribué à développer l’activité agricole en Guyane.\n    \n  \n    est continue depuis plusieurs recensements.\n  \n    ?\n    \n      Les recensements agricoles couvrent au même moment les Dom et la métropole à partir de 1988. Dans les Dom, une opération de recensement a eu lieu en 1981.\n    \n  \n  Il s’agit là d’un cas isolé au sein des départements d’outre-mer, où la tendance est plutôt à la stabilisation du nombre d'exploitations.\n\n\n\n\n\nGuyane : progression continue\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nAntilles et la Réunion : vers une stabilisation après une forte réduction\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nEn Corse le nombre d’exploitations se redresse légèrement\n\n\n\n\nCorse : légère augmentation entre 2010 et 2020\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nComparaison : indice base 100\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nLe profil du département de la Marne est atypique : le nombre d’exploitations est quasi stable depuis 50 ans\n\n\n\n\nMarne : seulement 20 % d’exploitations en moins en 50 ans\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nComparaison : indice base 100\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nDans cette terre de champagne, on compte en 2020 9 300 exploitations viticoles, soit 70 % de l’ensemble. Elles occupent pour la plupart moins de 20 ha. C’était déjà le cas en 1970.\n\n\n\n\nCette stabilité explique que la Marne soit devenue en 2020 le 1er département de France en nombre d’exploitations, alors qu’il n’était que le 45e il y a 50 ans !\n\n\n\n\n\n\nTaux d’évolution du nombre d’exploitations, 2010-2020 (en %)\n\n\n\n\n\n\n\nLe top 6 des départements en 2020\n\n\n\nℹ️ Télécharger les données\n\n 📥 Format CSV   📥 Format SVG   📥 Format PNG \n\n\n\n\n\nIl y a 50 ans, c’est la Bretagne et ses proches voisins qui marquaient la tête du classement.\n\n\n\n\nEn 2020, la distribution géographique des exploitations est assez proche, bien qu’un peu plus homogène, avec en particulier l’apparition de la Marne, des Pyrénées-Atlantiques et de l’Aveyron parmi les 6 premiers départements.\n\n\n\n\n\n\n1970\n\n 📥 Télécharger l’image \n\n\n2020\n\n 📥 Télécharger l’image \n\n\n\n\n\nPour en savoir plus sur le sujet :\n 🐮 Site Agreste 🐮 \nPour aller voir d’autres DataViz :\n 📉 Accueil VizAgreste 📉"
+    "text": "Retour à l’accueil\n      \n\n      \n      \n        \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n          \n            \n              \n            \n          \n        \n        Partager la dataviz\n      \n\n      \n      \n        \n          \n            \n          \n        \n        Explorer les données territoriales"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#nombre-dexploitations-agricoles-en-métropole",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#nombre-dexploitations-agricoles-en-métropole",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "Nombre d’exploitations agricoles en métropole",
+    "text": "Nombre d’exploitations agricoles en métropole"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#fois-moins-dexploitations-quen-1970",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#fois-moins-dexploitations-quen-1970",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "4 fois moins d’exploitations qu’en 1970",
+    "text": "4 fois moins d’exploitations qu’en 1970"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#forte-concentration-entre-1988-et-2000",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#forte-concentration-entre-1988-et-2000",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "Forte concentration entre 1988 et 2000",
+    "text": "Forte concentration entre 1988 et 2000"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#evolution-annuelle-moyenne-du-nombre-dexploitations",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#evolution-annuelle-moyenne-du-nombre-dexploitations",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "Evolution annuelle moyenne du nombre d’exploitations",
+    "text": "Evolution annuelle moyenne du nombre d’exploitations\n\n\n\n\n\n\n\n\n\n\nDepuis, la baisse s’atténue progressivement. Elle s’établit à -2.3 % par an sur la période 2010-2020 (contre -3 % entre 2000 et 2010)\n\n\n\n\nDans presque toutes les spécialisation, le nombre d’exploitations recule entre 2010 et 2020, excepté pour “Horticulture-maraichage”.\n\n\n\n\nC’est dans les exploitations spécialisées en élevage que la baisse est la plus forte : -30 % (correspondant à -63 500 exploitations), preque les 2/3 de la diminution totale.\n\n\n\n\nL’élevage de bovins est particulièrement concerné : -33 000 exploitations, soit -27 %. Il perd le premier range qu’il détenait en 2010, qui revient à la spécialisation “Grandes cultures”.\n\n\n\n\n\n\n\nÉvolution du nombre d’exploitations par spécialisation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÉvolution du nombre d’exploitations par spécialisation\n\n\n\n\n\n\n\n\n\n\n\n\n\nÉvolution du nombre d’exploitations par spécialisation\n\n\n\n\n\n\n\n\n\n\n\n\n\nÉvolution du nombre d’exploitations par spécialisation"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#évolution-du-nombre-dexploitations-par-spécialisation",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#évolution-du-nombre-dexploitations-par-spécialisation",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "Évolution du nombre d’exploitations par spécialisation",
+    "text": "Évolution du nombre d’exploitations par spécialisation"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#évolution-du-nombre-dexploitations-par-spécialisation-1",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#évolution-du-nombre-dexploitations-par-spécialisation-1",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "Évolution du nombre d’exploitations par spécialisation",
+    "text": "Évolution du nombre d’exploitations par spécialisation"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#évolution-du-nombre-dexploitations-par-spécialisation-2",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#évolution-du-nombre-dexploitations-par-spécialisation-2",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "Évolution du nombre d’exploitations par spécialisation",
+    "text": "Évolution du nombre d’exploitations par spécialisation"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#évolution-du-nombre-dexploitations-par-spécialisation-3",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#évolution-du-nombre-dexploitations-par-spécialisation-3",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "Évolution du nombre d’exploitations par spécialisation",
+    "text": "Évolution du nombre d’exploitations par spécialisation"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#section",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#section",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "1970",
+    "text": "1970"
+  },
+  {
+    "objectID": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#section-1",
+    "href": "DataViz/dataviz-02-evolution-du-nombre-dexploitation/index.html#section-1",
+    "title": "Evolution du nombre d’exploitations",
+    "section": "2020",
+    "text": "2020"
   }
 ]
