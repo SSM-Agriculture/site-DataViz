@@ -1,69 +1,37 @@
 ---
-image: ./data-png/surface-moyenne-des-exploitations-par-specialisation.png
-title: "Superficie Agricole Utilisée"
-format:
+image: ./data-png/l-agriculture-occupe-pres-de-la-moitie-de-l-espace-en-metropole.png
+title: "La surface agricole utilisée"
+description: |
+  <br>
+  Premier producteur agricole de l’Union européenne, la France dispose aussi d’une puissante force de transformation avec ses industries agroalimentaires (IAA). En chiffre d’affaires ou en valeur ajoutée, seule l’Allemagne la dépasse, depuis 2015.
+  <br>
+  <br>
+
+categories:
+  - Exploitations agricoles
+html:
+  text: Voir la viz
+  url: https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-03-la-superficie-agricole-utilisee/
+order: 3
+format: 
   closeread-html:
-    self-contained-math: true
-    backgroundcolor: white
+    embed-resources: true
     cr-section:
       layout: overlay-left
-      font-size: 0.2rem
-    css: ../../masa-closeread.css
-    include-after-body:
-      text: |
-        <script src="../../masa-closeread.js"></script>
+    cr-style:
+      narrative-background-color-overlay: "#242b35"
+    css: masa-closeread.css
+    include-after: |
+      <script src="masa-closeread.js"></script>
 editor: source
 execute:
   echo: false
 ---
 
-::::::::::: align-right
-Retourner à l'accueil [![](./data-png/Bouton%20Home.png)](https://vizagreste.agriculture.gouv.fr/){style="max-height: 100px; width: auto;"}
+```{=html}
+`r dataviz::menu_dataviz()`
+```
 
-Partager la Viz (Mail) [![](./data-png/Bouton%20Share.png)](mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20:%20https://monrapport.fr)
-
-Partager la Viz (X) [![](./data-png/Bouton%20Share.png)](https://twitter.com/intent/tweet?text=Regarde%20ce%20rapport%20!&url=https://monrapport.fr)
-
-Partager la Viz (Facebook) [![](./data-png/Bouton%20Share.png)](https://www.facebook.com/sharer/sharer.php?u=https://monrapport.fr)
-
-Explorer les données territoriales <img src="./data-png/Bouton Data Dep.png" alt="Ouvrir menu 1" onclick="openMenu(&apos;menu-overlay-1&apos;)" style="max-height: 100px; cursor: pointer;"/>
-
-Pendant la navigation, appuyer pour accéder aux autres actions <img src="./data-png/Bouton Menu.png" alt="Ouvrir menu 2" onclick="openMenu(&apos;menu-overlay-2&apos;)" style="max-height: 100px; cursor: pointer;"/>
-
-<!-- MENU 1 : Départements -->
-
-:::::: {#menu-overlay-1 .menu-overlay}
-::: {.menu-close onclick="closeMenu('menu-overlay-1')"}
-✖
-:::
-
-::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/01/2020')"}
-📍 01 Ain
-:::
-
-::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/#/indicateur/02/2020')"}
-📍 02 Aisne
-:::
-::::::
-
-<!-- MENU 2 : Paramètres  -->
-
-:::::: {#menu-overlay-2 .menu-overlay}
-::: {.menu-close onclick="closeMenu('menu-overlay-2')"}
-✖
-:::
-
-::: {.menu-option onclick="goTo('https://vizagreste.agriculture.gouv.fr/')"}
-📈 Accueil
-:::
-
-::: {.menu-option onclick="goTo('mailto:?subject=Regarde%20ce%20rapport&body=Voici%20le%20lien%20: https://monrapport.fr')"}
-📉 Partager la Viz
-:::
-::::::
-:::::::::::
-
-# La superficie agricole utilisée 
 
 ```{=html}
 <p>
@@ -74,7 +42,7 @@ Pendant la navigation, appuyer pour accéder aux autres actions <img src="./data
       En Guyane, dont la superficie est le sixième de celle de la métropole, l’agriculture n’utilise que 0,4&nbsp;% du territoire.
     </span>
   </span>
-    , cela représente 49&nbsp;% du territoire.
+  , cela représente 49&nbsp;% du territoire.
 </p>    
 
 <p>
@@ -90,22 +58,17 @@ Pendant la navigation, appuyer pour accéder aux autres actions <img src="./data
 ```
 
 <p style="display:flex; align-items: center; gap: 2%;">
-  <img src="./data-png/49.png"/> C'est la surface occupée en 2020 par l'agriculture en France métropolitaine.
+  <img src="./data-png/49.png"/> 
+  <span> C'est la surface occupée en 2020 par l'agriculture en France métropolitaine.</span>
 </p>
 
 # L'agriculture occupe près de la moitié de l'espace en métropole, part qui se stabilise
 
-![](./data-svg/l-agriculture-occupe-pres-de-la-moitie-de-l-espace-en-metropole.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/l-agriculture-occupe-pres-de-la-moitie-de-l-espace-en-metropole.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/l-agriculture-occupe-pres-de-la-moitie-de-l-espace-en-metropole.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/l-agriculture-occupe-pres-de-la-moitie-de-l-espace-en-metropole.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/l-agriculture-occupe-pres-de-la-moitie-de-l-espace-en-metropole.svg"
+)
+```
 
 Les exploitations agricoles sont moins nombreuses à utiliser cet espace : 100&nbsp;000 en moins depuis 2010. Leur SAU moyenne continue d’augmenter.
 
@@ -113,18 +76,11 @@ En 2020, elle s’élève en métropole à 69&nbsp;ha (contre 55&nbsp;ha en 2010
 
 # La SAU moyenne augmente toujours au même rythme
 
-![](./data-svg/la-sau-moyenne-augmente-toujours-au-meme-rythme.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/la-sau-moyenne-augmente-toujours-au-meme-rythme.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/la-sau-moyenne-augmente-toujours-au-meme-rythme.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/la-sau-moyenne-augmente-toujours-au-meme-rythme.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
-
+```{r}
+dataviz::genere_image(
+  "./data-svg/la-sau-moyenne-augmente-toujours-au-meme-rythme.svg"
+)
+```
 
 ## Nombre d'exploitations par classe de SAU
 
@@ -132,85 +88,65 @@ En 2020, elle s’élève en métropole à 69&nbsp;ha (contre 55&nbsp;ha en 2010
 
 :::{#cr-nb-exp}
 
-![](./data-svg/nombre-d-exploitations-en-2020-et-2010.svg){.img-fluid-custom}
+## Nombre d'exploitations par classe de SAU
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/nombre-d-exploitations-en-2020-et-2010.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/nombre-d-exploitations-en-2020-et-2010.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/nombre-d-exploitations-en-2020-et-2010.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/nombre-d-exploitations-en-2020-et-2010.svg"
+)
+```
 
 :::
 
 :::{#cr-nb-exp1}
 
-![](./data-svg/nombre-d-exploitations-en-2020-et-2010-1.svg){.img-fluid-custom}
+## Nombre d'exploitations par classe de SAU
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/nombre-d-exploitations-en-2020-et-2010-1.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/nombre-d-exploitations-en-2020-et-2010-1.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/nombre-d-exploitations-en-2020-et-2010-1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/nombre-d-exploitations-en-2020-et-2010-1.svg"
+)
+```
 
 :::
 
 :::{#cr-nb-exp2}
 
-![](./data-svg/nombre-d-exploitations-en-2020-et-2010-2.svg){.img-fluid-custom}
+## Nombre d'exploitations par classe de SAU
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/nombre-d-exploitations-en-2020-et-2010-2.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/nombre-d-exploitations-en-2020-et-2010-2.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/nombre-d-exploitations-en-2020-et-2010-2.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/nombre-d-exploitations-en-2020-et-2010-2.svg"
+)
+```
 
 :::
 
 :::{#cr-nb-exp-ha}
 
-![](./data-svg/nombre-d-exploitations-en-2020-et-2010-20ha.svg){.img-fluid-custom}
+## Évolution du nombre d’exploitations (en millions)
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/nombre-d-exploitations-en-2020-et-2010-20ha.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/nombre-d-exploitations-en-2020-et-2010-20ha.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/nombre-d-exploitations-en-2020-et-2010-20ha.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/nombre-d-exploitations-en-2020-et-2010-20ha.svg"
+)
+```
 
 :::
 
 :::{#cr-nb-exp-ha1}
 
-![](./data-svg/nombre-d-exploitations-en-2020-et-2010-100ha.svg){.img-fluid-custom}
+## Évolution du nombre d’exploitations (en millions)
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/nombre-d-exploitations-en-2020-et-2010-100ha.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/nombre-d-exploitations-en-2020-et-2010-100ha.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/nombre-d-exploitations-en-2020-et-2010-100ha.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/nombre-d-exploitations-en-2020-et-2010-100ha.svg"
+)
+```
 
 :::
 
-Le nombre [d'exploitation de moins de 100&nbsp;ha]{.highlight-orange} recule tandis que celui des plus grandes augmente. Pour autant, **les exploitations de moins de 50&nbsp;ha sont toujours majoritaires (54&nbsp;% en 2020)**. @cr-nb-exp
+Le nombre [d'exploitations de moins de 100&nbsp;ha]{.highlight-orange} recule tandis que celui des plus grandes augmente. Pour autant, **les exploitations de moins de 50&nbsp;ha sont toujours majoritaires (54&nbsp;% en 2020)**. @cr-nb-exp
 
 Les [exploitations de moins de 20&nbsp;ha]{.highlight-orange} concentrent les 2/3 de la diminution totale. @cr-nb-exp1
 
@@ -228,17 +164,11 @@ Les exploitations spécialisées en [grandes cultures]{.highlight-yellow} occupe
 
 # Grandes cultures et élevage de bovins occupent les deux tiers de la surface agricole totale
 
-![](./data-svg/grandes-cultures-et-elevage-de-bovins-occupent-les-deux-tiers-de-la-surface-agricole-totale.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/grandes-cultures-et-elevage-de-bovins-occupent-les-deux-tiers-de-la-surface-agricole-totale.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/grandes-cultures-et-elevage-de-bovins-occupent-les-deux-tiers-de-la-surface-agricole-totale.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/grandes-cultures-et-elevage-de-bovins-occupent-les-deux-tiers-de-la-surface-agricole-totale.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/grandes-cultures-et-elevage-de-bovins-occupent-les-deux-tiers-de-la-surface-agricole-totale.svg"
+)
+```
 
 La surface des exploitations varie avec leur spécialisation.
 
@@ -248,39 +178,31 @@ La surface des exploitations varie avec leur spécialisation.
 
 :::{#cr-surf-moy-exp}
 
-![](./data-svg/surface-moyenne-des-exploitations-par-specialisation.svg){.img-fluid-custom}
+## Surface moyenne des exploitations par spécialisation
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/surface-moyenne-des-exploitations-par-specialisation.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/surface-moyenne-des-exploitations-par-specialisation.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/surface-moyenne-des-exploitations-par-specialisation.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/surface-moyenne-des-exploitations-par-specialisation.svg"
+)
+```
 
 :::
 
 :::{#cr-surf-moy-exp1}
 
-![](./data-svg/surface-moyenne-des-exploitations-par-specialisation-1.svg){.img-fluid-custom}
+## Surface moyenne des exploitations par spécialisation
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/surface-moyenne-des-exploitations-par-specialisation-1.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/surface-moyenne-des-exploitations-par-specialisation-1.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/surface-moyenne-des-exploitations-par-specialisation-1.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r}
+dataviz::genere_image(
+  "./data-svg/surface-moyenne-des-exploitations-par-specialisation-1.svg"
+)
+```
 
 :::
 
 Les [exploitations bovines]{.highlight-orange} sont en moyenne les plus vastes, devant celles orientées en [grandes cultures]{.highlight-yellow}. @cr-surf-moy-exp
 
-A l'opposé, [viticulture, fruits, maraîchage ou horticulture]{.highlight-purple} se déploient plutôt dans de petites surfaces. @cr-surf-moy-exp1
+À l'opposé, [viticulture, fruits, maraîchage ou horticulture]{.highlight-purple} se déploient plutôt dans de petites surfaces. @cr-surf-moy-exp1
 
 ::::
 
@@ -299,35 +221,23 @@ A l'opposé, [viticulture, fruits, maraîchage ou horticulture]{.highlight-purpl
 
 # Exploitation avec une SAU nulle
 
-![](./data-svg/exploitations-avec-une-sau-nulle.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/exploitations-avec-une-sau-nulle.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/exploitations-avec-une-sau-nulle.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/exploitations-avec-une-sau-nulle.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r results='asis'}
+dataviz::genere_image(
+  "./data-svg/exploitations-avec-une-sau-nulle.svg"
+)
+```
 
 **Près de la moitié** des exploitations (46&nbsp;%) avec une SAU nulle sont celles de [l’élevage de volailles]{.highlight-green} ; elles représentent un quart des exploitations avicoles. [L’élevage et l’engraissement de porcins]{.highlight-blue} viennent ensuite (18&nbsp;%).
 
-# Évolution par type de culture en métropole
+# Evolution par type de culture en métropole
 
 Entre 2010 et 2020, l’exploitation de la SAU a évolué de façon contrastée selon les cultures : celle des [céréales]{.highlight-orange} et des [oléagineux]{.highlight-orange} **recule** tandis que celle des [plantes à fibres]{.highlight-green} et des [prairies]{.highlight-green} **grandit**.
 
-![](./data-svg/evolution-de-l-exploitation-de-la-sau.svg){.img-fluid-custom}
-
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/evolution-de-l-exploitation-de-la-sau.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/evolution-de-l-exploitation-de-la-sau.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/evolution-de-l-exploitation-de-la-sau.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r results='asis'}
+dataviz::genere_image(
+  "./data-svg/evolution-de-l-exploitation-de-la-sau.svg"
+)
+```
 
 La surface cultivée des « plantes à fibres » grandit nettement ; elle est **multipliée par 2,5** entre 2010 et 2020.
 
@@ -337,81 +247,61 @@ La surface cultivée des « plantes à fibres » grandit nettement ; elle est **
 
 :::{#cr-culture-lin}
 
-![](./data-svg/culture-du-lin.svg){.img-fluid-custom}
+## Culture des plantes à fibres
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/culture-du-lin.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/culture-du-lin.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/culture-du-lin.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r results='asis'}
+dataviz::genere_image(
+  "./data-svg/culture-du-lin.svg"
+)
+```
 
 :::
 
 :::{#cr-culture-plantes-parfum}
 
-![](./data-svg/culture-de-plantes-a-parfum.svg){.img-fluid-custom}
+## Culture de plantes à parfum, aromatiques et médicinales
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/culture-de-plantes-a-parfum.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/culture-de-plantes-a-parfum.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/culture-de-plantes-a-parfum.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r results='asis'}
+dataviz::genere_image(
+  "./data-svg/culture-de-plantes-a-parfum.svg"
+)
+```
 
 :::
 
 :::{#cr-culture-oleagineux}
 
-![](./data-svg/culture-des-oleagineux.svg){.img-fluid-custom}
+## Culture des oléagineux
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/culture-des-oleagineux.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/culture-des-oleagineux.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/culture-des-oleagineux.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r results='asis'}
+dataviz::genere_image(
+  "./data-svg/culture-des-oleagineux.svg"
+)
+```
 
 :::
 
 :::{#cr-culture-proteagineux}
 
-![](./data-svg/culture-des-proteagineux.svg){.img-fluid-custom}
+## Culture des protéagineux
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/culture-des-proteagineux.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/culture-des-proteagineux.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/culture-des-proteagineux.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r results='asis'}
+dataviz::genere_image(
+  "./data-svg/culture-des-proteagineux.svg"
+)
+```
 
 :::
 
 :::{#cr-culture-vigne}
 
-![](./data-svg/culture-de-la-vigne.svg){.img-fluid-custom}
+## Culture de la vigne
 
-<details>
-
-<summary>ℹ️ Télécharger les données</summary>
-
-<a href="./data-csv/culture-de-la-vigne.csv" download style="display: block; margin-top: 0.5rem;"> 📥 Format CSV </a> 
-<a href="./data-svg/culture-de-la-vigne.svg" download style="display: block; margin-top: 0.5rem;"> 📥 Format SVG </a> 
-<a href="./data-png/culture-de-la-vigne.png" download style="display: block; margin-top: 0.5rem;"> 📥 Format PNG </a>
-
-</details>
+```{r results='asis'}
+dataviz::genere_image(
+  "./data-svg/culture-de-la-vigne.svg"
+)
+```
 
 :::
 
@@ -423,7 +313,7 @@ La culture du lin s'est particulièrement développée, notamment en Haute-Norma
   <span class="tooltip-container">
     <span class="tooltip-question">?</span>
     <span class="tooltip-content">
-      La France est leader mondial de la production de lin textile, la Haute-Normandie assurant à elle seule la moitié de la production mondiale de fibres de lin de qualité.
+      La France est leader mondial de la production de lin tetile, la Haute-Normandie assurant à elle seule la moitié de la production mondiale de fibres de lin de qualité.
     </span>
   </span>
   s'est particulièrement développée, notamment en Haute-Normandie.
@@ -445,9 +335,9 @@ Les surfaces de PPAM ([plantes à parfum, aromatiques et médicinales]{.highligh
 </p>
 ```
 
-Entre 2010 et 2020, les surfaces d'[oléagineux]{.highlight-orange} (colza, tournesol, soja, ...) reculent de 5&nbsp;%. @cr-culture-oleagineux
+Entre 2010 et 2020, les surfaces d'[oléagineux]{.highlight-orange} (colza, tournesol, soja...) reculent de 5&nbsp;%. @cr-culture-oleagineux
 
-La superficie de [protéagineux]{.highlight-blue} (pois, féveroles, lupins, lentilles, ...) augmente légèrement (+&nbsp;1&nbsp;% entre 2010 et 2020). @cr-culture-proteagineux
+La superficie de [protéagineux]{.highlight-blue} (pois, féveroles, lupins, lentilles...) augmente légèrement (+&nbsp;1&nbsp;% entre 2010 et 2020). @cr-culture-proteagineux
 
 ```{=html}
 <p>
@@ -455,7 +345,7 @@ La superficie de [protéagineux]{.highlight-blue} (pois, féveroles, lupins, len
   <span class="tooltip-container">
     <span class="tooltip-question">?</span>
     <span class="tooltip-content">
-      Depuis, un deuxième plan a été mis en place en 2010 et un troisième va être lancé prochainement, pour continuer de soutenir ces cultures.
+      De puis, un deuxième plan a été mis en place en 2010 et un troisième va être lancé prochainement, pour continuer de soutenir ces cultures.
     </span>
   </span>
   , afin d'asseoir une production nationale.
@@ -481,19 +371,12 @@ La surface d'exploitation des vignes continue de diminuer entre 2010 et 2020, ma
 
 # Part de la superficie agricole utilisée en 2020 dans la superficie totale (en %)
 
-<!-- Commenter carte 1
 ```{=html}
 <script id="zoomOrder" type="application/json">
-  ["France", "Landes", "Alpes-Maritimes", "Lot"]
+  ["Carte", "Landes", "Alpes-Maritimes"]
 </script>
 ```
-Fin de commentaire -->
 
-```{=html}
-<script id="zoomOrder" type="application/json">
-  ["France", "Landes", "Alpes-Maritimes"]
-</script>
-```
 
 ::::{.cr-section .map}
 
@@ -513,7 +396,6 @@ Fin de commentaire -->
     height: 100% !important;
     border: none !important;
     transition: transform 1s ease-in-out !important;
-    pointer-events: none !important;
   }
 </style>
 
@@ -531,12 +413,11 @@ La part de SAU la plus faible est dans le département des [Alpes-Maritimes]{.hi
 
 ::::
 
-<!-- Commenter la deuxième carte 
 # SAU moyenne en 2020 (en hectares)
 
 ```{=html}
 <script id="zoomOrder" type="application/json">
-  ["France", "Var", "Lot"]
+  ["Carte", "Var"]
 </script>
 ```
 
@@ -558,7 +439,6 @@ La part de SAU la plus faible est dans le département des [Alpes-Maritimes]{.hi
     height: 100% !important;
     border: none !important;
     transition: transform 1s ease-in-out !important;
-    pointer-events: none !important;
   }
 </style>
 
@@ -572,10 +452,8 @@ Les valeurs les plus fortes de la surface moyenne des exploitations se concentre
 
 À l’inverse, en province, des départements de tradition viticole présentent une SAU moyenne plus faible : [Var, Hérault, Pyrénées-Orientales, Vaucluse]{.highlight-purple}. @cr-map1
 
-Les valeurs minimales sont observées dans les départements d'outre-mer : de 1,4&nbsp;ha à [Mayotte]{.highlight-purple} à 8&nbsp;ha en moyenne en [Martinique]{.highlight-purple}. @cr-map1
-
 ::::
-Fin de commentaire de la carte 2 -->
+
 
 ::: {.fin-page .align-center}
 **Pour en savoir plus sur le sujet :**
@@ -586,4 +464,3 @@ Fin de commentaire de la carte 2 -->
 
 <a href="https://vizagreste.agriculture.gouv.fr/" style="display: block; margin-top: 0.5rem;"> 📉 Accueil VizAgreste 📉 </a>
 :::
-
