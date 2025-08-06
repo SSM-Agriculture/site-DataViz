@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // === Set up scrolling event listeners === //
   // scrollama() is accessible because scrollama.min.js is attached
   // via closeread.lua
+  
+  /* Code de base de CloseRead
   const triggerScrollerConfig = {
     step: triggerSelector,
     offset: 0.5,
@@ -89,6 +91,22 @@ document.addEventListener("DOMContentLoaded", () => {
     progress: true,
     debug: debugMode
   }
+  Fin du code de base de CloseRead */
+  
+  /* Code modifié : */
+  const triggerScrollerConfig = {
+    step: triggerSelector,
+    offset: 0.1,
+    progress: true,
+    debug: debugMode
+  }
+  const progressScrollerConfig = {
+    step: progressBlockSelector,
+    offset: 0.1,
+    progress: true,
+    debug: debugMode
+  }
+  /* Fin du code modifié */
 
   function crTriggerStepEnter(trigger) {
     focusedStickyName = trigger.element.getAttribute("data-focus-on")
@@ -188,10 +206,32 @@ document.addEventListener("DOMContentLoaded", () => {
 function updateStickies(allStickies, focusedStickyName, trigger) {
   const focusedSticky = document.querySelectorAll("[id=" + focusedStickyName)[0];
   
+  /* Code de base de CloseRead
+  
   // update which sticky is active
   allStickies.forEach(node => {node.classList.remove("cr-active")});
   focusedSticky.classList.add("cr-active");
-        
+  
+  Fin du code de base de CloseRead */
+  
+  
+  /* Code modifié : */
+  
+  // update which sticky is active
+  allStickies.forEach(node => {
+    node.classList.remove("cr-active");
+    node.style.zIndex = "";
+  });
+  
+  if (focusedSticky) {
+    focusedSticky.classList.add("cr-active");
+    // Ajouter le z-index uniquement au sticky actif
+    focusedSticky.style.zIndex = "999";
+  }
+  
+  /* Fin du code modifié */
+  
+  
   // apply additional effects
   transformSticky(focusedSticky, trigger.element);
   highlightSpans(focusedSticky, trigger.element);
