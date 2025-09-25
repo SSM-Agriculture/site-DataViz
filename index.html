@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0d551e04ae099f8e8d5dd6027fea1ca4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e23cb115d7adc71a5604d713e9426d8f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -115,7 +116,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -141,6 +142,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Catalogue des Viz proposé par le SSM Agriculture</span>
     </a>
@@ -191,7 +194,7 @@ window.Quarto = {
 
 <div class="list grid quarto-listing-cols-4">
 
-  <div class="g-col-1" data-index="0" data-categories="SW5kdXN0cmllcyUyMGFncm9hbGltZW50YWlyZXM=" data-listing-file-modified-sort="1754469202000" data-listing-reading-time-sort="16" data-listing-word-count-sort="3077">
+  <div class="g-col-1" data-index="0" data-categories="SW5kdXN0cmllcyUyMGFncm9hbGltZW50YWlyZXM=" data-listing-file-modified-sort="1758790664164" data-listing-reading-time-sort="16" data-listing-word-count-sort="3077">
     <a href="https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       </a><div class="quarto-grid-item card h-100 card-left"><a href="https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-01-performances-economiques-des-industries-agroalimentaires/" target="_blank" rel="noopener" class="grid-item-link">
         
@@ -248,7 +251,7 @@ Premier producteur agricole de l’Union européenne, la France dispose aussi d�
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              8/6/25, 8:33:22 AM
+              9/25/25, 8:57:44 AM
             </div>
         </div> -->
 
@@ -256,7 +259,7 @@ Premier producteur agricole de l’Union européenne, la France dispose aussi d�
      <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-categories="RXhwbG9pdGF0aW9ucyUyMGFncmljb2xlcw==" data-listing-file-modified-sort="1754471157539" data-listing-reading-time-sort="6" data-listing-word-count-sort="1107">
+  <div class="g-col-1" data-index="1" data-categories="RXhwbG9pdGF0aW9ucyUyMGFncmljb2xlcw==" data-listing-file-modified-sort="1758790664172" data-listing-reading-time-sort="6" data-listing-word-count-sort="1107">
     <a href="https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-02-evolution-du-nombre-dexploitation/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       </a><div class="quarto-grid-item card h-100 card-left"><a href="https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-02-evolution-du-nombre-dexploitation/" target="_blank" rel="noopener" class="grid-item-link">
         
@@ -315,7 +318,7 @@ En 2020, la France compte 416 400 « exploitations agricoles », 20 % de moins q
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              8/6/25, 9:05:57 AM
+              9/25/25, 8:57:44 AM
             </div>
         </div> -->
 
@@ -323,7 +326,7 @@ En 2020, la France compte 416 400 « exploitations agricoles », 20 % de moins q
      <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="2" data-categories="RXhwbG9pdGF0aW9ucyUyMGFncmljb2xlcw==" data-listing-file-modified-sort="1754470415031" data-listing-reading-time-sort="8" data-listing-word-count-sort="1522">
+  <div class="g-col-1" data-index="2" data-categories="RXhwbG9pdGF0aW9ucyUyMGFncmljb2xlcw==" data-listing-file-modified-sort="1758790664180" data-listing-reading-time-sort="8" data-listing-word-count-sort="1522">
     <a href="https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-03-la-superficie-agricole-utilisee/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       </a><div class="quarto-grid-item card h-100 card-left"><a href="https://ssm-agriculture.github.io/site-DataViz/DataViz/dataviz-03-la-superficie-agricole-utilisee/" target="_blank" rel="noopener" class="grid-item-link">
         
@@ -380,7 +383,7 @@ Premier producteur agricole de l’Union européenne, la France dispose aussi d�
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              8/6/25, 8:53:35 AM
+              9/25/25, 8:57:44 AM
             </div>
         </div> -->
 
@@ -449,13 +452,14 @@ Premier producteur agricole de l’Union européenne, la France dispose aussi d�
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
