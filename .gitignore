@@ -5,7 +5,7 @@
 
 # Les fichiers suivants
 *.html
-!_site/DataViz/**/*.html
+!DataViz/**/*.html
 *.tex
 *.pdf
 *.log
@@ -15,3 +15,5 @@
 /.quarto/
 /index_files/
 /_site/
+
+**/*.quarto_ipynb
